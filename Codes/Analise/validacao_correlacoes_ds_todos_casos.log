@@ -1,0 +1,356 @@
+
+########################################################################################################################
+INICIANDO PROCESSAMENTO DO CASO: All Physics
+########################################################################################################################
+
+--------------------------------------------------------------------------------
+PROCESSANDO All Physics | |eta| < 0.5
+--------------------------------------------------------------------------------
+
+>>> All Physics | |eta| < 0.5 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 5.2101 | <<N_Ds>>_hard = 0.000401
+
+--------------------------------------------------------------------------------
+PROCESSANDO All Physics | |eta| < 1.0
+--------------------------------------------------------------------------------
+
+>>> All Physics | |eta| < 1.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 10.5884 | <<N_Ds>>_hard = 0.000861
+
+--------------------------------------------------------------------------------
+PROCESSANDO All Physics | |eta| < 2.0
+--------------------------------------------------------------------------------
+
+>>> All Physics | |eta| < 2.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 21.8440 | <<N_Ds>>_hard = 0.001920
+
+--------------------------------------------------------------------------------
+PROCESSANDO All Physics | |eta| < 3.0
+--------------------------------------------------------------------------------
+
+>>> All Physics | |eta| < 3.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 33.0463 | <<N_Ds>>_hard = 0.002994
+
+--------------------------------------------------------------------------------
+PROCESSANDO All Physics | |eta| < 4.0
+--------------------------------------------------------------------------------
+
+>>> All Physics | |eta| < 4.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 43.4730 | <<N_Ds>>_hard = 0.004121
+
+--------------------------------------------------------------------------------
+PROCESSANDO All Physics | |eta| < 5.0
+--------------------------------------------------------------------------------
+
+>>> All Physics | |eta| < 5.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 52.6597 | <<N_Ds>>_hard = 0.004999
+
+GERANDO FIGURA 1 (Comparativo de Eta) PARA All Physics
+[OK] Figura 1 salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Correlacao_QQ_Ds_todos_eta.pdf
+
+GERANDO FIGURAS 2 (Eixo X fixado por corte) PARA All Physics
+[OK] Figura 2 com X fixado em $|\eta| < 0.5$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Correlacao_QQ_Ds_X_fixado_eta_0p5.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 1.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Correlacao_QQ_Ds_X_fixado_eta_1p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 2.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Correlacao_QQ_Ds_X_fixado_eta_2p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 3.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Correlacao_QQ_Ds_X_fixado_eta_3p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 4.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Correlacao_QQ_Ds_X_fixado_eta_4p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 5.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Correlacao_QQ_Ds_X_fixado_eta_5p0.pdf
+
+########################################################################################################################
+INICIANDO PROCESSAMENTO DO CASO: No Extra
+########################################################################################################################
+
+--------------------------------------------------------------------------------
+PROCESSANDO No Extra | |eta| < 0.5
+--------------------------------------------------------------------------------
+
+>>> No Extra | |eta| < 0.5 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 2.4761 | <<N_Ds>>_hard = 0.000088
+
+--------------------------------------------------------------------------------
+PROCESSANDO No Extra | |eta| < 1.0
+--------------------------------------------------------------------------------
+
+>>> No Extra | |eta| < 1.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 5.0538 | <<N_Ds>>_hard = 0.000189
+
+--------------------------------------------------------------------------------
+PROCESSANDO No Extra | |eta| < 2.0
+--------------------------------------------------------------------------------
+
+>>> No Extra | |eta| < 2.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 10.5593 | <<N_Ds>>_hard = 0.000405
+
+--------------------------------------------------------------------------------
+PROCESSANDO No Extra | |eta| < 3.0
+--------------------------------------------------------------------------------
+
+>>> No Extra | |eta| < 3.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 16.2532 | <<N_Ds>>_hard = 0.000634
+
+--------------------------------------------------------------------------------
+PROCESSANDO No Extra | |eta| < 4.0
+--------------------------------------------------------------------------------
+
+>>> No Extra | |eta| < 4.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 21.8390 | <<N_Ds>>_hard = 0.000862
+
+--------------------------------------------------------------------------------
+PROCESSANDO No Extra | |eta| < 5.0
+--------------------------------------------------------------------------------
+
+>>> No Extra | |eta| < 5.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 27.1657 | <<N_Ds>>_hard = 0.001066
+
+GERANDO FIGURA 1 (Comparativo de Eta) PARA No Extra
+[OK] Figura 1 salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Correlacao_QQ_Ds_todos_eta.pdf
+
+GERANDO FIGURAS 2 (Eixo X fixado por corte) PARA No Extra
+[OK] Figura 2 com X fixado em $|\eta| < 0.5$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Correlacao_QQ_Ds_X_fixado_eta_0p5.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 1.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Correlacao_QQ_Ds_X_fixado_eta_1p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 2.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Correlacao_QQ_Ds_X_fixado_eta_2p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 3.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Correlacao_QQ_Ds_X_fixado_eta_3p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 4.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Correlacao_QQ_Ds_X_fixado_eta_4p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 5.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Correlacao_QQ_Ds_X_fixado_eta_5p0.pdf
+
+########################################################################################################################
+INICIANDO PROCESSAMENTO DO CASO: No MPI
+########################################################################################################################
+
+--------------------------------------------------------------------------------
+PROCESSANDO No MPI | |eta| < 0.5
+--------------------------------------------------------------------------------
+
+>>> No MPI | |eta| < 0.5 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 3.3868 | <<N_Ds>>_hard = 0.000242
+
+--------------------------------------------------------------------------------
+PROCESSANDO No MPI | |eta| < 1.0
+--------------------------------------------------------------------------------
+
+>>> No MPI | |eta| < 1.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 6.8978 | <<N_Ds>>_hard = 0.000474
+
+--------------------------------------------------------------------------------
+PROCESSANDO No MPI | |eta| < 2.0
+--------------------------------------------------------------------------------
+
+>>> No MPI | |eta| < 2.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 14.3065 | <<N_Ds>>_hard = 0.001038
+
+--------------------------------------------------------------------------------
+PROCESSANDO No MPI | |eta| < 3.0
+--------------------------------------------------------------------------------
+
+>>> No MPI | |eta| < 3.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 21.7859 | <<N_Ds>>_hard = 0.001690
+
+--------------------------------------------------------------------------------
+PROCESSANDO No MPI | |eta| < 4.0
+--------------------------------------------------------------------------------
+
+>>> No MPI | |eta| < 4.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 28.9002 | <<N_Ds>>_hard = 0.002308
+
+--------------------------------------------------------------------------------
+PROCESSANDO No MPI | |eta| < 5.0
+--------------------------------------------------------------------------------
+
+>>> No MPI | |eta| < 5.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 35.4051 | <<N_Ds>>_hard = 0.002818
+
+GERANDO FIGURA 1 (Comparativo de Eta) PARA No MPI
+[OK] Figura 1 salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Correlacao_QQ_Ds_todos_eta.pdf
+
+GERANDO FIGURAS 2 (Eixo X fixado por corte) PARA No MPI
+[OK] Figura 2 com X fixado em $|\eta| < 0.5$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Correlacao_QQ_Ds_X_fixado_eta_0p5.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 1.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Correlacao_QQ_Ds_X_fixado_eta_1p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 2.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Correlacao_QQ_Ds_X_fixado_eta_2p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 3.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Correlacao_QQ_Ds_X_fixado_eta_3p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 4.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Correlacao_QQ_Ds_X_fixado_eta_4p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 5.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Correlacao_QQ_Ds_X_fixado_eta_5p0.pdf
+
+########################################################################################################################
+INICIANDO PROCESSAMENTO DO CASO: Only FSR
+########################################################################################################################
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only FSR | |eta| < 0.5
+--------------------------------------------------------------------------------
+
+>>> Only FSR | |eta| < 0.5 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 2.6776 | <<N_Ds>>_hard = 0.000129
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only FSR | |eta| < 1.0
+--------------------------------------------------------------------------------
+
+>>> Only FSR | |eta| < 1.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 5.4584 | <<N_Ds>>_hard = 0.000288
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only FSR | |eta| < 2.0
+--------------------------------------------------------------------------------
+
+>>> Only FSR | |eta| < 2.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 11.3674 | <<N_Ds>>_hard = 0.000637
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only FSR | |eta| < 3.0
+--------------------------------------------------------------------------------
+
+>>> Only FSR | |eta| < 3.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 17.4075 | <<N_Ds>>_hard = 0.001020
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only FSR | |eta| < 4.0
+--------------------------------------------------------------------------------
+
+>>> Only FSR | |eta| < 4.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 23.2517 | <<N_Ds>>_hard = 0.001358
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only FSR | |eta| < 5.0
+--------------------------------------------------------------------------------
+
+>>> Only FSR | |eta| < 5.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 28.7366 | <<N_Ds>>_hard = 0.001655
+
+GERANDO FIGURA 1 (Comparativo de Eta) PARA Only FSR
+[OK] Figura 1 salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Correlacao_QQ_Ds_todos_eta.pdf
+
+GERANDO FIGURAS 2 (Eixo X fixado por corte) PARA Only FSR
+[OK] Figura 2 com X fixado em $|\eta| < 0.5$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Correlacao_QQ_Ds_X_fixado_eta_0p5.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 1.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Correlacao_QQ_Ds_X_fixado_eta_1p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 2.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Correlacao_QQ_Ds_X_fixado_eta_2p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 3.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Correlacao_QQ_Ds_X_fixado_eta_3p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 4.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Correlacao_QQ_Ds_X_fixado_eta_4p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 5.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Correlacao_QQ_Ds_X_fixado_eta_5p0.pdf
+
+########################################################################################################################
+INICIANDO PROCESSAMENTO DO CASO: Only ISR
+########################################################################################################################
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only ISR | |eta| < 0.5
+--------------------------------------------------------------------------------
+
+>>> Only ISR | |eta| < 0.5 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 2.9041 | <<N_Ds>>_hard = 0.000139
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only ISR | |eta| < 1.0
+--------------------------------------------------------------------------------
+
+>>> Only ISR | |eta| < 1.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 5.9202 | <<N_Ds>>_hard = 0.000294
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only ISR | |eta| < 2.0
+--------------------------------------------------------------------------------
+
+>>> Only ISR | |eta| < 2.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 12.3352 | <<N_Ds>>_hard = 0.000600
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only ISR | |eta| < 3.0
+--------------------------------------------------------------------------------
+
+>>> Only ISR | |eta| < 3.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 18.9388 | <<N_Ds>>_hard = 0.000931
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only ISR | |eta| < 4.0
+--------------------------------------------------------------------------------
+
+>>> Only ISR | |eta| < 4.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 25.3796 | <<N_Ds>>_hard = 0.001287
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only ISR | |eta| < 5.0
+--------------------------------------------------------------------------------
+
+>>> Only ISR | |eta| < 5.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 31.4475 | <<N_Ds>>_hard = 0.001614
+
+GERANDO FIGURA 1 (Comparativo de Eta) PARA Only ISR
+[OK] Figura 1 salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Correlacao_QQ_Ds_todos_eta.pdf
+
+GERANDO FIGURAS 2 (Eixo X fixado por corte) PARA Only ISR
+[OK] Figura 2 com X fixado em $|\eta| < 0.5$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Correlacao_QQ_Ds_X_fixado_eta_0p5.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 1.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Correlacao_QQ_Ds_X_fixado_eta_1p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 2.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Correlacao_QQ_Ds_X_fixado_eta_2p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 3.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Correlacao_QQ_Ds_X_fixado_eta_3p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 4.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Correlacao_QQ_Ds_X_fixado_eta_4p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 5.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Correlacao_QQ_Ds_X_fixado_eta_5p0.pdf
+
+########################################################################################################################
+INICIANDO PROCESSAMENTO DO CASO: Only MPI
+########################################################################################################################
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only MPI | |eta| < 0.5
+--------------------------------------------------------------------------------
+
+>>> Only MPI | |eta| < 0.5 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 3.2128 | <<N_Ds>>_hard = 0.000149
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only MPI | |eta| < 1.0
+--------------------------------------------------------------------------------
+
+>>> Only MPI | |eta| < 1.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 6.5326 | <<N_Ds>>_hard = 0.000331
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only MPI | |eta| < 2.0
+--------------------------------------------------------------------------------
+
+>>> Only MPI | |eta| < 2.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 13.5171 | <<N_Ds>>_hard = 0.000730
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only MPI | |eta| < 3.0
+--------------------------------------------------------------------------------
+
+>>> Only MPI | |eta| < 3.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 20.5547 | <<N_Ds>>_hard = 0.001186
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only MPI | |eta| < 4.0
+--------------------------------------------------------------------------------
+
+>>> Only MPI | |eta| < 4.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 27.2532 | <<N_Ds>>_hard = 0.001577
+
+--------------------------------------------------------------------------------
+PROCESSANDO Only MPI | |eta| < 5.0
+--------------------------------------------------------------------------------
+
+>>> Only MPI | |eta| < 5.0 | Evts Soft: 1000000 | Evts Hard: 1000000
+    <<N_ch>>_soft = 33.3648 | <<N_Ds>>_hard = 0.001973
+
+GERANDO FIGURA 1 (Comparativo de Eta) PARA Only MPI
+[OK] Figura 1 salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Correlacao_QQ_Ds_todos_eta.pdf
+
+GERANDO FIGURAS 2 (Eixo X fixado por corte) PARA Only MPI
+[OK] Figura 2 com X fixado em $|\eta| < 0.5$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Correlacao_QQ_Ds_X_fixado_eta_0p5.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 1.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Correlacao_QQ_Ds_X_fixado_eta_1p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 2.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Correlacao_QQ_Ds_X_fixado_eta_2p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 3.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Correlacao_QQ_Ds_X_fixado_eta_3p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 4.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Correlacao_QQ_Ds_X_fixado_eta_4p0.pdf
+[OK] Figura 2 com X fixado em $|\eta| < 5.0$ salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Correlacao_QQ_Ds_X_fixado_eta_5p0.pdf
+
+########################################################################################################################
+GERANDO TERCEIRA FIGURA: COMPARATIVO ENTRE CASOS POR CORTE DE ETA
+########################################################################################################################
+[OK] Comparativo entre casos para $|\eta| < 0.5$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta/Comparativo_Casos_eta_0p5.pdf
+[OK] Comparativo entre casos para $|\eta| < 1.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta/Comparativo_Casos_eta_1p0.pdf
+[OK] Comparativo entre casos para $|\eta| < 2.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta/Comparativo_Casos_eta_2p0.pdf
+[OK] Comparativo entre casos para $|\eta| < 3.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta/Comparativo_Casos_eta_3p0.pdf
+[OK] Comparativo entre casos para $|\eta| < 4.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta/Comparativo_Casos_eta_4p0.pdf
+[OK] Comparativo entre casos para $|\eta| < 5.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta/Comparativo_Casos_eta_5p0.pdf
+
+########################################################################################################################
+Sucesso! Todas as modificações e novas figuras foram geradas.
+########################################################################################################################
