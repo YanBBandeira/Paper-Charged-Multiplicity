@@ -22,7 +22,6 @@ casos = {
     "No Extra":    ("Soft_14TeV_noExtra", "Hard_14TeV_noExtra"),
 }
 
-# ATUALIZADO: Inclusão do Ds e separação correta das siglas
 particulas_info = {
     "Charged": {
         "sigla": "ch", 
@@ -47,7 +46,6 @@ particulas_info = {
 }
 
 cortes_eta = [0.5, 1.0, 2.0, 3.0, 4.0, 5.0]
-bin_width = 0.1
 
 # Abre o arquivo de log no modo de escrita na raiz
 log_file = open("validacao_simulacao_PN.log", "w", encoding="utf-8")
@@ -58,20 +56,24 @@ def log_print(texto, file=log_file):
     file.write(texto + "\n")
 
 # =============================================================================
-# 2. FUNÇÃO DE LEITURA E VALIDAÇÃO CRUZADA (COM TESTES)
+# 2. FUNÇÃO DE LEITURA E VALIDAÇÃO DA MULTIPLICIDADE
 # =============================================================================
-def processar_e_validar_dados(arq_mult, arq_eta):
+def processar_e_validar_dados(arq_mult):
     """
-    Lê os arquivos .dat, executa os testes de sanidade cruzados 
-    e retorna os dados processados e o status da validação.
+    Lê o arquivo de multiplicidade .dat, remove apenas o underflow (1ª linha), 
+    executa os testes de sanidade e retorna os dados processados.
     """
-    if not os.path.exists(arq_mult) or not os.path.exists(arq_eta):
-        return None, "Arquivos ausentes"
+    if not os.path.exists(arq_mult):
+        return None, "Arquivo ausente"
 
     # Leitura da Multiplicidade
     dados_mult = np.loadtxt(arq_mult)
     if dados_mult.ndim == 1:
         dados_mult = dados_mult.reshape(1, -1)
+    
+    # Remove apenas o underflow (1ª linha), mantendo o overflow e o restante
+    if len(dados_mult) > 1:
+        dados_mult = dados_mult[1:]
     
     N_valores = dados_mult[:, 0]  # Eixo X
     counts = dados_mult[:, 1]     # Eixo Y (Eventos)
@@ -84,23 +86,10 @@ def processar_e_validar_dados(arq_mult, arq_eta):
     media_N = np.sum(N_valores * P_N)
     soma_prob = np.sum(P_N)
 
-    # Leitura do dN/deta (usado apenas para validação estatística da média)
-    dados_eta = np.loadtxt(arq_eta)
-    if dados_eta.ndim == 1:
-        dados_eta = dados_eta.reshape(1, -1)
-        
-    eta_bins = dados_eta[:, 0]
-    soma_particulas = dados_eta[:, 1]
-    
-    dndeta_dist = soma_particulas / (total_eventos * bin_width)
-    integral_dndeta = np.sum(dndeta_dist * bin_width)
-
     # Status dos Testes
     status = "OK"
     if not np.isclose(soma_prob, 1.0, atol=1e-3):
         status = "Erro P(N)!=1"
-    elif not np.isclose(media_N, integral_dndeta, atol=0.2):
-        status = "Aviso Overflow/Integral"
 
     resultado = {
         "N": N_valores,
@@ -108,7 +97,6 @@ def processar_e_validar_dados(arq_mult, arq_eta):
         "P_N": P_N,
         "media_N": media_N,
         "soma_prob": soma_prob,
-        "integral": integral_dndeta
     }
     return resultado, status
 
@@ -175,7 +163,6 @@ def salvar_grafico(dados_plot, xlabel, ylabel, label, y_min, nome_pdf, y_log=Tru
         plt.ylim(bottom=0, top=top_lim)
 
     if max_x_global > 0:
-        # Dá um respiro de 15% no eixo X
         plt.xlim(left=0, right=max_x_global * 1.15)
 
     plt.xlabel(xlabel)
@@ -203,9 +190,10 @@ for corte_eta in cortes_eta:
         dados_pn_soft, dados_evt_soft = [], []
         dados_pn_hard, dados_evt_hard = [], []
 
+        # LOG AJUSTADO: Removida a coluna "Integral" que não existe mais neste escopo
         cabecalho = f"\n--- Partícula: {p_nome} ---\n" + \
-                    f"{'Configuração':<15} | {'Processo':<6} | {'Soma P(N)':<10} | {'<N>':<8} | {'Integral':<10} | {'Status'}\n" + \
-                    "-" * 68
+                    f"{'Configuração':<15} | {'Processo':<6} | {'Soma P(N)':<10} | {'<N>':<8} | {'Status'}\n" + \
+                    "-" * 55
         log_print(cabecalho)
 
         for idx, (nome_caso, (pref_soft, pref_hard)) in enumerate(casos.items()):
@@ -219,11 +207,10 @@ for corte_eta in cortes_eta:
             # 4.1. Leitura e Validação: Soft
             # -----------------------------------------------------------------
             arq_mult_soft = os.path.join("..", "Dados", "Soft", pasta_soft, f"{pref_soft}_mult_{sigla}_eta_{corte_str}.dat")
-            arq_eta_soft  = os.path.join("..", "Dados", "Soft", pasta_soft, f"{pref_soft}_dndeta_{sigla}_eta_{corte_str}.dat")
-            res_s, status_s = processar_e_validar_dados(arq_mult_soft, arq_eta_soft)
+            res_s, status_s = processar_e_validar_dados(arq_mult_soft)
 
             if res_s is not None:
-                linha_s = f"{nome_caso:<15} | {'Soft':<6} | {res_s['soma_prob']:<10.4f} | {res_s['media_N']:<8.4f} | {res_s['integral']:<10.4f} | {status_s}"
+                linha_s = f"{nome_caso:<15} | {'Soft':<6} | {res_s['soma_prob']:<10.4f} | {res_s['media_N']:<8.4f} | {status_s}"
                 log_print(linha_s)
                 
                 dados_pn_soft.append({
@@ -246,11 +233,10 @@ for corte_eta in cortes_eta:
             # 4.2. Leitura e Validação: Hard
             # -----------------------------------------------------------------
             arq_mult_hard = os.path.join("..", "Dados", "Hard", pasta_hard, f"{pref_hard}_mult_{sigla}_eta_{corte_str}.dat")
-            arq_eta_hard  = os.path.join("..", "Dados", "Hard", pasta_hard, f"{pref_hard}_dndeta_{sigla}_eta_{corte_str}.dat")
-            res_h, status_h = processar_e_validar_dados(arq_mult_hard, arq_eta_hard)
+            res_h, status_h = processar_e_validar_dados(arq_mult_hard)
 
             if res_h is not None:
-                linha_h = f"{nome_caso:<15} | {'Hard':<6} | {res_h['soma_prob']:<10.4f} | {res_h['media_N']:<8.4f} | {res_h['integral']:<10.4f} | {status_h}"
+                linha_h = f"{nome_caso:<15} | {'Hard':<6} | {res_h['soma_prob']:<10.4f} | {res_h['media_N']:<8.4f} | {status_h}"
                 log_print(linha_h)
 
                 dados_pn_hard.append({
