@@ -17,7 +17,7 @@ cortes_pt_dndeta = [5.0, 10.0, 20.0, 40.0]  # Cortes superiores de pT: pT < pt_c
 
 pdg_D_mesons = [411]            # D+
 pdg_Ds_mesons = [431]           # Ds+
-pdg_K_mesons = [321]            # Kaons
+pdg_D0_mesons = [421]            # D0
 bin_width = 0.1
 nEvents = 1000000
 
@@ -28,6 +28,8 @@ os.makedirs(output_dir, exist_ok=True)
 # 2. Inicialização do Pythia 8
 # =================================================================
 pythia = pythia8.Pythia()
+pythia.readString("Random:setSeed = on")
+pythia.readString("Random:seed = 42")
 pythia.readString("Beams:idA = 2212")
 pythia.readString("Beams:eCM = 14.e3")
 pythia.readString("SoftQCD:all = off")
@@ -40,9 +42,9 @@ pythia.init()
 # =================================================================
 # 3. Histogramas Nativos e Estruturas de Armazenamento
 # =================================================================
-h_mult_ch, h_mult_k, h_mult_d, h_mult_ds = [], [], [], []
-h_eta_ch,  h_eta_k,  h_eta_d,  h_eta_ds  = [], [], [], []
-h_pt_ch,   h_pt_k,   h_pt_d,   h_pt_ds   = [], [], [], []
+h_mult_ch, h_mult_d0, h_mult_d, h_mult_ds = [], [], [], []
+h_eta_ch,  h_eta_d0,  h_eta_d,  h_eta_ds  = [], [], [], []
+h_pt_ch,   h_pt_d0,   h_pt_d,   h_pt_ds   = [], [], [], []
 
 # Matriz para guardar (N_ch, N_D, N_Ds, N_K) de cada evento aceito por janela de eta
 eventos_por_eta = [[] for _ in cortes_eta]
@@ -51,11 +53,11 @@ eventos_por_eta = [[] for _ in cortes_eta]
 h_eta_d_pt  = []
 h_eta_ds_pt = []
 h_eta_ch_pt = []
-h_eta_k_pt  = []
+h_eta_d0_pt  = []
 
 # Estruturas 2D em NumPy para d2N / (deta dpt) para cada corte de eta
 matrizes_d2n_ch = []
-matrizes_d2n_k  = []
+matrizes_d2n_d0  = []
 matrizes_d2n_d  = []
 matrizes_d2n_ds = []
 
@@ -66,7 +68,7 @@ for pt_corte in cortes_pt_dndeta:
     h_eta_d_pt.append(pythia8.Hist(f"dN/deta Mesons D pt<{pt_corte}GeV", 100, -5.0, 5.0))
     h_eta_ds_pt.append(pythia8.Hist(f"dN/deta Mesons Ds pt<{pt_corte}GeV", 100, -5.0, 5.0))
     h_eta_ch_pt.append(pythia8.Hist(f"dN/deta Carregadas pt<{pt_corte}GeV", 100, -5.0, 5.0))
-    h_eta_k_pt.append(pythia8.Hist(f"dN/deta Kaons pt<{pt_corte}GeV", 100, -5.0, 5.0))
+    h_eta_d0_pt.append(pythia8.Hist(f"dN/deta Mesons D0 pt<{pt_corte}GeV", 100, -5.0, 5.0))
 
 # Histogramas 1D para cada janela de eta
 for corte in cortes_eta:
@@ -81,25 +83,25 @@ for corte in cortes_eta:
     bins_pt_lista.append(bins_pt)
     
     matrizes_d2n_ch.append(np.zeros((n_bins_eta, n_bins_pt)))
-    matrizes_d2n_k.append(np.zeros((n_bins_eta, n_bins_pt)))
+    matrizes_d2n_d0.append(np.zeros((n_bins_eta, n_bins_pt)))
     matrizes_d2n_d.append(np.zeros((n_bins_eta, n_bins_pt)))
     matrizes_d2n_ds.append(np.zeros((n_bins_eta, n_bins_pt)))
     
     # dN/deta
     h_eta_ch.append(pythia8.Hist(f"dN/deta Carregadas |eta|<{corte}", n_bins_eta, -corte, corte))
-    h_eta_k.append(pythia8.Hist(f"dN/deta Kaons |eta|<{corte}", n_bins_eta, -corte, corte))
+    h_eta_d0.append(pythia8.Hist(f"dN/deta Mesons D0 |eta|<{corte}", n_bins_eta, -corte, corte))
     h_eta_d.append(pythia8.Hist(f"dN/deta Mesons D |eta|<{corte}", n_bins_eta, -corte, corte))
     h_eta_ds.append(pythia8.Hist(f"dN/deta Mesons Ds |eta|<{corte}", n_bins_eta, -corte, corte))
     
     # dN/dpt
     h_pt_ch.append(pythia8.Hist(f"pT Carregadas |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
-    h_pt_k.append(pythia8.Hist(f"pT Kaons |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
+    h_pt_d0.append(pythia8.Hist(f"pT Mesons D0 |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
     h_pt_d.append(pythia8.Hist(f"pT Mesons D |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
     h_pt_ds.append(pythia8.Hist(f"pT Mesons Ds |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
 
     # Multiplicidade
-    h_mult_ch.append(pythia8.Hist(f"Mult Carregadas |eta|<{corte}", 400, -0.5, 399.5)) 
-    h_mult_k.append(pythia8.Hist(f"Mult Kaons |eta|<{corte}", 100, -0.5, 99.5))
+    h_mult_ch.append(pythia8.Hist(f"Mult Carregadas |eta|<{corte}", 500, -0.5, 499.5)) 
+    h_mult_d0.append(pythia8.Hist(f"Mult Mesons D0 |eta|<{corte}", 200, -0.5, 199.5))
     h_mult_d.append(pythia8.Hist(f"Mult Mesons D |eta|<{corte}", 50, -0.5, 49.5))
     h_mult_ds.append(pythia8.Hist(f"Mult Mesons Ds |eta|<{corte}", 50, -0.5, 49.5))
 
@@ -116,7 +118,7 @@ for iEvt in range(nEvents):
 
     # Inicializa os contadores para as partículas em cada janela de eta
     n_ch_evento = [0] * len(cortes_eta)
-    n_K_evento  = [0] * len(cortes_eta)
+    n_D0_evento  = [0] * len(cortes_eta)
     n_D_evento  = [0] * len(cortes_eta)
     n_Ds_evento = [0] * len(cortes_eta)
 
@@ -140,12 +142,12 @@ for iEvt in range(nEvents):
         pt = p.pT()
         
         is_charged  = (p.isCharged() and p.isFinal())
-        is_kaon     = (pdg_abs in pdg_K_mesons and last_copy)
+        is_meson_D0     = (pdg_abs in pdg_D0_mesons and last_copy)
         is_meson_D  = (pdg_abs in pdg_D_mesons and last_copy)
         is_meson_Ds = (pdg_abs in pdg_Ds_mesons and last_copy)
         
         # Se a partícula não for de interesse, pula para a próxima
-        if not (is_charged or is_kaon or is_meson_D or is_meson_Ds):
+        if not (is_charged or is_meson_D0 or is_meson_D or is_meson_Ds):
             continue
 
         # dN/deta com corte pt < pt_corte para todas as seleções
@@ -164,10 +166,10 @@ for iEvt in range(nEvents):
                 if pt < pt_corte:
                     h_eta_ch_pt[i_pt].fill(eta)
                             
-        if is_kaon:
+        if is_meson_D0:
             for i_pt, pt_corte in enumerate(cortes_pt_dndeta):
                 if pt < pt_corte:
-                    h_eta_k_pt[i_pt].fill(eta)
+                    h_eta_d0_pt[i_pt].fill(eta)
 
         # Preenche os histogramas 1D, pT, multiplicidades e matrizes 2D por corte de eta
         for i_corte, corte in enumerate(cortes_eta):
@@ -177,10 +179,10 @@ for iEvt in range(nEvents):
                     h_pt_ch[i_corte].fill(pt)
                     n_ch_evento[i_corte] += 1
                 
-                if is_kaon:
-                    h_eta_k[i_corte].fill(eta)
-                    h_pt_k[i_corte].fill(pt)
-                    n_K_evento[i_corte] += 1
+                if is_meson_D0:
+                    h_eta_d0[i_corte].fill(eta)
+                    h_pt_d0[i_corte].fill(pt)
+                    n_D0_evento[i_corte] += 1
                 
                 if is_meson_D:
                     h_eta_d[i_corte].fill(eta)
@@ -201,18 +203,18 @@ for iEvt in range(nEvents):
             
             if 0 <= b_eta < n_b_eta and 0 <= b_pt < n_b_pt:
                 if is_charged:  matrizes_d2n_ch[i_corte][b_eta, b_pt] += 1.0
-                if is_kaon:     matrizes_d2n_k[i_corte][b_eta, b_pt]  += 1.0
+                if is_meson_D0:     matrizes_d2n_d0[i_corte][b_eta, b_pt]  += 1.0
                 if is_meson_D:  matrizes_d2n_d[i_corte][b_eta, b_pt]  += 1.0
                 if is_meson_Ds: matrizes_d2n_ds[i_corte][b_eta, b_pt] += 1.0
 
     # Atualiza histogramas de multiplicidade e salva a tupla do evento
     for i_corte in range(len(cortes_eta)):
         h_mult_ch[i_corte].fill(n_ch_evento[i_corte])
-        h_mult_k[i_corte].fill(n_K_evento[i_corte])
+        h_mult_d0[i_corte].fill(n_D0_evento[i_corte])
         h_mult_d[i_corte].fill(n_D_evento[i_corte])
         h_mult_ds[i_corte].fill(n_Ds_evento[i_corte])
 
-        eventos_por_eta[i_corte].append([n_ch_evento[i_corte], n_D_evento[i_corte], n_Ds_evento[i_corte], n_K_evento[i_corte]])
+        eventos_por_eta[i_corte].append([n_ch_evento[i_corte], n_D0_evento[i_corte], n_D_evento[i_corte], n_Ds_evento[i_corte]])
 
     if n_accepted % 2000 == 0:
         print(f"Eventos processados: {n_accepted}")
@@ -229,7 +231,7 @@ for i_pt, pt_corte in enumerate(cortes_pt_dndeta):
     h_eta_d_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_d_pt_lt_{pt_str}GeV.dat"))
     h_eta_ds_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_ds_pt_lt_{pt_str}GeV.dat"))
     h_eta_ch_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_ch_pt_lt_{pt_str}GeV.dat"))
-    h_eta_k_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_k_pt_lt_{pt_str}GeV.dat"))
+    h_eta_d0_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_d0_pt_lt_{pt_str}GeV.dat"))
 
 # Tabelas 1D, 2D e dados brutos por corte de eta
 for i_corte, corte in enumerate(cortes_eta):
@@ -237,19 +239,19 @@ for i_corte, corte in enumerate(cortes_eta):
 
     # Multiplicidade
     h_mult_ch[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_ch_eta_{corte_str}.dat"))
-    h_mult_k[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_k_eta_{corte_str}.dat"))
+    h_mult_d0[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_d0_eta_{corte_str}.dat"))
     h_mult_d[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_d_eta_{corte_str}.dat"))
     h_mult_ds[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_ds_eta_{corte_str}.dat"))
 
     # dN/deta
     h_eta_ch[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_ch_eta_{corte_str}.dat"))
-    h_eta_k[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_k_eta_{corte_str}.dat"))
+    h_eta_d0[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_d0_eta_{corte_str}.dat"))
     h_eta_d[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_d_eta_{corte_str}.dat"))
     h_eta_ds[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_ds_eta_{corte_str}.dat"))
     
     # pT
     h_pt_ch[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_ch_eta_{corte_str}.dat"))
-    h_pt_k[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_k_eta_{corte_str}.dat"))
+    h_pt_d0[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_d0_eta_{corte_str}.dat"))
     h_pt_d[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_d_eta_{corte_str}.dat"))
     h_pt_ds[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_ds_eta_{corte_str}.dat"))
 
@@ -279,7 +281,7 @@ for i_corte, corte in enumerate(cortes_eta):
 
     # Salvando as matrizes 2D d2N / (deta dpt)
     salvar_matriz_2d(matrizes_d2n_ch[i_corte], f"{nome_script}_d2n_etapt_ch_eta_{corte_str}.dat")
-    salvar_matriz_2d(matrizes_d2n_k[i_corte],  f"{nome_script}_d2n_etapt_k_eta_{corte_str}.dat")
+    salvar_matriz_2d(matrizes_d2n_d0[i_corte],  f"{nome_script}_d2n_etapt_d0_eta_{corte_str}.dat")
     salvar_matriz_2d(matrizes_d2n_d[i_corte],  f"{nome_script}_d2n_etapt_d_eta_{corte_str}.dat")
     salvar_matriz_2d(matrizes_d2n_ds[i_corte], f"{nome_script}_d2n_etapt_ds_eta_{corte_str}.dat")
 
@@ -289,7 +291,7 @@ for i_corte, corte in enumerate(cortes_eta):
         c_events, 
         eventos_por_eta[i_corte], 
         fmt='%d %d %d %d',               
-        header="N_ch N_D N_Ds N_K",     
+        header="N_ch N_D0 N_D N_Ds",     
         comments=''
     )
 

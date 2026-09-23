@@ -163,7 +163,7 @@ def salvar_grafico(dados_plot, xlabel, ylabel, label, y_min, nome_pdf, y_log=Tru
         plt.ylim(bottom=0, top=top_lim)
 
     if max_x_global > 0:
-        plt.xlim(left=0, right=max_x_global * 1.15)
+        plt.xlim(left=0, right=max_x_global * 1.5)
 
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
@@ -272,7 +272,7 @@ for corte_eta in cortes_eta:
             salvar_grafico(dados_evt_hard, p_conf["xlabel"], "Number of events", p_conf["label"], 0.5, 
                            f"{p_nome}_Eventos_eta_{corte_str}.pdf", y_log=True, leg_title=rf"$|\eta| < {corte_eta}$ (Hard)", subpasta=sub_dir_hard)
 
-msg_fim = f"\n{'='*85}\nProcessamento, testes de validação e geração dos plots de Multiplicidade concluídos!\nDetalhes salvos em 'validacao_simulacao_PN.log'\n{'='*85}"
+msg_fim = f"\pref_hardn{'='*85}\nProcessamento, testes de validação e geração dos plots de Multiplicidade concluídos!\nDetalhes salvos em 'validacao_simulacao_PN.log'\n{'='*85}"
 log_print(msg_fim)
 
 log_file.close()
