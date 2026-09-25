@@ -1,133 +1,217 @@
+# =================================================================
+# SCRIPT DE SIMULAÇÃO PYTHIA 8 - FÍSICA DE PRÓTON-PRÓTON (pp)
+# Simulação de colisões pp a 14 TeV com análise cinemática diferencial e global
+# =================================================================
+
 import os
 import pythia8
 import numpy as np
 
 # =================================================================
-# 1. Configurações Iniciais e Nomes de Arquivos
+# 1. CONFIGURAÇÕES INICIAIS E DIRETÓRIOS DE SAÍDA
 # =================================================================
+
+# Tenta extrair o nome do script atual automaticamente para usar nos arquivos
 try:
     nome_script = os.path.splitext(os.path.basename(__file__))[0]
 except NameError:
     nome_script = "simulacao_pp"
 
-# Extrai o texto após o último "_" para criar a subpasta
+# Pega a última parte do nome do script para definir a subpasta de destino (ex: 'Hard')
 subpasta_nome = nome_script.split("_")[-1]
 
+# -----------------------------------------------------------------
+# Definição dos Cortes Cinemáticos (Pseudorapidez e Momento Transverso)
+# -----------------------------------------------------------------
+# Janelas de corte para a pseudorapidez (|eta| < corte)
 cortes_eta = [0.5, 1.0, 2.0, 3.0, 4.0, 5.0]
-cortes_pt_dndeta = [5.0, 10.0, 20.0, 40.0]  # Cortes superiores de pT: pT < pt_corte
 
-pdg_D_mesons = [411]            # D+
-pdg_Ds_mesons = [431]           # Ds+
-pdg_D0_mesons = [421]            # D0
+# Faixas diferenciais de momento transverso (pT_min, pT_max, identificador_para_arquivo)
+faixas_pt = [
+    (1.0,    2.0, "pt_1_2"),     # 1 < pT < 2 GeV/c
+    (2.0,    4.0, "pt_2_4"),     # 2 < pT < 4 GeV/c
+    (4.0,    6.0, "pt_4_6"),     # 4 < pT < 6 GeV/c
+    (6.0,    8.0, "pt_6_8"),     # 6 < pT < 8 GeV/c
+    (8.0,   12.0, "pt_8_12"),    # 8 < pT < 12 GeV/c
+    (12.0,  24.0, "pt_12_24")    # 12 < pT < 24 GeV/c
+]
+
+# Códigos PDG dos hástrons pesados e partículas carregadas de interesse
+# Nota: Utilizamos a última cópia física das ressonâncias para evitar contagem dupla
+pdg_D_mesons  = [411]   # Mésons D+ e D-
+pdg_Ds_mesons = [431]   # Mésons Ds+ e Ds-
+pdg_D0_mesons = [421]   # Mésons D0 e D0bar
+
+# Parâmetros gerais dos histogramas e do número de eventos
 bin_width = 0.1
 nEvents = 1000000
 
+# Criação estruturada do diretório de saída para os arquivos de dados (.dat)
 output_dir = os.path.join("..", "..", "Dados", "Hard", subpasta_nome)
 os.makedirs(output_dir, exist_ok=True)
 
 # =================================================================
-# 2. Inicialização do Pythia 8
+# 2. INICIALIZAÇÃO E CONFIGURAÇÃO DO GERADOR PYTHIA 8
 # =================================================================
 pythia = pythia8.Pythia()
-pythia.readString("Random:setSeed = on")
-pythia.readString("Random:seed = 42")
+pythia.readString("Random:setSeed = on")           # Ativa semente aleatória controlada
+pythia.readString("Random:seed = 42")              # Semente fixa para reprodutibilidade
 pythia.readString("Beams:idA = 2212")
-pythia.readString("Beams:eCM = 14.e3")
-pythia.readString("SoftQCD:all = off")
-pythia.readString("HardQCD:all = on")
-pythia.readString("PartonLevel:ISR = on") 
-pythia.readString("PartonLevel:MPI = off")
-pythia.readString("PartonLevel:FSR = off") 
-pythia.init()
+pythia.readString("Beams:idB = 2212")
+pythia.readString("Beams:eCM = 14.e3")             # Energia no centro de massa: 14 TeV
+pythia.readString("SoftQCD:all = off")             # Desliga processos suaves (soft QCD)
+pythia.readString("HardQCD:all = on")              # Liga processos duros (hard scattering)
+pythia.readString("PartonLevel:ISR = on")          # Radiação no estado inicial (ISR)
+pythia.readString("PartonLevel:MPI = off")          # Interações Múltiplas de Partons (MPI)
+pythia.readString("PartonLevel:FSR = off")          # Radiação no estado final (FSR)
+pythia.init()                                      # Inicializa a engine do Pythia
 
 # =================================================================
-# 3. Histogramas Nativos e Estruturas de Armazenamento
+# 3. DECLARAÇÃO DE HISTOGRAMAS E ESTRUTURAS DE DADOS
 # =================================================================
-h_mult_ch, h_mult_d0, h_mult_d, h_mult_ds = [], [], [], []
-h_eta_ch,  h_eta_d0,  h_eta_d,  h_eta_ds  = [], [], [], []
-h_pt_ch,   h_pt_d0,   h_pt_d,   h_pt_ds   = [], [], [], []
 
-# Matriz para guardar (N_ch, N_D, N_Ds, N_K) de cada evento aceito por janela de eta
-eventos_por_eta = [[] for _ in cortes_eta]
+# Listas principais globais integradas indexadas pelo corte de eta
+h_eta_ch, h_eta_d0, h_eta_d, h_eta_ds = [], [], [], []
+h_pt_ch,  h_pt_d0,  h_pt_d,  h_pt_ds  = [], [], [], []
 
-# Histogramas dN/deta com corte superior em pT (pT < pt_corte)
-h_eta_d_pt  = []
-h_eta_ds_pt = []
-h_eta_ch_pt = []
-h_eta_d0_pt  = []
+# Histogramas de Multiplicidade Global Integrada (pT > 0) por corte de eta
+h_mult_ch_global = []
+h_mult_d0_global = []
+h_mult_d_global  = []
+h_mult_ds_global = []
 
-# Estruturas 2D em NumPy para d2N / (deta dpt) para cada corte de eta
+# Matrizes 2D para a densidade diferencial bidimensional d2N / (deta dpt) global
 matrizes_d2n_ch = []
-matrizes_d2n_d0  = []
+matrizes_d2n_d0 = []
 matrizes_d2n_d  = []
 matrizes_d2n_ds = []
 
+# Listas auxiliares para armazenar os limites dos bins numéricos
 bins_eta_lista = []
 bins_pt_lista  = []
 
-for pt_corte in cortes_pt_dndeta:
-    h_eta_d_pt.append(pythia8.Hist(f"dN/deta Mesons D pt<{pt_corte}GeV", 100, -5.0, 5.0))
-    h_eta_ds_pt.append(pythia8.Hist(f"dN/deta Mesons Ds pt<{pt_corte}GeV", 100, -5.0, 5.0))
-    h_eta_ch_pt.append(pythia8.Hist(f"dN/deta Carregadas pt<{pt_corte}GeV", 100, -5.0, 5.0))
-    h_eta_d0_pt.append(pythia8.Hist(f"dN/deta Mesons D0 pt<{pt_corte}GeV", 100, -5.0, 5.0))
+# Listas estruturadas para guardar os histogramas diferenciais por faixa de pT
+h_eta_ch_faixas_pt = []
+h_eta_d0_faixas_pt = []
+h_eta_d_faixas_pt  = []
+h_eta_ds_faixas_pt = []
 
-# Histogramas 1D para cada janela de eta
-for corte in cortes_eta:
+h_mult_ch_faixas_pt = []
+h_mult_d0_faixas_pt = []
+h_mult_d_faixas_pt  = []
+h_mult_ds_faixas_pt = []
+
+# Estruturas para armazenar os eventos brutos (N_ch, N_D0, N_D, N_Ds)
+eventos_por_eta_global = []          # Casos globais (pT > 0) por janela de eta
+eventos_por_eta_faixas_pt = []       # Casos diferenciais por janela de eta e faixa de pT
+
+# Loop de configuração para instanciar os histogramas e estruturas de forma procedural
+for i_corte, corte in enumerate(cortes_eta):
     n_bins_eta = int(round(2.0 * corte / bin_width))
     pt_max_hist = 150.0  
     n_bins_pt  = int(round(pt_max_hist / bin_width))  
     
+    # Criação dos vetores de limites (bins) com NumPy
     bins_eta = np.linspace(-corte, corte, n_bins_eta + 1)
     bins_pt = np.linspace(0.0, pt_max_hist, n_bins_pt + 1)
     
     bins_eta_lista.append(bins_eta)
     bins_pt_lista.append(bins_pt)
     
+    # Inicializa matrizes 2D globais preenchidas com zeros para a distribuição (eta vs pT)
     matrizes_d2n_ch.append(np.zeros((n_bins_eta, n_bins_pt)))
     matrizes_d2n_d0.append(np.zeros((n_bins_eta, n_bins_pt)))
     matrizes_d2n_d.append(np.zeros((n_bins_eta, n_bins_pt)))
     matrizes_d2n_ds.append(np.zeros((n_bins_eta, n_bins_pt)))
     
-    # dN/deta
+    # Histogramas globais integrados por janela de eta
     h_eta_ch.append(pythia8.Hist(f"dN/deta Carregadas |eta|<{corte}", n_bins_eta, -corte, corte))
-    h_eta_d0.append(pythia8.Hist(f"dN/deta Mesons D0 |eta|<{corte}", n_bins_eta, -corte, corte))
-    h_eta_d.append(pythia8.Hist(f"dN/deta Mesons D |eta|<{corte}", n_bins_eta, -corte, corte))
-    h_eta_ds.append(pythia8.Hist(f"dN/deta Mesons Ds |eta|<{corte}", n_bins_eta, -corte, corte))
+    h_eta_d0.append(pythia8.Hist(f"dN/deta D0 |eta|<{corte}", n_bins_eta, -corte, corte))
+    h_eta_d.append(pythia8.Hist(f"dN/deta D+ |eta|<{corte}", n_bins_eta, -corte, corte))
+    h_eta_ds.append(pythia8.Hist(f"dN/deta Ds |eta|<{corte}", n_bins_eta, -corte, corte))
     
-    # dN/dpt
     h_pt_ch.append(pythia8.Hist(f"pT Carregadas |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
-    h_pt_d0.append(pythia8.Hist(f"pT Mesons D0 |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
-    h_pt_d.append(pythia8.Hist(f"pT Mesons D |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
-    h_pt_ds.append(pythia8.Hist(f"pT Mesons Ds |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
+    h_pt_d0.append(pythia8.Hist(f"pT D0 |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
+    h_pt_d.append(pythia8.Hist(f"pT D+ |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
+    h_pt_ds.append(pythia8.Hist(f"pT Ds |eta|<{corte}", n_bins_pt, 0.0, pt_max_hist))
 
-    # Multiplicidade
-    h_mult_ch.append(pythia8.Hist(f"Mult Carregadas |eta|<{corte}", 500, -0.5, 499.5)) 
-    h_mult_d0.append(pythia8.Hist(f"Mult Mesons D0 |eta|<{corte}", 200, -0.5, 199.5))
-    h_mult_d.append(pythia8.Hist(f"Mult Mesons D |eta|<{corte}", 50, -0.5, 49.5))
-    h_mult_ds.append(pythia8.Hist(f"Mult Mesons Ds |eta|<{corte}", 50, -0.5, 49.5))
+    # Histogramas de Multiplicidade Global Integrada por janela de eta
+    h_mult_ch_global.append(pythia8.Hist(f"Mult Global Ch |eta|<{corte}", 500, -0.5, 499.5))
+    h_mult_d0_global.append(pythia8.Hist(f"Mult Global D0 |eta|<{corte}", 200, -0.5, 199.5))
+    h_mult_d_global.append(pythia8.Hist(f"Mult Global D+ |eta|<{corte}", 50, -0.5, 49.5))
+    h_mult_ds_global.append(pythia8.Hist(f"Mult Global Ds |eta|<{corte}", 50, -0.5, 49.5))
 
+    # Inicializa a lista de eventos brutos globais para este corte de eta
+    eventos_por_eta_global.append([])
+
+    # Sub-listas temporárias para armazenar os elementos específicos de cada faixa de pT diferencial
+    sub_eta_ch, sub_eta_d0, sub_eta_d, sub_eta_ds = [], [], [], []
+    sub_mult_ch, sub_mult_d0, sub_mult_d, sub_mult_ds = [], [], [], []
+    sub_eventos_faixas = []
+
+    for pt_min, pt_max, pt_label in faixas_pt:
+        # Histogramas dN/deta restritos à faixa de pT correspondente
+        sub_eta_ch.append(pythia8.Hist(f"dN/deta Ch |eta|<{corte} {pt_label}", n_bins_eta, -corte, corte))
+        sub_eta_d0.append(pythia8.Hist(f"dN/deta D0 |eta|<{corte} {pt_label}", n_bins_eta, -corte, corte))
+        sub_eta_d.append(pythia8.Hist(f"dN/deta D+ |eta|<{corte} {pt_label}", n_bins_eta, -corte, corte))
+        sub_eta_ds.append(pythia8.Hist(f"dN/deta Ds |eta|<{corte} {pt_label}", n_bins_eta, -corte, corte))
+
+        # Histogramas de Multiplicidade restritos à faixa de pT correspondente
+        sub_mult_ch.append(pythia8.Hist(f"Mult Ch |eta|<{corte} {pt_label}", 500, -0.5, 499.5))
+        sub_mult_d0.append(pythia8.Hist(f"Mult D0 |eta|<{corte} {pt_label}", 200, -0.5, 199.5))
+        sub_mult_d.append(pythia8.Hist(f"Mult D+ |eta|<{corte} {pt_label}", 50, -0.5, 49.5))
+        sub_mult_ds.append(pythia8.Hist(f"Mult Ds |eta|<{corte} {pt_label}", 50, -0.5, 49.5))
+
+        # Inicializa a lista vazia de eventos brutos para esta faixa específica de pT
+        sub_eventos_faixas.append([])
+
+    # Associa as sub-listas às listas principais por corte de eta
+    h_eta_ch_faixas_pt.append(sub_eta_ch)
+    h_eta_d0_faixas_pt.append(sub_eta_d0)
+    h_eta_d_faixas_pt.append(sub_eta_d)
+    h_eta_ds_faixas_pt.append(sub_eta_ds)
+
+    h_mult_ch_faixas_pt.append(sub_mult_ch)
+    h_mult_d0_faixas_pt.append(sub_mult_d0)
+    h_mult_d_faixas_pt.append(sub_mult_d)
+    h_mult_ds_faixas_pt.append(sub_mult_ds)
+
+    eventos_por_eta_faixas_pt.append(sub_eventos_faixas)
+
+# Contador de eventos aceitos com sucesso pela simulação
 n_accepted = 0
 
 # =================================================================
-# 4. Loop Principal de Eventos
+# 4. LOOP PRINCIPAL DE PROCESSAMENTO DE EVENTOS
 # =================================================================
 for iEvt in range(nEvents):
+    # Gera o próximo evento físico no Pythia. Se falhar, avança para o próximo ciclo.
     if not pythia.next():
         continue
 
     n_accepted += 1
 
-    # Inicializa os contadores para as partículas em cada janela de eta
-    n_ch_evento = [0] * len(cortes_eta)
-    n_D0_evento  = [0] * len(cortes_eta)
-    n_D_evento  = [0] * len(cortes_eta)
-    n_Ds_evento = [0] * len(cortes_eta)
+    # =================================================================
+    # Inicialização de contadores temporários por evento (Global e Diferencial)
+    # =================================================================
+    cont_ch_global = [0 for _ in cortes_eta]
+    cont_d0_global = [0 for _ in cortes_eta]
+    cont_d_global  = [0 for _ in cortes_eta]
+    cont_ds_global = [0 for _ in cortes_eta]
 
-    # Varre as partículas do evento aceito
+    cont_ch_evento = [[0 for _ in faixas_pt] for _ in cortes_eta]
+    cont_d0_evento = [[0 for _ in faixas_pt] for _ in cortes_eta]
+    cont_d_evento  = [[0 for _ in faixas_pt] for _ in cortes_eta]
+    cont_ds_evento = [[0 for _ in faixas_pt] for _ in cortes_eta]
+
+    # Itera por todas as partículas geradas no evento atual do Pythia
     for i in range(pythia.event.size()):
         p = pythia.event[i]
         
-        # Garante a escolha da última cópia de ressonâncias
+        # -----------------------------------------------------------------
+        # Algoritmo de seleção da última cópia (Last Copy) de ressonâncias
+        # Garante que pegamos o estado final da partícula antes do decaimento
+        # -----------------------------------------------------------------
         d1, d2 = p.daughter1(), p.daughter2()
         tem_filha_igual = False
         if d1 > 0:
@@ -137,126 +221,184 @@ for iEvt in range(nEvents):
                     break
         last_copy = not tem_filha_igual 
         
+        # Extração das grandezas cinemáticas fundamentais da partícula
         pdg_abs = abs(p.id())
         eta = p.eta()
         eta_abs = abs(eta)
         pt = p.pT()
         
+        # Identificação booleana das espécies de partículas exigidas
         is_charged  = (p.isCharged() and p.isFinal())
-        is_meson_D0     = (pdg_abs in pdg_D0_mesons and last_copy)
+        is_meson_D0 = (pdg_abs in pdg_D0_mesons and last_copy)
         is_meson_D  = (pdg_abs in pdg_D_mesons and last_copy)
         is_meson_Ds = (pdg_abs in pdg_Ds_mesons and last_copy)
         
-        # Se a partícula não for de interesse, pula para a próxima
+        # Se a partícula não pertencer a nenhum grupo de interesse, ignora
         if not (is_charged or is_meson_D0 or is_meson_D or is_meson_Ds):
             continue
 
-        # dN/deta com corte pt < pt_corte para todas as seleções
-        if is_meson_D:
-            for i_pt, pt_corte in enumerate(cortes_pt_dndeta):
-                if pt < pt_corte:
-                    h_eta_d_pt[i_pt].fill(eta)
-
-        if is_meson_Ds:
-            for i_pt, pt_corte in enumerate(cortes_pt_dndeta):
-                if pt < pt_corte:
-                    h_eta_ds_pt[i_pt].fill(eta)
-                            
-        if is_charged:
-            for i_pt, pt_corte in enumerate(cortes_pt_dndeta):
-                if pt < pt_corte:
-                    h_eta_ch_pt[i_pt].fill(eta)
-                            
-        if is_meson_D0:
-            for i_pt, pt_corte in enumerate(cortes_pt_dndeta):
-                if pt < pt_corte:
-                    h_eta_d0_pt[i_pt].fill(eta)
-
-        # Preenche os histogramas 1D, pT, multiplicidades e matrizes 2D por corte de eta
+        # -----------------------------------------------------------------
+        # Varredura por janelas de pseudorapidez e faixas de momento transverso
+        # -----------------------------------------------------------------
         for i_corte, corte in enumerate(cortes_eta):
+            # Verifica se a partícula está dentro do limite geométrico de eta atual
             if eta_abs < corte:
-                if is_charged:
+                
+                # Preenchimento dos histogramas globais integrados padrão
+                if is_charged:  
                     h_eta_ch[i_corte].fill(eta)
                     h_pt_ch[i_corte].fill(pt)
-                    n_ch_evento[i_corte] += 1
-                
-                if is_meson_D0:
+                    cont_ch_global[i_corte] += 1
+                if is_meson_D0: 
                     h_eta_d0[i_corte].fill(eta)
                     h_pt_d0[i_corte].fill(pt)
-                    n_D0_evento[i_corte] += 1
-                
-                if is_meson_D:
+                    cont_d0_global[i_corte] += 1
+                if is_meson_D:  
                     h_eta_d[i_corte].fill(eta)
                     h_pt_d[i_corte].fill(pt)
-                    n_D_evento[i_corte] += 1
-                
-                if is_meson_Ds:
+                    cont_d_global[i_corte] += 1
+                if is_meson_Ds:  
                     h_eta_ds[i_corte].fill(eta)
                     h_pt_ds[i_corte].fill(pt)
-                    n_Ds_evento[i_corte] += 1
+                    cont_ds_global[i_corte] += 1
+
+                # Avaliação de qual faixa diferencial de pT a partícula pertence
+                for i_faixa, (pt_min, pt_max, _) in enumerate(faixas_pt):
+                    if pt_min < pt < pt_max:
+                        # Preenche dN/deta diferencial por faixa de pT e incrementa contador do evento
+                        if is_charged:  
+                            h_eta_ch_faixas_pt[i_corte][i_faixa].fill(eta)
+                            cont_ch_evento[i_corte][i_faixa] += 1
+                        if is_meson_D0: 
+                            h_eta_d0_faixas_pt[i_corte][i_faixa].fill(eta)
+                            cont_d0_evento[i_corte][i_faixa] += 1
+                        if is_meson_D:  
+                            h_eta_d_faixas_pt[i_corte][i_faixa].fill(eta)
+                            cont_d_evento[i_corte][i_faixa] += 1
+                        if is_meson_Ds: 
+                            h_eta_ds_faixas_pt[i_corte][i_faixa].fill(eta)
+                            cont_ds_evento[i_corte][i_faixa] += 1
+
+                # Acumulação rápida e otimizada da Matriz 2D global d2N / (deta dpt)
+                bins_e = bins_eta_lista[i_corte]
+                bins_p = bins_pt_lista[i_corte]
+                
+                if bins_e[0] <= eta <= bins_e[-1] and 0.0 <= pt <= bins_p[-1]:
+                    b_eta = int((eta - bins_e[0]) / bin_width)
+                    b_pt  = int(pt / bin_width)
                     
-            # Acumulação da Matriz 2D para d2N / (deta dpt) baseada nos bins específicos do corte
-            b_eta = np.digitize(eta, bins_eta_lista[i_corte]) - 1
-            b_pt  = np.digitize(pt, bins_pt_lista[i_corte]) - 1
-            
-            n_b_eta = len(bins_eta_lista[i_corte]) - 1
-            n_b_pt  = len(bins_pt_lista[i_corte]) - 1
-            
-            if 0 <= b_eta < n_b_eta and 0 <= b_pt < n_b_pt:
-                if is_charged:  matrizes_d2n_ch[i_corte][b_eta, b_pt] += 1.0
-                if is_meson_D0:     matrizes_d2n_d0[i_corte][b_eta, b_pt]  += 1.0
-                if is_meson_D:  matrizes_d2n_d[i_corte][b_eta, b_pt]  += 1.0
-                if is_meson_Ds: matrizes_d2n_ds[i_corte][b_eta, b_pt] += 1.0
+                    if 0 <= b_eta < len(bins_e) - 1 and 0 <= b_pt < len(bins_p) - 1:
+                        if is_charged:  
+                            matrizes_d2n_ch[i_corte][b_eta, b_pt] += 1.0
+                        if is_meson_D0: 
+                            matrizes_d2n_d0[i_corte][b_eta, b_pt] += 1.0
+                        if is_meson_D:  
+                            matrizes_d2n_d[i_corte][b_eta, b_pt]  += 1.0
+                        if is_meson_Ds: 
+                            matrizes_d2n_ds[i_corte][b_eta, b_pt] += 1.0
 
-    # Atualiza histogramas de multiplicidade e salva a tupla do evento
+    # -----------------------------------------------------------------
+    # Preenchimento dos histogramas de multiplicidade e registro de eventos brutos (Global e Diferencial)
+    # -----------------------------------------------------------------
     for i_corte in range(len(cortes_eta)):
-        h_mult_ch[i_corte].fill(n_ch_evento[i_corte])
-        h_mult_d0[i_corte].fill(n_D0_evento[i_corte])
-        h_mult_d[i_corte].fill(n_D_evento[i_corte])
-        h_mult_ds[i_corte].fill(n_Ds_evento[i_corte])
+        # Preenchimento global (pT > 0)
+        h_mult_ch_global[i_corte].fill(cont_ch_global[i_corte])
+        h_mult_d0_global[i_corte].fill(cont_d0_global[i_corte])
+        h_mult_d_global[i_corte].fill(cont_d_global[i_corte])
+        h_mult_ds_global[i_corte].fill(cont_ds_global[i_corte])
 
-        eventos_por_eta[i_corte].append([n_ch_evento[i_corte], n_D0_evento[i_corte], n_D_evento[i_corte], n_Ds_evento[i_corte]])
+        eventos_por_eta_global[i_corte].append([
+            cont_ch_global[i_corte],
+            cont_d0_global[i_corte],
+            cont_d_global[i_corte],
+            cont_ds_global[i_corte]
+        ])
 
+        # Preenchimento por faixas diferenciais de pT
+        for i_faixa in range(len(faixas_pt)):
+            h_mult_ch_faixas_pt[i_corte][i_faixa].fill(cont_ch_evento[i_corte][i_faixa])
+            h_mult_d0_faixas_pt[i_corte][i_faixa].fill(cont_d0_evento[i_corte][i_faixa])
+            h_mult_d_faixas_pt[i_corte][i_faixa].fill(cont_d_evento[i_corte][i_faixa])
+            h_mult_ds_faixas_pt[i_corte][i_faixa].fill(cont_ds_evento[i_corte][i_faixa])
+
+            eventos_por_eta_faixas_pt[i_corte][i_faixa].append([
+                cont_ch_evento[i_corte][i_faixa],
+                cont_d0_evento[i_corte][i_faixa],
+                cont_d_evento[i_corte][i_faixa],
+                cont_ds_evento[i_corte][i_faixa]
+            ])
+
+    # Exibe no console uma mensagem de progresso a cada 2000 eventos processados
     if n_accepted % 2000 == 0:
-        print(f"Eventos processados: {n_accepted}")
+        print(f"Progresso: {n_accepted} eventos processados com sucesso.")
 
+# Imprime o sumário de estatísticas gerais gerado pela biblioteca Pythia
 pythia.stat()
 
 # =================================================================
-# 5. Escrita dos Dados em Arquivos de Texto (.dat)
+# 5. ESCRITA E EXPORTAÇÃO DOS DADOS EM ARQUIVOS DE TEXTO (.dat)
 # =================================================================
 
-# Tabelas de dN/deta com cortes superiores em pT (pt < pt_corte)
-for i_pt, pt_corte in enumerate(cortes_pt_dndeta):
-    pt_str = f"{pt_corte:.0f}"
-    h_eta_d_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_d_pt_lt_{pt_str}GeV.dat"))
-    h_eta_ds_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_ds_pt_lt_{pt_str}GeV.dat"))
-    h_eta_ch_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_ch_pt_lt_{pt_str}GeV.dat"))
-    h_eta_d0_pt[i_pt].table(os.path.join(output_dir, f"{nome_script}_dndeta_d0_pt_lt_{pt_str}GeV.dat"))
+# 1. Exporta histogramas diferenciais, de multiplicidade e tabelas de eventos brutos por faixa de pT e corte de eta
+for i_corte, corte in enumerate(cortes_eta):
+    corte_str = f"{corte:.1f}".replace(".", "p")
+    
+    for i_faixa, (_, _, pt_label) in enumerate(faixas_pt):
+        # Nomes dos arquivos de dN/deta diferencial por pT
+        h_eta_ch_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_dndeta_ch_eta_{corte_str}_{pt_label}.dat"))
+        h_eta_d0_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_dndeta_d0_eta_{corte_str}_{pt_label}.dat"))
+        h_eta_d_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_dndeta_d_eta_{corte_str}_{pt_label}.dat"))
+        h_eta_ds_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_dndeta_ds_eta_{corte_str}_{pt_label}.dat"))
 
-# Tabelas 1D, 2D e dados brutos por corte de eta
+        # Nomes dos arquivos de multiplicidade diferencial por pT
+        h_mult_ch_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_mult_ch_eta_{corte_str}_{pt_label}.dat"))
+        h_mult_d0_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_mult_d0_eta_{corte_str}_{pt_label}.dat"))
+        h_mult_d_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_mult_d_eta_{corte_str}_{pt_label}.dat"))
+        h_mult_ds_faixas_pt[i_corte][i_faixa].table(os.path.join(output_dir, f"{nome_script}_mult_ds_eta_{corte_str}_{pt_label}.dat"))
+
+        # Salvamento do arquivo de eventos brutos diferenciais (N_ch, N_D0, N_D, N_Ds)
+        c_events_pt = os.path.join(output_dir, f"{nome_script}_events_eta_{corte_str}_{pt_label}.dat")
+        np.savetxt(
+            c_events_pt,
+            eventos_por_eta_faixas_pt[i_corte][i_faixa],
+            fmt='%d %d %d %d',
+            header="N_ch N_D0 N_D N_Ds",
+            comments=''
+        )
+
+# 2. Exporta os histogramas globais integrados, matrizes 2D, multiplicidades globais e eventos globais por corte de eta
 for i_corte, corte in enumerate(cortes_eta):
     corte_str = f"{corte:.1f}".replace(".", "p")
 
-    # Multiplicidade
-    h_mult_ch[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_ch_eta_{corte_str}.dat"))
-    h_mult_d0[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_d0_eta_{corte_str}.dat"))
-    h_mult_d[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_d_eta_{corte_str}.dat"))
-    h_mult_ds[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_ds_eta_{corte_str}.dat"))
-
-    # dN/deta
+    # Escrita das distribuições globais integradas dN/deta
     h_eta_ch[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_ch_eta_{corte_str}.dat"))
     h_eta_d0[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_d0_eta_{corte_str}.dat"))
     h_eta_d[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_d_eta_{corte_str}.dat"))
     h_eta_ds[i_corte].table(os.path.join(output_dir, f"{nome_script}_dndeta_ds_eta_{corte_str}.dat"))
     
-    # pT
+    # Escrita das distribuições globais integradas de momento transverso (dN/dpt)
     h_pt_ch[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_ch_eta_{corte_str}.dat"))
     h_pt_d0[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_d0_eta_{corte_str}.dat"))
     h_pt_d[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_d_eta_{corte_str}.dat"))
     h_pt_ds[i_corte].table(os.path.join(output_dir, f"{nome_script}_pt_ds_eta_{corte_str}.dat"))
 
-    # Função auxiliar para salvar matriz 2D no formato tabular (eta, pt, d2N/deta dpt)
+    # Escrita dos histogramas de Multiplicidade Global Integrada (pT > 0)
+    h_mult_ch_global[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_ch_eta_{corte_str}_global.dat"))
+    h_mult_d0_global[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_d0_eta_{corte_str}_global.dat"))
+    h_mult_d_global[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_d_eta_{corte_str}_global.dat"))
+    h_mult_ds_global[i_corte].table(os.path.join(output_dir, f"{nome_script}_mult_ds_eta_{corte_str}_global.dat"))
+
+    # Escrita do arquivo de eventos brutos globais (N_ch, N_D0, N_D, N_Ds) por janela de eta
+    c_events_global = os.path.join(output_dir, f"{nome_script}_events_eta_{corte_str}_global.dat")
+    np.savetxt(
+        c_events_global,
+        eventos_por_eta_global[i_corte],
+        fmt='%d %d %d %d',
+        header="N_ch N_D0 N_D N_Ds",
+        comments=''
+    )
+
+    # Função interna procedural para normalizar e exportar a matriz 2D global d2N / (deta dpt)
     def salvar_matriz_2d(matriz, nome_base_arq):
         bins_e = bins_eta_lista[i_corte]
         bins_p = bins_pt_lista[i_corte]
@@ -268,7 +410,7 @@ for i_corte, corte in enumerate(cortes_eta):
             val_eta = 0.5 * (bins_e[ie] + bins_e[ie+1])
             for ip in range(matriz.shape[1]):
                 val_pt = 0.5 * (bins_p[ip] + bins_p[ip+1])
-                # Normalização diferencial dividindo por n_accepted e larguras de bin
+                # Normalização pela quantidade total de eventos aceitos e larguras dos bins
                 val_d2n = matriz[ie, ip] / (n_accepted * d_eta * d_pt) if n_accepted > 0 else 0.0
                 dados_tabulados.append([val_eta, val_pt, val_d2n])
                 
@@ -280,22 +422,12 @@ for i_corte, corte in enumerate(cortes_eta):
             comments=""
         )
 
-    # Salvando as matrizes 2D d2N / (deta dpt)
+    # Executa a gravação das matrizes 2D globais para cada espécie particulada
     salvar_matriz_2d(matrizes_d2n_ch[i_corte], f"{nome_script}_d2n_etapt_ch_eta_{corte_str}.dat")
-    salvar_matriz_2d(matrizes_d2n_d0[i_corte],  f"{nome_script}_d2n_etapt_d0_eta_{corte_str}.dat")
+    salvar_matriz_2d(matrizes_d2n_d0[i_corte], f"{nome_script}_d2n_etapt_d0_eta_{corte_str}.dat")
     salvar_matriz_2d(matrizes_d2n_d[i_corte],  f"{nome_script}_d2n_etapt_d_eta_{corte_str}.dat")
     salvar_matriz_2d(matrizes_d2n_ds[i_corte], f"{nome_script}_d2n_etapt_ds_eta_{corte_str}.dat")
 
-    # Salva os valores evento-a-evento 
-    c_events = os.path.join(output_dir, f"{nome_script}_events_eta_{corte_str}.dat")
-    np.savetxt(
-        c_events, 
-        eventos_por_eta[i_corte], 
-        fmt='%d %d %d %d',               
-        header="N_ch N_D0 N_D N_Ds",     
-        comments=''
-    )
-
-print(f"\nSimulação concluída!")
-print(f"Total de eventos aceitos: {n_accepted}")
-print(f"Arquivos salvos no diretório: {output_dir}")
+print(f"\nSimulação concluída com sucesso!")
+print(f"Total de eventos válidos computados: {n_accepted}")
+print(f"Todos os arquivos globais e diferenciais foram salvos em: {output_dir}")

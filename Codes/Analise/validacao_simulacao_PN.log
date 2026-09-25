@@ -1,413 +1,2855 @@
 
 =====================================================================================
- PROCESSANDO CORTE EM |eta| < 0.5
+ PROCESSANDO: |eta| < 0.5 | pT: global
 =====================================================================================
 
 --- Partícula: Charged ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 8.1515   | OK
-All Physics     | Hard   | 1.0000     | 3.3354   | OK
-No MPI          | Soft   | 1.0000     | 3.6768   | OK
-No MPI          | Hard   | 1.0000     | 2.5815   | OK
-Only MPI        | Soft   | 1.0000     | 5.1356   | OK
-Only MPI        | Hard   | 1.0000     | 2.7633   | OK
-Only ISR        | Soft   | 1.0000     | 3.2146   | OK
-Only ISR        | Hard   | 1.0000     | 2.4601   | OK
-Only FSR        | Soft   | 1.0000     | 3.0084   | OK
-Only FSR        | Hard   | 1.0000     | 2.4233   | OK
-No Extra        | Soft   | 1.0000     | 2.8131   | OK
-No Extra        | Hard   | 1.0000     | 2.3666   | OK
+All Physics     | Soft   | 1.0000     | 8.1809   | OK
+All Physics     | Hard   | 1.0000     | 3.3294   | OK
+No MPI          | Soft   | 1.0000     | 3.6806   | OK
+No MPI          | Hard   | 1.0000     | 2.5859   | OK
+Only MPI        | Soft   | 1.0000     | 5.1268   | OK
+Only MPI        | Hard   | 1.0000     | 2.7580   | OK
+Only ISR        | Soft   | 1.0000     | 3.2163   | OK
+Only ISR        | Hard   | 1.0000     | 2.4624   | OK
+Only FSR        | Soft   | 1.0000     | 3.0100   | OK
+Only FSR        | Hard   | 1.0000     | 2.4216   | OK
+No Extra        | Soft   | 1.0000     | 2.8125   | OK
+No Extra        | Hard   | 1.0000     | 2.3661   | OK
 
---- Partícula: Kaons ---
+--- Partícula: D0_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.6665   | OK
-All Physics     | Hard   | 1.0000     | 1.2297   | OK
-No MPI          | Soft   | 1.0000     | 1.2440   | OK
-No MPI          | Hard   | 1.0000     | 1.1298   | OK
-Only MPI        | Soft   | 1.0000     | 1.3653   | OK
-Only MPI        | Hard   | 1.0000     | 1.1522   | OK
-Only ISR        | Soft   | 1.0000     | 1.2020   | OK
-Only ISR        | Hard   | 1.0000     | 1.1158   | OK
-Only FSR        | Soft   | 1.0000     | 1.1885   | OK
-Only FSR        | Hard   | 1.0000     | 1.1144   | OK
-No Extra        | Soft   | 1.0000     | 1.1648   | OK
-No Extra        | Hard   | 1.0000     | 1.1070   | OK
+All Physics     | Soft   | 1.0000     | 1.0960   | OK
+All Physics     | Hard   | 1.0000     | 1.0740   | OK
+No MPI          | Soft   | 1.0000     | 1.0777   | OK
+No MPI          | Hard   | 1.0000     | 1.0379   | OK
+Only MPI        | Soft   | 1.0000     | 1.0333   | OK
+Only MPI        | Hard   | 1.0000     | 1.0211   | OK
+Only ISR        | Soft   | 1.0000     | 1.0570   | OK
+Only ISR        | Hard   | 1.0000     | 1.0310   | OK
+Only FSR        | Soft   | 1.0000     | 1.0706   | OK
+Only FSR        | Hard   | 1.0000     | 1.0222   | OK
+No Extra        | Soft   | 1.0000     | 1.0384   | OK
+No Extra        | Hard   | 1.0000     | 1.0131   | OK
 
 --- Partícula: D_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
 All Physics     | Soft   | 1.0000     | 1.0484   | OK
-All Physics     | Hard   | 1.0000     | 1.0343   | OK
-No MPI          | Soft   | 1.0000     | 1.0390   | OK
-No MPI          | Hard   | 1.0000     | 1.0359   | OK
-Only MPI        | Soft   | 1.0000     | 1.0133   | OK
-Only MPI        | Hard   | 1.0000     | 1.0045   | OK
-Only ISR        | Soft   | 1.0000     | 1.0347   | OK
-Only ISR        | Hard   | 1.0000     | 1.0331   | OK
-Only FSR        | Soft   | 1.0000     | 1.0324   | OK
-Only FSR        | Hard   | 1.0000     | 1.0129   | OK
-No Extra        | Soft   | 1.0000     | 1.0110   | OK
-No Extra        | Hard   | 1.0000     | 1.0080   | OK
+All Physics     | Hard   | 1.0000     | 1.0359   | OK
+No MPI          | Soft   | 1.0000     | 1.0401   | OK
+No MPI          | Hard   | 1.0000     | 1.0239   | OK
+Only MPI        | Soft   | 1.0000     | 1.0185   | OK
+Only MPI        | Hard   | 1.0000     | 1.0066   | OK
+Only ISR        | Soft   | 1.0000     | 1.0296   | OK
+Only ISR        | Hard   | 1.0000     | 1.0081   | OK
+Only FSR        | Soft   | 1.0000     | 1.0338   | OK
+Only FSR        | Hard   | 1.0000     | 1.0152   | OK
+No Extra        | Soft   | 1.0000     | 1.0165   | OK
+No Extra        | Hard   | 1.0000     | 1.0171   | OK
 
 --- Partícula: Ds_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.0207   | OK
-All Physics     | Hard   | 1.0000     | 1.0075   | OK
-No MPI          | Soft   | 1.0000     | 1.0151   | OK
-No MPI          | Hard   | 1.0000     | 1.0041   | OK
-Only MPI        | Soft   | 1.0000     | 1.0081   | OK
-Only MPI        | Hard   | 1.0000     | 1.0000   | OK
-Only ISR        | Soft   | 1.0000     | 1.0167   | OK
-Only ISR        | Hard   | 1.0000     | 1.0072   | OK
-Only FSR        | Soft   | 1.0000     | 1.0115   | OK
-Only FSR        | Hard   | 1.0000     | 1.0078   | OK
-No Extra        | Soft   | 1.0000     | 1.0198   | OK
+All Physics     | Soft   | 1.0000     | 1.0166   | OK
+All Physics     | Hard   | 1.0000     | 1.0080   | OK
+No MPI          | Soft   | 1.0000     | 1.0187   | OK
+No MPI          | Hard   | 1.0000     | 1.0097   | OK
+Only MPI        | Soft   | 1.0000     | 1.0133   | OK
+Only MPI        | Hard   | 1.0000     | 1.0256   | OK
+Only ISR        | Soft   | 1.0000     | 1.0178   | OK
+Only ISR        | Hard   | 1.0000     | 1.0145   | OK
+Only FSR        | Soft   | 1.0000     | 1.0136   | OK
+Only FSR        | Hard   | 1.0000     | 1.0082   | OK
+No Extra        | Soft   | 1.0000     | 1.0143   | OK
 No Extra        | Hard   | 1.0000     | 1.0000   | OK
 
 =====================================================================================
- PROCESSANDO CORTE EM |eta| < 1.0
+ PROCESSANDO: |eta| < 0.5 | pT: pt_1_2
 =====================================================================================
 
 --- Partícula: Charged ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 15.7299  | OK
-All Physics     | Hard   | 1.0000     | 6.1398   | OK
-No MPI          | Soft   | 1.0000     | 6.9752   | OK
-No MPI          | Hard   | 1.0000     | 4.6861   | OK
-Only MPI        | Soft   | 1.0000     | 9.7133   | OK
-Only MPI        | Hard   | 1.0000     | 5.0051   | OK
-Only ISR        | Soft   | 1.0000     | 6.0005   | OK
-Only ISR        | Hard   | 1.0000     | 4.4221   | OK
-Only FSR        | Soft   | 1.0000     | 5.5499   | OK
-Only FSR        | Hard   | 1.0000     | 4.3517   | OK
-No Extra        | Soft   | 1.0000     | 5.1454   | OK
-No Extra        | Hard   | 1.0000     | 4.2271   | OK
+All Physics     | Soft   | 1.0000     | 2.3159   | OK
+All Physics     | Hard   | 1.0000     | 1.4643   | OK
+No MPI          | Soft   | 1.0000     | 1.4574   | OK
+No MPI          | Hard   | 1.0000     | 1.1370   | OK
+Only MPI        | Soft   | 1.0000     | 1.7510   | OK
+Only MPI        | Hard   | 1.0000     | 1.2687   | OK
+Only ISR        | Soft   | 1.0000     | 1.3925   | OK
+Only ISR        | Hard   | 1.0000     | 1.1255   | OK
+Only FSR        | Soft   | 1.0000     | 1.3659   | OK
+Only FSR        | Hard   | 1.0000     | 1.1005   | OK
+No Extra        | Soft   | 1.0000     | 1.3266   | OK
+No Extra        | Hard   | 1.0000     | 1.0950   | OK
 
---- Partícula: Kaons ---
+--- Partícula: D0_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 2.3257   | OK
-All Physics     | Hard   | 1.0000     | 1.4461   | OK
-No MPI          | Soft   | 1.0000     | 1.4672   | OK
-No MPI          | Hard   | 1.0000     | 1.2637   | OK
-Only MPI        | Soft   | 1.0000     | 1.7140   | OK
-Only MPI        | Hard   | 1.0000     | 1.3042   | OK
-Only ISR        | Soft   | 1.0000     | 1.3755   | OK
-Only ISR        | Hard   | 1.0000     | 1.2390   | OK
-Only FSR        | Soft   | 1.0000     | 1.3539   | OK
-Only FSR        | Hard   | 1.0000     | 1.2355   | OK
-No Extra        | Soft   | 1.0000     | 1.3092   | OK
-No Extra        | Hard   | 1.0000     | 1.2199   | OK
+All Physics     | Soft   | 1.0000     | 1.0269   | OK
+All Physics     | Hard   | 1.0000     | 1.0253   | OK
+No MPI          | Soft   | 1.0000     | 1.0166   | OK
+No MPI          | Hard   | 1.0000     | 1.0118   | OK
+Only MPI        | Soft   | 1.0000     | 1.0174   | OK
+Only MPI        | Hard   | 1.0000     | 1.0074   | OK
+Only ISR        | Soft   | 1.0000     | 1.0152   | OK
+Only ISR        | Hard   | 1.0000     | 1.0043   | OK
+Only FSR        | Soft   | 1.0000     | 1.0225   | OK
+Only FSR        | Hard   | 1.0000     | 1.0038   | OK
+No Extra        | Soft   | 1.0000     | 1.0039   | OK
+No Extra        | Hard   | 1.0000     | 1.0122   | OK
 
 --- Partícula: D_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.0911   | OK
-All Physics     | Hard   | 1.0000     | 1.0565   | OK
-No MPI          | Soft   | 1.0000     | 1.0705   | OK
-No MPI          | Hard   | 1.0000     | 1.0559   | OK
-Only MPI        | Soft   | 1.0000     | 1.0279   | OK
-Only MPI        | Hard   | 1.0000     | 1.0178   | OK
-Only ISR        | Soft   | 1.0000     | 1.0504   | OK
-Only ISR        | Hard   | 1.0000     | 1.0505   | OK
-Only FSR        | Soft   | 1.0000     | 1.0555   | OK
-Only FSR        | Hard   | 1.0000     | 1.0260   | OK
-No Extra        | Soft   | 1.0000     | 1.0281   | OK
+All Physics     | Soft   | 1.0000     | 1.0115   | OK
+All Physics     | Hard   | 1.0000     | 1.0090   | OK
+No MPI          | Soft   | 1.0000     | 1.0098   | OK
+No MPI          | Hard   | 1.0000     | 1.0040   | OK
+Only MPI        | Soft   | 1.0000     | 1.0030   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0062   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0025   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0211   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0019   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0032   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0088   | OK
+Only ISR        | Hard   | 1.0000     | 1.0179   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 0.5 | pT: pt_2_4
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.4888   | OK
+All Physics     | Hard   | 1.0000     | 1.2845   | OK
+No MPI          | Soft   | 1.0000     | 1.2881   | OK
+No MPI          | Hard   | 1.0000     | 1.1197   | OK
+Only MPI        | Soft   | 1.0000     | 1.3489   | OK
+Only MPI        | Hard   | 1.0000     | 1.1898   | OK
+Only ISR        | Soft   | 1.0000     | 1.2822   | OK
+Only ISR        | Hard   | 1.0000     | 1.1359   | OK
+Only FSR        | Soft   | 1.0000     | 1.2429   | OK
+Only FSR        | Hard   | 1.0000     | 1.1004   | OK
+No Extra        | Soft   | 1.0000     | 1.2376   | OK
+No Extra        | Hard   | 1.0000     | 1.1063   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0405   | OK
+All Physics     | Hard   | 1.0000     | 1.0311   | OK
+No MPI          | Soft   | 1.0000     | 1.0309   | OK
+No MPI          | Hard   | 1.0000     | 1.0217   | OK
+Only MPI        | Soft   | 1.0000     | 1.0174   | OK
+Only MPI        | Hard   | 1.0000     | 1.0052   | OK
+Only ISR        | Soft   | 1.0000     | 1.0230   | OK
+Only ISR        | Hard   | 1.0000     | 1.0171   | OK
+Only FSR        | Soft   | 1.0000     | 1.0320   | OK
+Only FSR        | Hard   | 1.0000     | 1.0135   | OK
+No Extra        | Soft   | 1.0000     | 1.0252   | OK
+No Extra        | Hard   | 1.0000     | 1.0089   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0213   | OK
+All Physics     | Hard   | 1.0000     | 1.0171   | OK
+No MPI          | Soft   | 1.0000     | 1.0181   | OK
+No MPI          | Hard   | 1.0000     | 1.0104   | OK
+Only MPI        | Soft   | 1.0000     | 1.0091   | OK
+Only MPI        | Hard   | 1.0000     | 1.0050   | OK
+Only ISR        | Soft   | 1.0000     | 1.0153   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0145   | OK
+Only FSR        | Hard   | 1.0000     | 1.0071   | OK
+No Extra        | Soft   | 1.0000     | 1.0115   | OK
+No Extra        | Hard   | 1.0000     | 1.0104   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0064   | OK
+All Physics     | Hard   | 1.0000     | 1.0067   | OK
+No MPI          | Soft   | 1.0000     | 1.0075   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0062   | OK
+Only MPI        | Hard   | 1.0000     | 1.0143   | OK
+Only ISR        | Soft   | 1.0000     | 1.0036   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0117   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0058   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 0.5 | pT: pt_4_6
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0988   | OK
+All Physics     | Hard   | 1.0000     | 1.0646   | OK
+No MPI          | Soft   | 1.0000     | 1.1118   | OK
+No MPI          | Hard   | 1.0000     | 1.0749   | OK
+Only MPI        | Soft   | 1.0000     | 1.0895   | OK
+Only MPI        | Hard   | 1.0000     | 1.0710   | OK
+Only ISR        | Soft   | 1.0000     | 1.1180   | OK
+Only ISR        | Hard   | 1.0000     | 1.0777   | OK
+Only FSR        | Soft   | 1.0000     | 1.0975   | OK
+Only FSR        | Hard   | 1.0000     | 1.0442   | OK
+No Extra        | Soft   | 1.0000     | 1.0965   | OK
+No Extra        | Hard   | 1.0000     | 1.0634   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0157   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0123   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0048   | OK
+Only MPI        | Hard   | 1.0000     | 1.0288   | OK
+Only ISR        | Soft   | 1.0000     | 1.0090   | OK
+Only ISR        | Hard   | 1.0000     | 1.0182   | OK
+Only FSR        | Soft   | 1.0000     | 1.0154   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0187   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0041   | OK
+All Physics     | Hard   | 1.0000     | 1.0190   | OK
+No MPI          | Soft   | 1.0000     | 1.0033   | OK
+No MPI          | Hard   | 1.0000     | 1.0200   | OK
+Only MPI        | Soft   | 1.0000     | 1.0071   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0099   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0098   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0027   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0041   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0163   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 0.5 | pT: pt_6_8
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0623   | OK
+All Physics     | Hard   | 1.0000     | 1.0492   | OK
+No MPI          | Soft   | 1.0000     | 1.0573   | OK
+No MPI          | Hard   | 1.0000     | 1.1045   | OK
+Only MPI        | Soft   | 1.0000     | 1.0590   | OK
+Only MPI        | Hard   | 1.0000     | 1.0189   | OK
+Only ISR        | Soft   | 1.0000     | 1.0695   | OK
+Only ISR        | Hard   | 1.0000     | 1.0680   | OK
+Only FSR        | Soft   | 1.0000     | 1.0665   | OK
+Only FSR        | Hard   | 1.0000     | 1.0152   | OK
+No Extra        | Soft   | 1.0000     | 1.0562   | OK
+No Extra        | Hard   | 1.0000     | 1.0130   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0131   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0127   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0063   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0051   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0070   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0059   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0032   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0000   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 0.5 | pT: pt_8_12
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0784   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0725   | OK
+No MPI          | Hard   | 1.0000     | 1.1364   | OK
+Only MPI        | Soft   | 1.0000     | 1.0603   | OK
+Only MPI        | Hard   | 1.0000     | 1.0408   | OK
+Only ISR        | Soft   | 1.0000     | 1.0775   | OK
+Only ISR        | Hard   | 1.0000     | 1.0541   | OK
+Only FSR        | Soft   | 1.0000     | 1.0819   | OK
+Only FSR        | Hard   | 1.0000     | 1.0833   | OK
+No Extra        | Soft   | 1.0000     | 1.0658   | OK
+No Extra        | Hard   | 1.0000     | 1.0526   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0060   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0051   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0114   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0067   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0115   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0099   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0094   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0137   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0139   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 0.5 | pT: pt_12_24
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1041   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0796   | OK
+No MPI          | Hard   | 1.0000     | 1.1111   | OK
+Only MPI        | Soft   | 1.0000     | 1.1028   | OK
+Only MPI        | Hard   | 1.0000     | 1.1000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0957   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0779   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0884   | OK
+No Extra        | Hard   | 1.0000     | 1.0909   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0213   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0061   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0226   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0215   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0208   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0222   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0000   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 1.0 | pT: global
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 15.7892  | OK
+All Physics     | Hard   | 1.0000     | 6.1281   | OK
+No MPI          | Soft   | 1.0000     | 6.9793   | OK
+No MPI          | Hard   | 1.0000     | 4.6929   | OK
+Only MPI        | Soft   | 1.0000     | 9.6956   | OK
+Only MPI        | Hard   | 1.0000     | 4.9917   | OK
+Only ISR        | Soft   | 1.0000     | 6.0032   | OK
+Only ISR        | Hard   | 1.0000     | 4.4257   | OK
+Only FSR        | Soft   | 1.0000     | 5.5604   | OK
+Only FSR        | Hard   | 1.0000     | 4.3471   | OK
+No Extra        | Soft   | 1.0000     | 5.1426   | OK
+No Extra        | Hard   | 1.0000     | 4.2247   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1815   | OK
+All Physics     | Hard   | 1.0000     | 1.1387   | OK
+No MPI          | Soft   | 1.0000     | 1.1459   | OK
+No MPI          | Hard   | 1.0000     | 1.0796   | OK
+Only MPI        | Soft   | 1.0000     | 1.0598   | OK
+Only MPI        | Hard   | 1.0000     | 1.0384   | OK
+Only ISR        | Soft   | 1.0000     | 1.1097   | OK
+Only ISR        | Hard   | 1.0000     | 1.0627   | OK
+Only FSR        | Soft   | 1.0000     | 1.1091   | OK
+Only FSR        | Hard   | 1.0000     | 1.0481   | OK
+No Extra        | Soft   | 1.0000     | 1.0517   | OK
+No Extra        | Hard   | 1.0000     | 1.0214   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0924   | OK
+All Physics     | Hard   | 1.0000     | 1.0641   | OK
+No MPI          | Soft   | 1.0000     | 1.0706   | OK
+No MPI          | Hard   | 1.0000     | 1.0407   | OK
+Only MPI        | Soft   | 1.0000     | 1.0314   | OK
+Only MPI        | Hard   | 1.0000     | 1.0225   | OK
+Only ISR        | Soft   | 1.0000     | 1.0611   | OK
+Only ISR        | Hard   | 1.0000     | 1.0266   | OK
+Only FSR        | Soft   | 1.0000     | 1.0504   | OK
+Only FSR        | Hard   | 1.0000     | 1.0286   | OK
+No Extra        | Soft   | 1.0000     | 1.0255   | OK
+No Extra        | Hard   | 1.0000     | 1.0145   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0380   | OK
+All Physics     | Hard   | 1.0000     | 1.0231   | OK
+No MPI          | Soft   | 1.0000     | 1.0357   | OK
+No MPI          | Hard   | 1.0000     | 1.0114   | OK
+Only MPI        | Soft   | 1.0000     | 1.0147   | OK
+Only MPI        | Hard   | 1.0000     | 1.0119   | OK
+Only ISR        | Soft   | 1.0000     | 1.0385   | OK
+Only ISR        | Hard   | 1.0000     | 1.0073   | OK
+Only FSR        | Soft   | 1.0000     | 1.0249   | OK
+Only FSR        | Hard   | 1.0000     | 1.0112   | OK
+No Extra        | Soft   | 1.0000     | 1.0230   | OK
+No Extra        | Hard   | 1.0000     | 1.0099   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 1.0 | pT: pt_1_2
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 3.4485   | OK
+All Physics     | Hard   | 1.0000     | 1.7475   | OK
+No MPI          | Soft   | 1.0000     | 1.7677   | OK
+No MPI          | Hard   | 1.0000     | 1.2295   | OK
+Only MPI        | Soft   | 1.0000     | 2.3702   | OK
+Only MPI        | Hard   | 1.0000     | 1.4364   | OK
+Only ISR        | Soft   | 1.0000     | 1.6347   | OK
+Only ISR        | Hard   | 1.0000     | 1.2028   | OK
+Only FSR        | Soft   | 1.0000     | 1.5792   | OK
+Only FSR        | Hard   | 1.0000     | 1.1656   | OK
+No Extra        | Soft   | 1.0000     | 1.4974   | OK
+No Extra        | Hard   | 1.0000     | 1.1529   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0510   | OK
+All Physics     | Hard   | 1.0000     | 1.0492   | OK
+No MPI          | Soft   | 1.0000     | 1.0381   | OK
+No MPI          | Hard   | 1.0000     | 1.0243   | OK
+Only MPI        | Soft   | 1.0000     | 1.0252   | OK
+Only MPI        | Hard   | 1.0000     | 1.0083   | OK
+Only ISR        | Soft   | 1.0000     | 1.0366   | OK
+Only ISR        | Hard   | 1.0000     | 1.0224   | OK
+Only FSR        | Soft   | 1.0000     | 1.0331   | OK
+Only FSR        | Hard   | 1.0000     | 1.0139   | OK
+No Extra        | Soft   | 1.0000     | 1.0184   | OK
+No Extra        | Hard   | 1.0000     | 1.0055   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0224   | OK
+All Physics     | Hard   | 1.0000     | 1.0209   | OK
+No MPI          | Soft   | 1.0000     | 1.0199   | OK
+No MPI          | Hard   | 1.0000     | 1.0120   | OK
+Only MPI        | Soft   | 1.0000     | 1.0081   | OK
+Only MPI        | Hard   | 1.0000     | 1.0034   | OK
+Only ISR        | Soft   | 1.0000     | 1.0116   | OK
+Only ISR        | Hard   | 1.0000     | 1.0036   | OK
+Only FSR        | Soft   | 1.0000     | 1.0072   | OK
+Only FSR        | Hard   | 1.0000     | 1.0140   | OK
+No Extra        | Soft   | 1.0000     | 1.0147   | OK
+No Extra        | Hard   | 1.0000     | 1.0066   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0121   | OK
+All Physics     | Hard   | 1.0000     | 1.0072   | OK
+No MPI          | Soft   | 1.0000     | 1.0088   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0042   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0283   | OK
+Only ISR        | Hard   | 1.0000     | 1.0095   | OK
+Only FSR        | Soft   | 1.0000     | 1.0064   | OK
+Only FSR        | Hard   | 1.0000     | 1.0119   | OK
+No Extra        | Soft   | 1.0000     | 1.0268   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 1.0 | pT: pt_2_4
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.8516   | OK
+All Physics     | Hard   | 1.0000     | 1.4654   | OK
+No MPI          | Soft   | 1.0000     | 1.3957   | OK
+No MPI          | Hard   | 1.0000     | 1.1611   | OK
+Only MPI        | Soft   | 1.0000     | 1.5597   | OK
+Only MPI        | Hard   | 1.0000     | 1.3048   | OK
+Only ISR        | Soft   | 1.0000     | 1.3755   | OK
+Only ISR        | Hard   | 1.0000     | 1.1705   | OK
+Only FSR        | Soft   | 1.0000     | 1.3195   | OK
+Only FSR        | Hard   | 1.0000     | 1.1272   | OK
+No Extra        | Soft   | 1.0000     | 1.3019   | OK
+No Extra        | Hard   | 1.0000     | 1.1301   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0727   | OK
+All Physics     | Hard   | 1.0000     | 1.0506   | OK
+No MPI          | Soft   | 1.0000     | 1.0497   | OK
+No MPI          | Hard   | 1.0000     | 1.0318   | OK
+Only MPI        | Soft   | 1.0000     | 1.0291   | OK
+Only MPI        | Hard   | 1.0000     | 1.0141   | OK
+Only ISR        | Soft   | 1.0000     | 1.0357   | OK
+Only ISR        | Hard   | 1.0000     | 1.0299   | OK
+Only FSR        | Soft   | 1.0000     | 1.0491   | OK
+Only FSR        | Hard   | 1.0000     | 1.0168   | OK
+No Extra        | Soft   | 1.0000     | 1.0309   | OK
+No Extra        | Hard   | 1.0000     | 1.0189   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0370   | OK
+All Physics     | Hard   | 1.0000     | 1.0302   | OK
+No MPI          | Soft   | 1.0000     | 1.0308   | OK
+No MPI          | Hard   | 1.0000     | 1.0165   | OK
+Only MPI        | Soft   | 1.0000     | 1.0156   | OK
+Only MPI        | Hard   | 1.0000     | 1.0128   | OK
+Only ISR        | Soft   | 1.0000     | 1.0207   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0196   | OK
+Only FSR        | Hard   | 1.0000     | 1.0216   | OK
+No Extra        | Soft   | 1.0000     | 1.0157   | OK
+No Extra        | Hard   | 1.0000     | 1.0105   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0140   | OK
+All Physics     | Hard   | 1.0000     | 1.0204   | OK
+No MPI          | Soft   | 1.0000     | 1.0134   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0031   | OK
+Only MPI        | Hard   | 1.0000     | 1.0069   | OK
+Only ISR        | Soft   | 1.0000     | 1.0150   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0117   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0107   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 1.0 | pT: pt_4_6
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1429   | OK
+All Physics     | Hard   | 1.0000     | 1.1017   | OK
+No MPI          | Soft   | 1.0000     | 1.1401   | OK
+No MPI          | Hard   | 1.0000     | 1.0908   | OK
+Only MPI        | Soft   | 1.0000     | 1.1273   | OK
+Only MPI        | Hard   | 1.0000     | 1.0853   | OK
+Only ISR        | Soft   | 1.0000     | 1.1435   | OK
+Only ISR        | Hard   | 1.0000     | 1.0897   | OK
+Only FSR        | Soft   | 1.0000     | 1.1224   | OK
+Only FSR        | Hard   | 1.0000     | 1.0668   | OK
+No Extra        | Soft   | 1.0000     | 1.1181   | OK
+No Extra        | Hard   | 1.0000     | 1.0831   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0296   | OK
+All Physics     | Hard   | 1.0000     | 1.0156   | OK
+No MPI          | Soft   | 1.0000     | 1.0216   | OK
+No MPI          | Hard   | 1.0000     | 1.0063   | OK
+Only MPI        | Soft   | 1.0000     | 1.0178   | OK
+Only MPI        | Hard   | 1.0000     | 1.0196   | OK
+Only ISR        | Soft   | 1.0000     | 1.0180   | OK
+Only ISR        | Hard   | 1.0000     | 1.0172   | OK
+Only FSR        | Soft   | 1.0000     | 1.0179   | OK
+Only FSR        | Hard   | 1.0000     | 1.0095   | OK
+No Extra        | Soft   | 1.0000     | 1.0190   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0136   | OK
+All Physics     | Hard   | 1.0000     | 1.0189   | OK
+No MPI          | Soft   | 1.0000     | 1.0114   | OK
+No MPI          | Hard   | 1.0000     | 1.0125   | OK
+Only MPI        | Soft   | 1.0000     | 1.0069   | OK
+Only MPI        | Hard   | 1.0000     | 1.0202   | OK
+Only ISR        | Soft   | 1.0000     | 1.0087   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0120   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0032   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0137   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0135   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0186   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0052   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0115   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 1.0 | pT: pt_6_8
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0740   | OK
+All Physics     | Hard   | 1.0000     | 1.0478   | OK
+No MPI          | Soft   | 1.0000     | 1.0790   | OK
+No MPI          | Hard   | 1.0000     | 1.0909   | OK
+Only MPI        | Soft   | 1.0000     | 1.0708   | OK
+Only MPI        | Hard   | 1.0000     | 1.0225   | OK
+Only ISR        | Soft   | 1.0000     | 1.0840   | OK
+Only ISR        | Hard   | 1.0000     | 1.0836   | OK
+Only FSR        | Soft   | 1.0000     | 1.0754   | OK
+Only FSR        | Hard   | 1.0000     | 1.0265   | OK
+No Extra        | Soft   | 1.0000     | 1.0733   | OK
+No Extra        | Hard   | 1.0000     | 1.0222   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0173   | OK
+All Physics     | Hard   | 1.0000     | 1.0110   | OK
+No MPI          | Soft   | 1.0000     | 1.0157   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0114   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0089   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0120   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0075   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0060   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0051   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0070   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0023   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0086   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0040   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0081   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 1.0 | pT: pt_8_12
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0983   | OK
+All Physics     | Hard   | 1.0000     | 1.0400   | OK
+No MPI          | Soft   | 1.0000     | 1.0877   | OK
+No MPI          | Hard   | 1.0000     | 1.1875   | OK
+Only MPI        | Soft   | 1.0000     | 1.0770   | OK
+Only MPI        | Hard   | 1.0000     | 1.0659   | OK
+Only ISR        | Soft   | 1.0000     | 1.0858   | OK
+Only ISR        | Hard   | 1.0000     | 1.0889   | OK
+Only FSR        | Soft   | 1.0000     | 1.0919   | OK
+Only FSR        | Hard   | 1.0000     | 1.0625   | OK
+No Extra        | Soft   | 1.0000     | 1.0830   | OK
+No Extra        | Hard   | 1.0000     | 1.1184   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0111   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0091   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0146   | OK
+Only MPI        | Hard   | 1.0000     | 1.0455   | OK
+Only ISR        | Soft   | 1.0000     | 1.0087   | OK
+Only ISR        | Hard   | 1.0000     | 1.0476   | OK
+Only FSR        | Soft   | 1.0000     | 1.0133   | OK
+Only FSR        | Hard   | 1.0000     | 1.0556   | OK
+No Extra        | Soft   | 1.0000     | 1.0073   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0075   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0027   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0140   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0043   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0121   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0143   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0068   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 1.0 | pT: pt_12_24
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1253   | OK
+All Physics     | Hard   | 1.0000     | 1.1250   | OK
+No MPI          | Soft   | 1.0000     | 1.1090   | OK
+No MPI          | Hard   | 1.0000     | 1.2000   | OK
+Only MPI        | Soft   | 1.0000     | 1.1149   | OK
+Only MPI        | Hard   | 1.0000     | 1.0667   | OK
+Only ISR        | Soft   | 1.0000     | 1.1144   | OK
+Only ISR        | Hard   | 1.0000     | 1.0377   | OK
+Only FSR        | Soft   | 1.0000     | 1.1045   | OK
+Only FSR        | Hard   | 1.0000     | 1.0833   | OK
+No Extra        | Soft   | 1.0000     | 1.1025   | OK
+No Extra        | Hard   | 1.0000     | 1.0417   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0217   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0136   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0140   | OK
+Only MPI        | Hard   | 1.0000     | 1.2000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0144   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0101   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0321   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0000   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0188   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0103   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0119   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0000   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0000   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 2.0 | pT: global
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 31.6578  | OK
+All Physics     | Hard   | 1.0000     | 12.6256  | OK
+No MPI          | Soft   | 1.0000     | 14.3210  | OK
+No MPI          | Hard   | 1.0000     | 9.6978   | OK
+Only MPI        | Soft   | 1.0000     | 19.4568  | OK
+Only MPI        | Hard   | 1.0000     | 10.2886  | OK
+Only ISR        | Soft   | 1.0000     | 12.3448  | OK
+Only ISR        | Hard   | 1.0000     | 9.1407   | OK
+Only FSR        | Soft   | 1.0000     | 11.3826  | OK
+Only FSR        | Hard   | 1.0000     | 8.9773   | OK
+No Extra        | Soft   | 1.0000     | 10.5587  | OK
+No Extra        | Hard   | 1.0000     | 8.7268   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.3298   | OK
+All Physics     | Hard   | 1.0000     | 1.2453   | OK
+No MPI          | Soft   | 1.0000     | 1.2524   | OK
+No MPI          | Hard   | 1.0000     | 1.1697   | OK
+Only MPI        | Soft   | 1.0000     | 1.1128   | OK
+Only MPI        | Hard   | 1.0000     | 1.0699   | OK
+Only ISR        | Soft   | 1.0000     | 1.2070   | OK
+Only ISR        | Hard   | 1.0000     | 1.1354   | OK
+Only FSR        | Soft   | 1.0000     | 1.1757   | OK
+Only FSR        | Hard   | 1.0000     | 1.1000   | OK
+No Extra        | Soft   | 1.0000     | 1.0863   | OK
+No Extra        | Hard   | 1.0000     | 1.0538   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1626   | OK
+All Physics     | Hard   | 1.0000     | 1.1253   | OK
+No MPI          | Soft   | 1.0000     | 1.1155   | OK
+No MPI          | Hard   | 1.0000     | 1.0871   | OK
+Only MPI        | Soft   | 1.0000     | 1.0553   | OK
+Only MPI        | Hard   | 1.0000     | 1.0348   | OK
+Only ISR        | Soft   | 1.0000     | 1.0993   | OK
+Only ISR        | Hard   | 1.0000     | 1.0764   | OK
+Only FSR        | Soft   | 1.0000     | 1.0817   | OK
+Only FSR        | Hard   | 1.0000     | 1.0523   | OK
+No Extra        | Soft   | 1.0000     | 1.0392   | OK
+No Extra        | Hard   | 1.0000     | 1.0320   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0649   | OK
+All Physics     | Hard   | 1.0000     | 1.0416   | OK
+No MPI          | Soft   | 1.0000     | 1.0506   | OK
+No MPI          | Hard   | 1.0000     | 1.0334   | OK
+Only MPI        | Soft   | 1.0000     | 1.0290   | OK
+Only MPI        | Hard   | 1.0000     | 1.0173   | OK
+Only ISR        | Soft   | 1.0000     | 1.0568   | OK
+Only ISR        | Hard   | 1.0000     | 1.0225   | OK
+Only FSR        | Soft   | 1.0000     | 1.0399   | OK
+Only FSR        | Hard   | 1.0000     | 1.0169   | OK
+No Extra        | Soft   | 1.0000     | 1.0349   | OK
+No Extra        | Hard   | 1.0000     | 1.0136   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 2.0 | pT: pt_1_2
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 5.4433   | OK
+All Physics     | Hard   | 1.0000     | 2.1476   | OK
+No MPI          | Soft   | 1.0000     | 2.2911   | OK
+No MPI          | Hard   | 1.0000     | 1.3702   | OK
+Only MPI        | Soft   | 1.0000     | 3.4400   | OK
+Only MPI        | Hard   | 1.0000     | 1.6718   | OK
+Only ISR        | Soft   | 1.0000     | 2.0294   | OK
+Only ISR        | Hard   | 1.0000     | 1.3238   | OK
+Only FSR        | Soft   | 1.0000     | 1.8787   | OK
+Only FSR        | Hard   | 1.0000     | 1.2560   | OK
+No Extra        | Soft   | 1.0000     | 1.7318   | OK
+No Extra        | Hard   | 1.0000     | 1.2328   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0916   | OK
+All Physics     | Hard   | 1.0000     | 1.0758   | OK
+No MPI          | Soft   | 1.0000     | 1.0696   | OK
+No MPI          | Hard   | 1.0000     | 1.0627   | OK
+Only MPI        | Soft   | 1.0000     | 1.0363   | OK
+Only MPI        | Hard   | 1.0000     | 1.0303   | OK
+Only ISR        | Soft   | 1.0000     | 1.0524   | OK
+Only ISR        | Hard   | 1.0000     | 1.0446   | OK
+Only FSR        | Soft   | 1.0000     | 1.0609   | OK
+Only FSR        | Hard   | 1.0000     | 1.0368   | OK
+No Extra        | Soft   | 1.0000     | 1.0344   | OK
+No Extra        | Hard   | 1.0000     | 1.0222   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0416   | OK
+All Physics     | Hard   | 1.0000     | 1.0387   | OK
+No MPI          | Soft   | 1.0000     | 1.0310   | OK
+No MPI          | Hard   | 1.0000     | 1.0235   | OK
+Only MPI        | Soft   | 1.0000     | 1.0187   | OK
+Only MPI        | Hard   | 1.0000     | 1.0107   | OK
+Only ISR        | Soft   | 1.0000     | 1.0211   | OK
+Only ISR        | Hard   | 1.0000     | 1.0148   | OK
+Only FSR        | Soft   | 1.0000     | 1.0256   | OK
+Only FSR        | Hard   | 1.0000     | 1.0193   | OK
+No Extra        | Soft   | 1.0000     | 1.0226   | OK
+No Extra        | Hard   | 1.0000     | 1.0194   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0174   | OK
+All Physics     | Hard   | 1.0000     | 1.0111   | OK
+No MPI          | Soft   | 1.0000     | 1.0108   | OK
+No MPI          | Hard   | 1.0000     | 1.0102   | OK
+Only MPI        | Soft   | 1.0000     | 1.0145   | OK
+Only MPI        | Hard   | 1.0000     | 1.0040   | OK
+Only ISR        | Soft   | 1.0000     | 1.0236   | OK
+Only ISR        | Hard   | 1.0000     | 1.0131   | OK
+Only FSR        | Soft   | 1.0000     | 1.0145   | OK
+Only FSR        | Hard   | 1.0000     | 1.0046   | OK
+No Extra        | Soft   | 1.0000     | 1.0233   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 2.0 | pT: pt_2_4
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 2.4894   | OK
+All Physics     | Hard   | 1.0000     | 1.7330   | OK
+No MPI          | Soft   | 1.0000     | 1.5620   | OK
+No MPI          | Hard   | 1.0000     | 1.2228   | OK
+Only MPI        | Soft   | 1.0000     | 1.9431   | OK
+Only MPI        | Hard   | 1.0000     | 1.4831   | OK
+Only ISR        | Soft   | 1.0000     | 1.5267   | OK
+Only ISR        | Hard   | 1.0000     | 1.2252   | OK
+Only FSR        | Soft   | 1.0000     | 1.4278   | OK
+Only FSR        | Hard   | 1.0000     | 1.1740   | OK
+No Extra        | Soft   | 1.0000     | 1.3979   | OK
+No Extra        | Hard   | 1.0000     | 1.1707   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1157   | OK
+All Physics     | Hard   | 1.0000     | 1.0878   | OK
+No MPI          | Soft   | 1.0000     | 1.0778   | OK
+No MPI          | Hard   | 1.0000     | 1.0513   | OK
+Only MPI        | Soft   | 1.0000     | 1.0432   | OK
+Only MPI        | Hard   | 1.0000     | 1.0239   | OK
+Only ISR        | Soft   | 1.0000     | 1.0612   | OK
+Only ISR        | Hard   | 1.0000     | 1.0392   | OK
+Only FSR        | Soft   | 1.0000     | 1.0666   | OK
+Only FSR        | Hard   | 1.0000     | 1.0369   | OK
+No Extra        | Soft   | 1.0000     | 1.0469   | OK
+No Extra        | Hard   | 1.0000     | 1.0245   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0585   | OK
+All Physics     | Hard   | 1.0000     | 1.0464   | OK
+No MPI          | Soft   | 1.0000     | 1.0393   | OK
+No MPI          | Hard   | 1.0000     | 1.0268   | OK
+Only MPI        | Soft   | 1.0000     | 1.0256   | OK
+Only MPI        | Hard   | 1.0000     | 1.0160   | OK
+Only ISR        | Soft   | 1.0000     | 1.0273   | OK
+Only ISR        | Hard   | 1.0000     | 1.0154   | OK
+Only FSR        | Soft   | 1.0000     | 1.0360   | OK
+Only FSR        | Hard   | 1.0000     | 1.0299   | OK
+No Extra        | Soft   | 1.0000     | 1.0189   | OK
 No Extra        | Hard   | 1.0000     | 1.0148   | OK
 
 --- Partícula: Ds_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.0348   | OK
-All Physics     | Hard   | 1.0000     | 1.0189   | OK
-No MPI          | Soft   | 1.0000     | 1.0329   | OK
-No MPI          | Hard   | 1.0000     | 1.0260   | OK
-Only MPI        | Soft   | 1.0000     | 1.0132   | OK
-Only MPI        | Hard   | 1.0000     | 1.0122   | OK
-Only ISR        | Soft   | 1.0000     | 1.0325   | OK
-Only ISR        | Hard   | 1.0000     | 1.0103   | OK
-Only FSR        | Soft   | 1.0000     | 1.0350   | OK
-Only FSR        | Hard   | 1.0000     | 1.0141   | OK
+All Physics     | Soft   | 1.0000     | 1.0257   | OK
+All Physics     | Hard   | 1.0000     | 1.0295   | OK
+No MPI          | Soft   | 1.0000     | 1.0206   | OK
+No MPI          | Hard   | 1.0000     | 1.0098   | OK
+Only MPI        | Soft   | 1.0000     | 1.0106   | OK
+Only MPI        | Hard   | 1.0000     | 1.0103   | OK
+Only ISR        | Soft   | 1.0000     | 1.0241   | OK
+Only ISR        | Hard   | 1.0000     | 1.0057   | OK
+Only FSR        | Soft   | 1.0000     | 1.0214   | OK
+Only FSR        | Hard   | 1.0000     | 1.0050   | OK
+No Extra        | Soft   | 1.0000     | 1.0132   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 2.0 | pT: pt_4_6
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.2168   | OK
+All Physics     | Hard   | 1.0000     | 1.1408   | OK
+No MPI          | Soft   | 1.0000     | 1.1887   | OK
+No MPI          | Hard   | 1.0000     | 1.1227   | OK
+Only MPI        | Soft   | 1.0000     | 1.1875   | OK
+Only MPI        | Hard   | 1.0000     | 1.1188   | OK
+Only ISR        | Soft   | 1.0000     | 1.1917   | OK
+Only ISR        | Hard   | 1.0000     | 1.1156   | OK
+Only FSR        | Soft   | 1.0000     | 1.1592   | OK
+Only FSR        | Hard   | 1.0000     | 1.0942   | OK
+No Extra        | Soft   | 1.0000     | 1.1613   | OK
+No Extra        | Hard   | 1.0000     | 1.1147   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0473   | OK
+All Physics     | Hard   | 1.0000     | 1.0297   | OK
+No MPI          | Soft   | 1.0000     | 1.0350   | OK
+No MPI          | Hard   | 1.0000     | 1.0063   | OK
+Only MPI        | Soft   | 1.0000     | 1.0310   | OK
+Only MPI        | Hard   | 1.0000     | 1.0124   | OK
+Only ISR        | Soft   | 1.0000     | 1.0307   | OK
+Only ISR        | Hard   | 1.0000     | 1.0229   | OK
+Only FSR        | Soft   | 1.0000     | 1.0273   | OK
+Only FSR        | Hard   | 1.0000     | 1.0230   | OK
+No Extra        | Soft   | 1.0000     | 1.0234   | OK
+No Extra        | Hard   | 1.0000     | 1.0272   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0234   | OK
+All Physics     | Hard   | 1.0000     | 1.0222   | OK
+No MPI          | Soft   | 1.0000     | 1.0167   | OK
+No MPI          | Hard   | 1.0000     | 1.0221   | OK
+Only MPI        | Soft   | 1.0000     | 1.0136   | OK
+Only MPI        | Hard   | 1.0000     | 1.0149   | OK
+Only ISR        | Soft   | 1.0000     | 1.0170   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0118   | OK
+Only FSR        | Hard   | 1.0000     | 1.0093   | OK
+No Extra        | Soft   | 1.0000     | 1.0063   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0163   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0124   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0233   | OK
+Only ISR        | Soft   | 1.0000     | 1.0174   | OK
+Only ISR        | Hard   | 1.0000     | 1.0208   | OK
+Only FSR        | Soft   | 1.0000     | 1.0080   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0095   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 2.0 | pT: pt_6_8
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0855   | OK
+All Physics     | Hard   | 1.0000     | 1.0677   | OK
+No MPI          | Soft   | 1.0000     | 1.0996   | OK
+No MPI          | Hard   | 1.0000     | 1.0967   | OK
+Only MPI        | Soft   | 1.0000     | 1.0926   | OK
+Only MPI        | Hard   | 1.0000     | 1.0741   | OK
+Only ISR        | Soft   | 1.0000     | 1.1109   | OK
+Only ISR        | Hard   | 1.0000     | 1.0968   | OK
+Only FSR        | Soft   | 1.0000     | 1.0926   | OK
+Only FSR        | Hard   | 1.0000     | 1.0657   | OK
+No Extra        | Soft   | 1.0000     | 1.0973   | OK
+No Extra        | Hard   | 1.0000     | 1.0471   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0240   | OK
+All Physics     | Hard   | 1.0000     | 1.0056   | OK
+No MPI          | Soft   | 1.0000     | 1.0225   | OK
+No MPI          | Hard   | 1.0000     | 1.0102   | OK
+Only MPI        | Soft   | 1.0000     | 1.0180   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0175   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0178   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0215   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0098   | OK
+All Physics     | Hard   | 1.0000     | 1.0283   | OK
+No MPI          | Soft   | 1.0000     | 1.0112   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0017   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0085   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0073   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0079   | OK
+No Extra        | Hard   | 1.0000     | 1.0500   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0019   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0042   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0041   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0031   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0030   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0079   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 2.0 | pT: pt_8_12
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1104   | OK
+All Physics     | Hard   | 1.0000     | 1.0724   | OK
+No MPI          | Soft   | 1.0000     | 1.1121   | OK
+No MPI          | Hard   | 1.0000     | 1.1091   | OK
+Only MPI        | Soft   | 1.0000     | 1.1109   | OK
+Only MPI        | Hard   | 1.0000     | 1.1341   | OK
+Only ISR        | Soft   | 1.0000     | 1.1163   | OK
+Only ISR        | Hard   | 1.0000     | 1.0913   | OK
+Only FSR        | Soft   | 1.0000     | 1.1163   | OK
+Only FSR        | Hard   | 1.0000     | 1.0988   | OK
+No Extra        | Soft   | 1.0000     | 1.1194   | OK
+No Extra        | Hard   | 1.0000     | 1.1034   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0242   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0165   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0217   | OK
+Only MPI        | Hard   | 1.0000     | 1.0500   | OK
+Only ISR        | Soft   | 1.0000     | 1.0198   | OK
+Only ISR        | Hard   | 1.0000     | 1.0556   | OK
+Only FSR        | Soft   | 1.0000     | 1.0187   | OK
+Only FSR        | Hard   | 1.0000     | 1.0645   | OK
+No Extra        | Soft   | 1.0000     | 1.0135   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0015   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0066   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0000   | OK
+Only MPI        | Hard   | 1.0000     | 1.0476   | OK
+Only ISR        | Soft   | 1.0000     | 1.0031   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0156   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0062   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0068   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0131   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0139   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0072   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0095   | OK
+Only FSR        | Hard   | 1.0000     | 1.5000   | OK
+No Extra        | Soft   | 1.0000     | 1.0000   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 2.0 | pT: pt_12_24
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1217   | OK
+All Physics     | Hard   | 1.0000     | 1.1667   | OK
+No MPI          | Soft   | 1.0000     | 1.1291   | OK
+No MPI          | Hard   | 1.0000     | 1.3448   | OK
+Only MPI        | Soft   | 1.0000     | 1.1517   | OK
+Only MPI        | Hard   | 1.0000     | 1.0833   | OK
+Only ISR        | Soft   | 1.0000     | 1.1409   | OK
+Only ISR        | Hard   | 1.0000     | 1.0602   | OK
+Only FSR        | Soft   | 1.0000     | 1.1280   | OK
+Only FSR        | Hard   | 1.0000     | 1.0909   | OK
+No Extra        | Soft   | 1.0000     | 1.1509   | OK
+No Extra        | Hard   | 1.0000     | 1.0952   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0282   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0223   | OK
+No MPI          | Hard   | 1.0000     | 1.0556   | OK
+Only MPI        | Soft   | 1.0000     | 1.0539   | OK
+Only MPI        | Hard   | 1.0000     | 1.0833   | OK
+Only ISR        | Soft   | 1.0000     | 1.0228   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0171   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0268   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0061   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0296   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0268   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0145   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0059   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0000   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0244   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0125   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0115   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 3.0 | pT: global
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 46.9280  | OK
+All Physics     | Hard   | 1.0000     | 19.5582  | OK
+No MPI          | Soft   | 1.0000     | 21.7982  | OK
+No MPI          | Hard   | 1.0000     | 15.1149  | OK
+Only MPI        | Soft   | 1.0000     | 29.0121  | OK
+Only MPI        | Hard   | 1.0000     | 16.0079  | OK
+Only ISR        | Soft   | 1.0000     | 18.9414  | OK
+Only ISR        | Hard   | 1.0000     | 14.2907  | OK
+Only FSR        | Soft   | 1.0000     | 17.4168  | OK
+Only FSR        | Hard   | 1.0000     | 14.0179  | OK
+No Extra        | Soft   | 1.0000     | 16.2480  | OK
+No Extra        | Hard   | 1.0000     | 13.6463  | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.4388   | OK
+All Physics     | Hard   | 1.0000     | 1.3341   | OK
+No MPI          | Soft   | 1.0000     | 1.3220   | OK
+No MPI          | Hard   | 1.0000     | 1.2512   | OK
+Only MPI        | Soft   | 1.0000     | 1.1582   | OK
+Only MPI        | Hard   | 1.0000     | 1.1145   | OK
+Only ISR        | Soft   | 1.0000     | 1.2746   | OK
+Only ISR        | Hard   | 1.0000     | 1.2100   | OK
+Only FSR        | Soft   | 1.0000     | 1.2109   | OK
+Only FSR        | Hard   | 1.0000     | 1.1433   | OK
+No Extra        | Soft   | 1.0000     | 1.1111   | OK
+No Extra        | Hard   | 1.0000     | 1.0879   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.2092   | OK
+All Physics     | Hard   | 1.0000     | 1.1670   | OK
+No MPI          | Soft   | 1.0000     | 1.1477   | OK
+No MPI          | Hard   | 1.0000     | 1.1231   | OK
+Only MPI        | Soft   | 1.0000     | 1.0795   | OK
+Only MPI        | Hard   | 1.0000     | 1.0550   | OK
+Only ISR        | Soft   | 1.0000     | 1.1234   | OK
+Only ISR        | Hard   | 1.0000     | 1.1037   | OK
+Only FSR        | Soft   | 1.0000     | 1.0995   | OK
+Only FSR        | Hard   | 1.0000     | 1.0702   | OK
+No Extra        | Soft   | 1.0000     | 1.0477   | OK
+No Extra        | Hard   | 1.0000     | 1.0474   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0802   | OK
+All Physics     | Hard   | 1.0000     | 1.0539   | OK
+No MPI          | Soft   | 1.0000     | 1.0656   | OK
+No MPI          | Hard   | 1.0000     | 1.0346   | OK
+Only MPI        | Soft   | 1.0000     | 1.0390   | OK
+Only MPI        | Hard   | 1.0000     | 1.0228   | OK
+Only ISR        | Soft   | 1.0000     | 1.0672   | OK
+Only ISR        | Hard   | 1.0000     | 1.0303   | OK
+Only FSR        | Soft   | 1.0000     | 1.0482   | OK
+Only FSR        | Hard   | 1.0000     | 1.0261   | OK
+No Extra        | Soft   | 1.0000     | 1.0427   | OK
+No Extra        | Hard   | 1.0000     | 1.0165   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 3.0 | pT: pt_1_2
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 7.1303   | OK
+All Physics     | Hard   | 1.0000     | 2.4320   | OK
+No MPI          | Soft   | 1.0000     | 2.7427   | OK
+No MPI          | Hard   | 1.0000     | 1.4840   | OK
+Only MPI        | Soft   | 1.0000     | 4.3190   | OK
+Only MPI        | Hard   | 1.0000     | 1.8390   | OK
+Only ISR        | Soft   | 1.0000     | 2.3880   | OK
+Only ISR        | Hard   | 1.0000     | 1.4237   | OK
+Only FSR        | Soft   | 1.0000     | 2.1046   | OK
+Only FSR        | Hard   | 1.0000     | 1.3244   | OK
+No Extra        | Soft   | 1.0000     | 1.9204   | OK
+No Extra        | Hard   | 1.0000     | 1.2966   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1215   | OK
+All Physics     | Hard   | 1.0000     | 1.0991   | OK
+No MPI          | Soft   | 1.0000     | 1.0865   | OK
+No MPI          | Hard   | 1.0000     | 1.0814   | OK
+Only MPI        | Soft   | 1.0000     | 1.0478   | OK
+Only MPI        | Hard   | 1.0000     | 1.0465   | OK
+Only ISR        | Soft   | 1.0000     | 1.0601   | OK
+Only ISR        | Hard   | 1.0000     | 1.0647   | OK
+Only FSR        | Soft   | 1.0000     | 1.0678   | OK
+Only FSR        | Hard   | 1.0000     | 1.0505   | OK
+No Extra        | Soft   | 1.0000     | 1.0462   | OK
+No Extra        | Hard   | 1.0000     | 1.0310   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0555   | OK
+All Physics     | Hard   | 1.0000     | 1.0460   | OK
+No MPI          | Soft   | 1.0000     | 1.0416   | OK
+No MPI          | Hard   | 1.0000     | 1.0316   | OK
+Only MPI        | Soft   | 1.0000     | 1.0239   | OK
+Only MPI        | Hard   | 1.0000     | 1.0187   | OK
+Only ISR        | Soft   | 1.0000     | 1.0249   | OK
+Only ISR        | Hard   | 1.0000     | 1.0293   | OK
+Only FSR        | Soft   | 1.0000     | 1.0333   | OK
+Only FSR        | Hard   | 1.0000     | 1.0314   | OK
+No Extra        | Soft   | 1.0000     | 1.0256   | OK
+No Extra        | Hard   | 1.0000     | 1.0225   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0211   | OK
+All Physics     | Hard   | 1.0000     | 1.0199   | OK
+No MPI          | Soft   | 1.0000     | 1.0149   | OK
+No MPI          | Hard   | 1.0000     | 1.0101   | OK
+Only MPI        | Soft   | 1.0000     | 1.0178   | OK
+Only MPI        | Hard   | 1.0000     | 1.0081   | OK
+Only ISR        | Soft   | 1.0000     | 1.0199   | OK
+Only ISR        | Hard   | 1.0000     | 1.0083   | OK
+Only FSR        | Soft   | 1.0000     | 1.0190   | OK
+Only FSR        | Hard   | 1.0000     | 1.0084   | OK
+No Extra        | Soft   | 1.0000     | 1.0290   | OK
+No Extra        | Hard   | 1.0000     | 1.0045   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 3.0 | pT: pt_2_4
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 3.0064   | OK
+All Physics     | Hard   | 1.0000     | 1.9308   | OK
+No MPI          | Soft   | 1.0000     | 1.6850   | OK
+No MPI          | Hard   | 1.0000     | 1.2685   | OK
+Only MPI        | Soft   | 1.0000     | 2.2515   | OK
+Only MPI        | Hard   | 1.0000     | 1.6057   | OK
+Only ISR        | Soft   | 1.0000     | 1.6482   | OK
+Only ISR        | Hard   | 1.0000     | 1.2644   | OK
+Only FSR        | Soft   | 1.0000     | 1.5042   | OK
+Only FSR        | Hard   | 1.0000     | 1.2040   | OK
+No Extra        | Soft   | 1.0000     | 1.4741   | OK
+No Extra        | Hard   | 1.0000     | 1.1963   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1459   | OK
+All Physics     | Hard   | 1.0000     | 1.1080   | OK
+No MPI          | Soft   | 1.0000     | 1.0917   | OK
+No MPI          | Hard   | 1.0000     | 1.0613   | OK
+Only MPI        | Soft   | 1.0000     | 1.0556   | OK
+Only MPI        | Hard   | 1.0000     | 1.0417   | OK
+Only ISR        | Soft   | 1.0000     | 1.0771   | OK
+Only ISR        | Hard   | 1.0000     | 1.0541   | OK
+Only FSR        | Soft   | 1.0000     | 1.0731   | OK
+Only FSR        | Hard   | 1.0000     | 1.0440   | OK
+No Extra        | Soft   | 1.0000     | 1.0530   | OK
+No Extra        | Hard   | 1.0000     | 1.0263   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0714   | OK
+All Physics     | Hard   | 1.0000     | 1.0574   | OK
+No MPI          | Soft   | 1.0000     | 1.0463   | OK
+No MPI          | Hard   | 1.0000     | 1.0240   | OK
+Only MPI        | Soft   | 1.0000     | 1.0313   | OK
+Only MPI        | Hard   | 1.0000     | 1.0201   | OK
+Only ISR        | Soft   | 1.0000     | 1.0362   | OK
+Only ISR        | Hard   | 1.0000     | 1.0236   | OK
+Only FSR        | Soft   | 1.0000     | 1.0393   | OK
+Only FSR        | Hard   | 1.0000     | 1.0210   | OK
 No Extra        | Soft   | 1.0000     | 1.0205   | OK
-No Extra        | Hard   | 1.0000     | 1.0053   | OK
+No Extra        | Hard   | 1.0000     | 1.0166   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0301   | OK
+All Physics     | Hard   | 1.0000     | 1.0284   | OK
+No MPI          | Soft   | 1.0000     | 1.0269   | OK
+No MPI          | Hard   | 1.0000     | 1.0089   | OK
+Only MPI        | Soft   | 1.0000     | 1.0162   | OK
+Only MPI        | Hard   | 1.0000     | 1.0095   | OK
+Only ISR        | Soft   | 1.0000     | 1.0264   | OK
+Only ISR        | Hard   | 1.0000     | 1.0072   | OK
+Only FSR        | Soft   | 1.0000     | 1.0214   | OK
+Only FSR        | Hard   | 1.0000     | 1.0034   | OK
+No Extra        | Soft   | 1.0000     | 1.0146   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
 
 =====================================================================================
- PROCESSANDO CORTE EM |eta| < 2.0
+ PROCESSANDO: |eta| < 3.0 | pT: pt_4_6
 =====================================================================================
 
 --- Partícula: Charged ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 31.5351  | OK
-All Physics     | Hard   | 1.0000     | 12.6571  | OK
-No MPI          | Soft   | 1.0000     | 14.3137  | OK
-No MPI          | Hard   | 1.0000     | 9.6794   | OK
-Only MPI        | Soft   | 1.0000     | 19.4746  | OK
-Only MPI        | Hard   | 1.0000     | 10.3203  | OK
-Only ISR        | Soft   | 1.0000     | 12.3418  | OK
-Only ISR        | Hard   | 1.0000     | 9.1417   | OK
-Only FSR        | Soft   | 1.0000     | 11.3749  | OK
-Only FSR        | Hard   | 1.0000     | 8.9841   | OK
-No Extra        | Soft   | 1.0000     | 10.5666  | OK
-No Extra        | Hard   | 1.0000     | 8.7334   | OK
+All Physics     | Soft   | 1.0000     | 1.2739   | OK
+All Physics     | Hard   | 1.0000     | 1.1697   | OK
+No MPI          | Soft   | 1.0000     | 1.2203   | OK
+No MPI          | Hard   | 1.0000     | 1.1533   | OK
+Only MPI        | Soft   | 1.0000     | 1.2331   | OK
+Only MPI        | Hard   | 1.0000     | 1.1488   | OK
+Only ISR        | Soft   | 1.0000     | 1.2270   | OK
+Only ISR        | Hard   | 1.0000     | 1.1452   | OK
+Only FSR        | Soft   | 1.0000     | 1.1857   | OK
+Only FSR        | Hard   | 1.0000     | 1.1213   | OK
+No Extra        | Soft   | 1.0000     | 1.1887   | OK
+No Extra        | Hard   | 1.0000     | 1.1330   | OK
 
---- Partícula: Kaons ---
+--- Partícula: D0_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 3.7119   | OK
-All Physics     | Hard   | 1.0000     | 1.8993   | OK
-No MPI          | Soft   | 1.0000     | 1.9442   | OK
-No MPI          | Hard   | 1.0000     | 1.5714   | OK
-Only MPI        | Soft   | 1.0000     | 2.4547   | OK
-Only MPI        | Hard   | 1.0000     | 1.6426   | OK
-Only ISR        | Soft   | 1.0000     | 1.7537   | OK
-Only ISR        | Hard   | 1.0000     | 1.5213   | OK
-Only FSR        | Soft   | 1.0000     | 1.7053   | OK
-Only FSR        | Hard   | 1.0000     | 1.5115   | OK
-No Extra        | Soft   | 1.0000     | 1.6237   | OK
-No Extra        | Hard   | 1.0000     | 1.4880   | OK
+All Physics     | Soft   | 1.0000     | 1.0567   | OK
+All Physics     | Hard   | 1.0000     | 1.0368   | OK
+No MPI          | Soft   | 1.0000     | 1.0423   | OK
+No MPI          | Hard   | 1.0000     | 1.0211   | OK
+Only MPI        | Soft   | 1.0000     | 1.0376   | OK
+Only MPI        | Hard   | 1.0000     | 1.0173   | OK
+Only ISR        | Soft   | 1.0000     | 1.0349   | OK
+Only ISR        | Hard   | 1.0000     | 1.0326   | OK
+Only FSR        | Soft   | 1.0000     | 1.0331   | OK
+Only FSR        | Hard   | 1.0000     | 1.0226   | OK
+No Extra        | Soft   | 1.0000     | 1.0245   | OK
+No Extra        | Hard   | 1.0000     | 1.0305   | OK
 
 --- Partícula: D_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.1611   | OK
-All Physics     | Hard   | 1.0000     | 1.1101   | OK
-No MPI          | Soft   | 1.0000     | 1.1173   | OK
-No MPI          | Hard   | 1.0000     | 1.0870   | OK
-Only MPI        | Soft   | 1.0000     | 1.0581   | OK
-Only MPI        | Hard   | 1.0000     | 1.0439   | OK
-Only ISR        | Soft   | 1.0000     | 1.0971   | OK
-Only ISR        | Hard   | 1.0000     | 1.0892   | OK
-Only FSR        | Soft   | 1.0000     | 1.0842   | OK
-Only FSR        | Hard   | 1.0000     | 1.0573   | OK
-No Extra        | Soft   | 1.0000     | 1.0421   | OK
-No Extra        | Hard   | 1.0000     | 1.0219   | OK
+All Physics     | Soft   | 1.0000     | 1.0277   | OK
+All Physics     | Hard   | 1.0000     | 1.0205   | OK
+No MPI          | Soft   | 1.0000     | 1.0201   | OK
+No MPI          | Hard   | 1.0000     | 1.0234   | OK
+Only MPI        | Soft   | 1.0000     | 1.0157   | OK
+Only MPI        | Hard   | 1.0000     | 1.0172   | OK
+Only ISR        | Soft   | 1.0000     | 1.0214   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0175   | OK
+Only FSR        | Hard   | 1.0000     | 1.0114   | OK
+No Extra        | Soft   | 1.0000     | 1.0102   | OK
+No Extra        | Hard   | 1.0000     | 1.0070   | OK
 
 --- Partícula: Ds_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.0599   | OK
-All Physics     | Hard   | 1.0000     | 1.0418   | OK
-No MPI          | Soft   | 1.0000     | 1.0494   | OK
-No MPI          | Hard   | 1.0000     | 1.0349   | OK
-Only MPI        | Soft   | 1.0000     | 1.0315   | OK
-Only MPI        | Hard   | 1.0000     | 1.0196   | OK
-Only ISR        | Soft   | 1.0000     | 1.0548   | OK
-Only ISR        | Hard   | 1.0000     | 1.0274   | OK
-Only FSR        | Soft   | 1.0000     | 1.0477   | OK
-Only FSR        | Hard   | 1.0000     | 1.0225   | OK
-No Extra        | Soft   | 1.0000     | 1.0257   | OK
-No Extra        | Hard   | 1.0000     | 1.0050   | OK
+All Physics     | Soft   | 1.0000     | 1.0159   | OK
+All Physics     | Hard   | 1.0000     | 1.0046   | OK
+No MPI          | Soft   | 1.0000     | 1.0121   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0022   | OK
+Only MPI        | Hard   | 1.0000     | 1.0167   | OK
+Only ISR        | Soft   | 1.0000     | 1.0134   | OK
+Only ISR        | Hard   | 1.0000     | 1.0147   | OK
+Only FSR        | Soft   | 1.0000     | 1.0065   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0123   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
 
 =====================================================================================
- PROCESSANDO CORTE EM |eta| < 3.0
+ PROCESSANDO: |eta| < 3.0 | pT: pt_6_8
 =====================================================================================
 
 --- Partícula: Charged ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 46.7685  | OK
-All Physics     | Hard   | 1.0000     | 19.6078  | OK
-No MPI          | Soft   | 1.0000     | 21.7870  | OK
-No MPI          | Hard   | 1.0000     | 15.0881  | OK
-Only MPI        | Soft   | 1.0000     | 29.0315  | OK
-Only MPI        | Hard   | 1.0000     | 16.0507  | OK
-Only ISR        | Soft   | 1.0000     | 18.9399  | OK
-Only ISR        | Hard   | 1.0000     | 14.2944  | OK
-Only FSR        | Soft   | 1.0000     | 17.4083  | OK
-Only FSR        | Hard   | 1.0000     | 14.0236  | OK
-No Extra        | Soft   | 1.0000     | 16.2540  | OK
-No Extra        | Hard   | 1.0000     | 13.6563  | OK
+All Physics     | Soft   | 1.0000     | 1.1056   | OK
+All Physics     | Hard   | 1.0000     | 1.0811   | OK
+No MPI          | Soft   | 1.0000     | 1.1164   | OK
+No MPI          | Hard   | 1.0000     | 1.1106   | OK
+Only MPI        | Soft   | 1.0000     | 1.1140   | OK
+Only MPI        | Hard   | 1.0000     | 1.0825   | OK
+Only ISR        | Soft   | 1.0000     | 1.1270   | OK
+Only ISR        | Hard   | 1.0000     | 1.0954   | OK
+Only FSR        | Soft   | 1.0000     | 1.1034   | OK
+Only FSR        | Hard   | 1.0000     | 1.0959   | OK
+No Extra        | Soft   | 1.0000     | 1.1166   | OK
+No Extra        | Hard   | 1.0000     | 1.0786   | OK
 
---- Partícula: Kaons ---
+--- Partícula: D0_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 5.0911   | OK
-All Physics     | Hard   | 1.0000     | 2.3822   | OK
-No MPI          | Soft   | 1.0000     | 2.4593   | OK
-No MPI          | Hard   | 1.0000     | 1.9159   | OK
-Only MPI        | Soft   | 1.0000     | 3.2154   | OK
-Only MPI        | Hard   | 1.0000     | 2.0143   | OK
-Only ISR        | Soft   | 1.0000     | 2.1710   | OK
-Only ISR        | Hard   | 1.0000     | 1.8411   | OK
-Only FSR        | Soft   | 1.0000     | 2.0867   | OK
-Only FSR        | Hard   | 1.0000     | 1.8253   | OK
-No Extra        | Soft   | 1.0000     | 1.9709   | OK
-No Extra        | Hard   | 1.0000     | 1.7903   | OK
+All Physics     | Soft   | 1.0000     | 1.0297   | OK
+All Physics     | Hard   | 1.0000     | 1.0157   | OK
+No MPI          | Soft   | 1.0000     | 1.0230   | OK
+No MPI          | Hard   | 1.0000     | 1.0074   | OK
+Only MPI        | Soft   | 1.0000     | 1.0177   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0214   | OK
+Only ISR        | Hard   | 1.0000     | 1.0087   | OK
+Only FSR        | Soft   | 1.0000     | 1.0159   | OK
+Only FSR        | Hard   | 1.0000     | 1.0278   | OK
+No Extra        | Soft   | 1.0000     | 1.0222   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
 
 --- Partícula: D_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.2107   | OK
-All Physics     | Hard   | 1.0000     | 1.1535   | OK
-No MPI          | Soft   | 1.0000     | 1.1481   | OK
-No MPI          | Hard   | 1.0000     | 1.1186   | OK
-Only MPI        | Soft   | 1.0000     | 1.0800   | OK
-Only MPI        | Hard   | 1.0000     | 1.0621   | OK
-Only ISR        | Soft   | 1.0000     | 1.1258   | OK
-Only ISR        | Hard   | 1.0000     | 1.1109   | OK
-Only FSR        | Soft   | 1.0000     | 1.1008   | OK
-Only FSR        | Hard   | 1.0000     | 1.0748   | OK
-No Extra        | Soft   | 1.0000     | 1.0553   | OK
-No Extra        | Hard   | 1.0000     | 1.0349   | OK
+All Physics     | Soft   | 1.0000     | 1.0114   | OK
+All Physics     | Hard   | 1.0000     | 1.0192   | OK
+No MPI          | Soft   | 1.0000     | 1.0129   | OK
+No MPI          | Hard   | 1.0000     | 1.0132   | OK
+Only MPI        | Soft   | 1.0000     | 1.0048   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0088   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0096   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0101   | OK
+No Extra        | Hard   | 1.0000     | 1.0303   | OK
 
 --- Partícula: Ds_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.0806   | OK
-All Physics     | Hard   | 1.0000     | 1.0580   | OK
-No MPI          | Soft   | 1.0000     | 1.0623   | OK
-No MPI          | Hard   | 1.0000     | 1.0471   | OK
-Only MPI        | Soft   | 1.0000     | 1.0409   | OK
+All Physics     | Soft   | 1.0000     | 1.0014   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0029   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0031   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0021   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0044   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0054   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 3.0 | pT: pt_8_12
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1175   | OK
+All Physics     | Hard   | 1.0000     | 1.1029   | OK
+No MPI          | Soft   | 1.0000     | 1.1178   | OK
+No MPI          | Hard   | 1.0000     | 1.1032   | OK
+Only MPI        | Soft   | 1.0000     | 1.1270   | OK
+Only MPI        | Hard   | 1.0000     | 1.1325   | OK
+Only ISR        | Soft   | 1.0000     | 1.1378   | OK
+Only ISR        | Hard   | 1.0000     | 1.0955   | OK
+Only FSR        | Soft   | 1.0000     | 1.1271   | OK
+Only FSR        | Hard   | 1.0000     | 1.1150   | OK
+No Extra        | Soft   | 1.0000     | 1.1339   | OK
+No Extra        | Hard   | 1.0000     | 1.1457   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0230   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0164   | OK
+No MPI          | Hard   | 1.0000     | 1.0328   | OK
+Only MPI        | Soft   | 1.0000     | 1.0240   | OK
+Only MPI        | Hard   | 1.0000     | 1.0893   | OK
+Only ISR        | Soft   | 1.0000     | 1.0260   | OK
+Only ISR        | Hard   | 1.0000     | 1.0385   | OK
+Only FSR        | Soft   | 1.0000     | 1.0195   | OK
+Only FSR        | Hard   | 1.0000     | 1.0500   | OK
+No Extra        | Soft   | 1.0000     | 1.0183   | OK
+No Extra        | Hard   | 1.0000     | 1.0238   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0087   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0086   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0020   | OK
+Only MPI        | Hard   | 1.0000     | 1.0400   | OK
+Only ISR        | Soft   | 1.0000     | 1.0067   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0127   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0077   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0077   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0165   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0138   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0108   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0103   | OK
+Only FSR        | Hard   | 1.0000     | 1.2500   | OK
+No Extra        | Soft   | 1.0000     | 1.0038   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 3.0 | pT: pt_12_24
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1202   | OK
+All Physics     | Hard   | 1.0000     | 1.1296   | OK
+No MPI          | Soft   | 1.0000     | 1.1490   | OK
+No MPI          | Hard   | 1.0000     | 1.3000   | OK
+Only MPI        | Soft   | 1.0000     | 1.1677   | OK
+Only MPI        | Hard   | 1.0000     | 1.1200   | OK
+Only ISR        | Soft   | 1.0000     | 1.1615   | OK
+Only ISR        | Hard   | 1.0000     | 1.0901   | OK
+Only FSR        | Soft   | 1.0000     | 1.1503   | OK
+Only FSR        | Hard   | 1.0000     | 1.0938   | OK
+No Extra        | Soft   | 1.0000     | 1.1695   | OK
+No Extra        | Hard   | 1.0000     | 1.1148   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0249   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0245   | OK
+No MPI          | Hard   | 1.0000     | 1.0435   | OK
+Only MPI        | Soft   | 1.0000     | 1.0514   | OK
+Only MPI        | Hard   | 1.0000     | 1.0526   | OK
+Only ISR        | Soft   | 1.0000     | 1.0221   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0165   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0238   | OK
+No Extra        | Hard   | 1.0000     | 1.0714   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0108   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0066   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0275   | OK
+Only MPI        | Hard   | 1.0000     | 1.0667   | OK
+Only ISR        | Soft   | 1.0000     | 1.0246   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0175   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0126   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0062   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0164   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0100   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0091   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 4.0 | pT: global
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 60.6710  | OK
+All Physics     | Hard   | 1.0000     | 26.4918  | OK
+No MPI          | Soft   | 1.0000     | 28.9061  | OK
+No MPI          | Hard   | 1.0000     | 20.6035  | OK
+Only MPI        | Soft   | 1.0000     | 37.8178  | OK
+Only MPI        | Hard   | 1.0000     | 21.8054  | OK
+Only ISR        | Soft   | 1.0000     | 25.3867  | OK
+Only ISR        | Hard   | 1.0000     | 19.5702  | OK
+Only FSR        | Soft   | 1.0000     | 23.2538  | OK
+Only FSR        | Hard   | 1.0000     | 19.1552  | OK
+No Extra        | Soft   | 1.0000     | 21.8406  | OK
+No Extra        | Hard   | 1.0000     | 18.6889  | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.5184   | OK
+All Physics     | Hard   | 1.0000     | 1.3959   | OK
+No MPI          | Soft   | 1.0000     | 1.3711   | OK
+No MPI          | Hard   | 1.0000     | 1.2987   | OK
+Only MPI        | Soft   | 1.0000     | 1.2081   | OK
+Only MPI        | Hard   | 1.0000     | 1.1624   | OK
+Only ISR        | Soft   | 1.0000     | 1.3206   | OK
+Only ISR        | Hard   | 1.0000     | 1.2656   | OK
+Only FSR        | Soft   | 1.0000     | 1.2414   | OK
+Only FSR        | Hard   | 1.0000     | 1.1823   | OK
+No Extra        | Soft   | 1.0000     | 1.1415   | OK
+No Extra        | Hard   | 1.0000     | 1.1148   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.2441   | OK
+All Physics     | Hard   | 1.0000     | 1.1921   | OK
+No MPI          | Soft   | 1.0000     | 1.1654   | OK
+No MPI          | Hard   | 1.0000     | 1.1446   | OK
+Only MPI        | Soft   | 1.0000     | 1.1026   | OK
+Only MPI        | Hard   | 1.0000     | 1.0756   | OK
+Only ISR        | Soft   | 1.0000     | 1.1457   | OK
+Only ISR        | Hard   | 1.0000     | 1.1175   | OK
+Only FSR        | Soft   | 1.0000     | 1.1141   | OK
+Only FSR        | Hard   | 1.0000     | 1.0857   | OK
+No Extra        | Soft   | 1.0000     | 1.0636   | OK
+No Extra        | Hard   | 1.0000     | 1.0630   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0957   | OK
+All Physics     | Hard   | 1.0000     | 1.0614   | OK
+No MPI          | Soft   | 1.0000     | 1.0747   | OK
+No MPI          | Hard   | 1.0000     | 1.0407   | OK
+Only MPI        | Soft   | 1.0000     | 1.0491   | OK
+Only MPI        | Hard   | 1.0000     | 1.0267   | OK
+Only ISR        | Soft   | 1.0000     | 1.0758   | OK
+Only ISR        | Hard   | 1.0000     | 1.0398   | OK
+Only FSR        | Soft   | 1.0000     | 1.0541   | OK
+Only FSR        | Hard   | 1.0000     | 1.0254   | OK
+No Extra        | Soft   | 1.0000     | 1.0499   | OK
+No Extra        | Hard   | 1.0000     | 1.0231   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 4.0 | pT: pt_1_2
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 8.5019   | OK
+All Physics     | Hard   | 1.0000     | 2.6443   | OK
+No MPI          | Soft   | 1.0000     | 3.1118   | OK
+No MPI          | Hard   | 1.0000     | 1.5771   | OK
+Only MPI        | Soft   | 1.0000     | 5.0094   | OK
+Only MPI        | Hard   | 1.0000     | 1.9589   | OK
+Only ISR        | Soft   | 1.0000     | 2.6977   | OK
+Only ISR        | Hard   | 1.0000     | 1.5059   | OK
+Only FSR        | Soft   | 1.0000     | 2.2757   | OK
+Only FSR        | Hard   | 1.0000     | 1.3781   | OK
+No Extra        | Soft   | 1.0000     | 2.0711   | OK
+No Extra        | Hard   | 1.0000     | 1.3484   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1417   | OK
+All Physics     | Hard   | 1.0000     | 1.1180   | OK
+No MPI          | Soft   | 1.0000     | 1.0953   | OK
+No MPI          | Hard   | 1.0000     | 1.0883   | OK
+Only MPI        | Soft   | 1.0000     | 1.0587   | OK
+Only MPI        | Hard   | 1.0000     | 1.0519   | OK
+Only ISR        | Soft   | 1.0000     | 1.0675   | OK
+Only ISR        | Hard   | 1.0000     | 1.0753   | OK
+Only FSR        | Soft   | 1.0000     | 1.0729   | OK
+Only FSR        | Hard   | 1.0000     | 1.0592   | OK
+No Extra        | Soft   | 1.0000     | 1.0504   | OK
+No Extra        | Hard   | 1.0000     | 1.0316   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0657   | OK
+All Physics     | Hard   | 1.0000     | 1.0545   | OK
+No MPI          | Soft   | 1.0000     | 1.0468   | OK
+No MPI          | Hard   | 1.0000     | 1.0430   | OK
+Only MPI        | Soft   | 1.0000     | 1.0297   | OK
+Only MPI        | Hard   | 1.0000     | 1.0220   | OK
+Only ISR        | Soft   | 1.0000     | 1.0297   | OK
+Only ISR        | Hard   | 1.0000     | 1.0363   | OK
+Only FSR        | Soft   | 1.0000     | 1.0372   | OK
+Only FSR        | Hard   | 1.0000     | 1.0304   | OK
+No Extra        | Soft   | 1.0000     | 1.0327   | OK
+No Extra        | Hard   | 1.0000     | 1.0259   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0273   | OK
+All Physics     | Hard   | 1.0000     | 1.0211   | OK
+No MPI          | Soft   | 1.0000     | 1.0176   | OK
+No MPI          | Hard   | 1.0000     | 1.0127   | OK
+Only MPI        | Soft   | 1.0000     | 1.0183   | OK
+Only MPI        | Hard   | 1.0000     | 1.0078   | OK
+Only ISR        | Soft   | 1.0000     | 1.0190   | OK
+Only ISR        | Hard   | 1.0000     | 1.0104   | OK
+Only FSR        | Soft   | 1.0000     | 1.0192   | OK
+Only FSR        | Hard   | 1.0000     | 1.0082   | OK
+No Extra        | Soft   | 1.0000     | 1.0264   | OK
+No Extra        | Hard   | 1.0000     | 1.0069   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 4.0 | pT: pt_2_4
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 3.3933   | OK
+All Physics     | Hard   | 1.0000     | 2.0654   | OK
+No MPI          | Soft   | 1.0000     | 1.7718   | OK
+No MPI          | Hard   | 1.0000     | 1.2894   | OK
+Only MPI        | Soft   | 1.0000     | 2.4773   | OK
+Only MPI        | Hard   | 1.0000     | 1.6938   | OK
+Only ISR        | Soft   | 1.0000     | 1.7388   | OK
+Only ISR        | Hard   | 1.0000     | 1.2919   | OK
+Only FSR        | Soft   | 1.0000     | 1.5542   | OK
+Only FSR        | Hard   | 1.0000     | 1.2178   | OK
+No Extra        | Soft   | 1.0000     | 1.5253   | OK
+No Extra        | Hard   | 1.0000     | 1.2141   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1673   | OK
+All Physics     | Hard   | 1.0000     | 1.1212   | OK
+No MPI          | Soft   | 1.0000     | 1.1019   | OK
+No MPI          | Hard   | 1.0000     | 1.0629   | OK
+Only MPI        | Soft   | 1.0000     | 1.0645   | OK
+Only MPI        | Hard   | 1.0000     | 1.0457   | OK
+Only ISR        | Soft   | 1.0000     | 1.0836   | OK
+Only ISR        | Hard   | 1.0000     | 1.0574   | OK
+Only FSR        | Soft   | 1.0000     | 1.0790   | OK
+Only FSR        | Hard   | 1.0000     | 1.0469   | OK
+No Extra        | Soft   | 1.0000     | 1.0582   | OK
+No Extra        | Hard   | 1.0000     | 1.0294   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0832   | OK
+All Physics     | Hard   | 1.0000     | 1.0625   | OK
+No MPI          | Soft   | 1.0000     | 1.0530   | OK
+No MPI          | Hard   | 1.0000     | 1.0260   | OK
+Only MPI        | Soft   | 1.0000     | 1.0360   | OK
 Only MPI        | Hard   | 1.0000     | 1.0251   | OK
-Only ISR        | Soft   | 1.0000     | 1.0637   | OK
-Only ISR        | Hard   | 1.0000     | 1.0414   | OK
-Only FSR        | Soft   | 1.0000     | 1.0530   | OK
-Only FSR        | Hard   | 1.0000     | 1.0251   | OK
-No Extra        | Soft   | 1.0000     | 1.0338   | OK
-No Extra        | Hard   | 1.0000     | 1.0096   | OK
+Only ISR        | Soft   | 1.0000     | 1.0414   | OK
+Only ISR        | Hard   | 1.0000     | 1.0276   | OK
+Only FSR        | Soft   | 1.0000     | 1.0417   | OK
+Only FSR        | Hard   | 1.0000     | 1.0210   | OK
+No Extra        | Soft   | 1.0000     | 1.0228   | OK
+No Extra        | Hard   | 1.0000     | 1.0179   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0363   | OK
+All Physics     | Hard   | 1.0000     | 1.0288   | OK
+No MPI          | Soft   | 1.0000     | 1.0312   | OK
+No MPI          | Hard   | 1.0000     | 1.0086   | OK
+Only MPI        | Soft   | 1.0000     | 1.0179   | OK
+Only MPI        | Hard   | 1.0000     | 1.0074   | OK
+Only ISR        | Soft   | 1.0000     | 1.0279   | OK
+Only ISR        | Hard   | 1.0000     | 1.0109   | OK
+Only FSR        | Soft   | 1.0000     | 1.0217   | OK
+Only FSR        | Hard   | 1.0000     | 1.0053   | OK
+No Extra        | Soft   | 1.0000     | 1.0147   | OK
+No Extra        | Hard   | 1.0000     | 1.0033   | OK
 
 =====================================================================================
- PROCESSANDO CORTE EM |eta| < 4.0
+ PROCESSANDO: |eta| < 4.0 | pT: pt_4_6
 =====================================================================================
 
 --- Partícula: Charged ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 60.4665  | OK
-All Physics     | Hard   | 1.0000     | 26.5548  | OK
-No MPI          | Soft   | 1.0000     | 28.9005  | OK
-No MPI          | Hard   | 1.0000     | 20.5807  | OK
-Only MPI        | Soft   | 1.0000     | 37.8330  | OK
-Only MPI        | Hard   | 1.0000     | 21.8568  | OK
-Only ISR        | Soft   | 1.0000     | 25.3800  | OK
-Only ISR        | Hard   | 1.0000     | 19.5743  | OK
-Only FSR        | Soft   | 1.0000     | 23.2521  | OK
-Only FSR        | Hard   | 1.0000     | 19.1615  | OK
-No Extra        | Soft   | 1.0000     | 21.8392  | OK
-No Extra        | Hard   | 1.0000     | 18.6962  | OK
+All Physics     | Soft   | 1.0000     | 1.3130   | OK
+All Physics     | Hard   | 1.0000     | 1.1941   | OK
+No MPI          | Soft   | 1.0000     | 1.2353   | OK
+No MPI          | Hard   | 1.0000     | 1.1605   | OK
+Only MPI        | Soft   | 1.0000     | 1.2644   | OK
+Only MPI        | Hard   | 1.0000     | 1.1679   | OK
+Only ISR        | Soft   | 1.0000     | 1.2488   | OK
+Only ISR        | Hard   | 1.0000     | 1.1606   | OK
+Only FSR        | Soft   | 1.0000     | 1.1988   | OK
+Only FSR        | Hard   | 1.0000     | 1.1227   | OK
+No Extra        | Soft   | 1.0000     | 1.2056   | OK
+No Extra        | Hard   | 1.0000     | 1.1398   | OK
 
---- Partícula: Kaons ---
+--- Partícula: D0_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 6.3522   | OK
-All Physics     | Hard   | 1.0000     | 2.8732   | OK
-No MPI          | Soft   | 1.0000     | 2.9825   | OK
-No MPI          | Hard   | 1.0000     | 2.2827   | OK
-Only MPI        | Soft   | 1.0000     | 3.9405   | OK
-Only MPI        | Hard   | 1.0000     | 2.4007   | OK
-Only ISR        | Soft   | 1.0000     | 2.6071   | OK
-Only ISR        | Hard   | 1.0000     | 2.1805   | OK
-Only FSR        | Soft   | 1.0000     | 2.4798   | OK
-Only FSR        | Hard   | 1.0000     | 2.1578   | OK
-No Extra        | Soft   | 1.0000     | 2.3323   | OK
-No Extra        | Hard   | 1.0000     | 2.1121   | OK
+All Physics     | Soft   | 1.0000     | 1.0631   | OK
+All Physics     | Hard   | 1.0000     | 1.0430   | OK
+No MPI          | Soft   | 1.0000     | 1.0458   | OK
+No MPI          | Hard   | 1.0000     | 1.0228   | OK
+Only MPI        | Soft   | 1.0000     | 1.0410   | OK
+Only MPI        | Hard   | 1.0000     | 1.0198   | OK
+Only ISR        | Soft   | 1.0000     | 1.0396   | OK
+Only ISR        | Hard   | 1.0000     | 1.0297   | OK
+Only FSR        | Soft   | 1.0000     | 1.0353   | OK
+Only FSR        | Hard   | 1.0000     | 1.0260   | OK
+No Extra        | Soft   | 1.0000     | 1.0278   | OK
+No Extra        | Hard   | 1.0000     | 1.0354   | OK
 
 --- Partícula: D_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.2466   | OK
-All Physics     | Hard   | 1.0000     | 1.1861   | OK
-No MPI          | Soft   | 1.0000     | 1.1672   | OK
-No MPI          | Hard   | 1.0000     | 1.1351   | OK
-Only MPI        | Soft   | 1.0000     | 1.1069   | OK
-Only MPI        | Hard   | 1.0000     | 1.0817   | OK
-Only ISR        | Soft   | 1.0000     | 1.1440   | OK
-Only ISR        | Hard   | 1.0000     | 1.1325   | OK
-Only FSR        | Soft   | 1.0000     | 1.1151   | OK
-Only FSR        | Hard   | 1.0000     | 1.0872   | OK
-No Extra        | Soft   | 1.0000     | 1.0694   | OK
-No Extra        | Hard   | 1.0000     | 1.0501   | OK
+All Physics     | Soft   | 1.0000     | 1.0302   | OK
+All Physics     | Hard   | 1.0000     | 1.0214   | OK
+No MPI          | Soft   | 1.0000     | 1.0228   | OK
+No MPI          | Hard   | 1.0000     | 1.0258   | OK
+Only MPI        | Soft   | 1.0000     | 1.0179   | OK
+Only MPI        | Hard   | 1.0000     | 1.0251   | OK
+Only ISR        | Soft   | 1.0000     | 1.0224   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0182   | OK
+Only FSR        | Hard   | 1.0000     | 1.0136   | OK
+No Extra        | Soft   | 1.0000     | 1.0126   | OK
+No Extra        | Hard   | 1.0000     | 1.0060   | OK
 
 --- Partícula: Ds_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.0939   | OK
-All Physics     | Hard   | 1.0000     | 1.0610   | OK
-No MPI          | Soft   | 1.0000     | 1.0691   | OK
-No MPI          | Hard   | 1.0000     | 1.0573   | OK
-Only MPI        | Soft   | 1.0000     | 1.0496   | OK
-Only MPI        | Hard   | 1.0000     | 1.0348   | OK
-Only ISR        | Soft   | 1.0000     | 1.0705   | OK
-Only ISR        | Hard   | 1.0000     | 1.0463   | OK
-Only FSR        | Soft   | 1.0000     | 1.0566   | OK
-Only FSR        | Hard   | 1.0000     | 1.0351   | OK
-No Extra        | Soft   | 1.0000     | 1.0437   | OK
-No Extra        | Hard   | 1.0000     | 1.0141   | OK
+All Physics     | Soft   | 1.0000     | 1.0164   | OK
+All Physics     | Hard   | 1.0000     | 1.0074   | OK
+No MPI          | Soft   | 1.0000     | 1.0124   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0026   | OK
+Only MPI        | Hard   | 1.0000     | 1.0143   | OK
+Only ISR        | Soft   | 1.0000     | 1.0116   | OK
+Only ISR        | Hard   | 1.0000     | 1.0233   | OK
+Only FSR        | Soft   | 1.0000     | 1.0077   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0110   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
 
 =====================================================================================
- PROCESSANDO CORTE EM |eta| < 5.0
+ PROCESSANDO: |eta| < 4.0 | pT: pt_6_8
 =====================================================================================
 
 --- Partícula: Charged ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 72.1167  | OK
-All Physics     | Hard   | 1.0000     | 33.2706  | OK
-No MPI          | Soft   | 1.0000     | 35.4052  | OK
-No MPI          | Hard   | 1.0000     | 26.0021  | OK
-Only MPI        | Soft   | 1.0000     | 45.6074  | OK
-Only MPI        | Hard   | 1.0000     | 27.5682  | OK
-Only ISR        | Soft   | 1.0000     | 31.4477  | OK
-Only ISR        | Hard   | 1.0000     | 24.8329  | OK
-Only FSR        | Soft   | 1.0000     | 28.7367  | OK
-Only FSR        | Hard   | 1.0000     | 24.2620  | OK
-No Extra        | Soft   | 1.0000     | 27.1658  | OK
-No Extra        | Hard   | 1.0000     | 23.7220  | OK
+All Physics     | Soft   | 1.0000     | 1.1169   | OK
+All Physics     | Hard   | 1.0000     | 1.0887   | OK
+No MPI          | Soft   | 1.0000     | 1.1233   | OK
+No MPI          | Hard   | 1.0000     | 1.1229   | OK
+Only MPI        | Soft   | 1.0000     | 1.1248   | OK
+Only MPI        | Hard   | 1.0000     | 1.0935   | OK
+Only ISR        | Soft   | 1.0000     | 1.1388   | OK
+Only ISR        | Hard   | 1.0000     | 1.1198   | OK
+Only FSR        | Soft   | 1.0000     | 1.1070   | OK
+Only FSR        | Hard   | 1.0000     | 1.0972   | OK
+No Extra        | Soft   | 1.0000     | 1.1235   | OK
+No Extra        | Hard   | 1.0000     | 1.0887   | OK
 
---- Partícula: Kaons ---
+--- Partícula: D0_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 7.4266   | OK
-All Physics     | Hard   | 1.0000     | 3.3617   | OK
-No MPI          | Soft   | 1.0000     | 3.4799   | OK
-No MPI          | Hard   | 1.0000     | 2.6603   | OK
-Only MPI        | Soft   | 1.0000     | 4.5923   | OK
-Only MPI        | Hard   | 1.0000     | 2.7955   | OK
-Only ISR        | Soft   | 1.0000     | 3.0385   | OK
-Only ISR        | Hard   | 1.0000     | 2.5358   | OK
-Only FSR        | Soft   | 1.0000     | 2.8678   | OK
-Only FSR        | Hard   | 1.0000     | 2.5027   | OK
-No Extra        | Soft   | 1.0000     | 2.6965   | OK
-No Extra        | Hard   | 1.0000     | 2.4471   | OK
+All Physics     | Soft   | 1.0000     | 1.0320   | OK
+All Physics     | Hard   | 1.0000     | 1.0195   | OK
+No MPI          | Soft   | 1.0000     | 1.0236   | OK
+No MPI          | Hard   | 1.0000     | 1.0063   | OK
+Only MPI        | Soft   | 1.0000     | 1.0195   | OK
+Only MPI        | Hard   | 1.0000     | 1.0111   | OK
+Only ISR        | Soft   | 1.0000     | 1.0220   | OK
+Only ISR        | Hard   | 1.0000     | 1.0143   | OK
+Only FSR        | Soft   | 1.0000     | 1.0173   | OK
+Only FSR        | Hard   | 1.0000     | 1.0233   | OK
+No Extra        | Soft   | 1.0000     | 1.0255   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
 
 --- Partícula: D_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.2745   | OK
-All Physics     | Hard   | 1.0000     | 1.2014   | OK
-No MPI          | Soft   | 1.0000     | 1.1807   | OK
-No MPI          | Hard   | 1.0000     | 1.1499   | OK
-Only MPI        | Soft   | 1.0000     | 1.1317   | OK
-Only MPI        | Hard   | 1.0000     | 1.1055   | OK
-Only ISR        | Soft   | 1.0000     | 1.1573   | OK
-Only ISR        | Hard   | 1.0000     | 1.1493   | OK
-Only FSR        | Soft   | 1.0000     | 1.1261   | OK
-Only FSR        | Hard   | 1.0000     | 1.1016   | OK
-No Extra        | Soft   | 1.0000     | 1.0861   | OK
-No Extra        | Hard   | 1.0000     | 1.0670   | OK
+All Physics     | Soft   | 1.0000     | 1.0133   | OK
+All Physics     | Hard   | 1.0000     | 1.0169   | OK
+No MPI          | Soft   | 1.0000     | 1.0135   | OK
+No MPI          | Hard   | 1.0000     | 1.0227   | OK
+Only MPI        | Soft   | 1.0000     | 1.0048   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0102   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0085   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0120   | OK
+No Extra        | Hard   | 1.0000     | 1.0208   | OK
 
 --- Partícula: Ds_mesons ---
 Configuração    | Processo | Soma P(N)  | <N>      | Status
 -------------------------------------------------------
-All Physics     | Soft   | 1.0000     | 1.1041   | OK
-All Physics     | Hard   | 1.0000     | 1.0663   | OK
-No MPI          | Soft   | 1.0000     | 1.0749   | OK
-No MPI          | Hard   | 1.0000     | 1.0578   | OK
-Only MPI        | Soft   | 1.0000     | 1.0593   | OK
-Only MPI        | Hard   | 1.0000     | 1.0357   | OK
-Only ISR        | Soft   | 1.0000     | 1.0742   | OK
-Only ISR        | Hard   | 1.0000     | 1.0481   | OK
-Only FSR        | Soft   | 1.0000     | 1.0614   | OK
-Only FSR        | Hard   | 1.0000     | 1.0363   | OK
-No Extra        | Soft   | 1.0000     | 1.0478   | OK
-No Extra        | Hard   | 1.0000     | 1.0181   | OK
+All Physics     | Soft   | 1.0000     | 1.0046   | OK
+All Physics     | Hard   | 1.0000     | 1.0141   | OK
+No MPI          | Soft   | 1.0000     | 1.0049   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0025   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0017   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0038   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0066   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
 
 =====================================================================================
-Processamento, testes de validação e geração dos plots de Multiplicidade concluídos!
-Detalhes salvos em 'validacao_simulacao_PN.log'
+ PROCESSANDO: |eta| < 4.0 | pT: pt_8_12
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1239   | OK
+All Physics     | Hard   | 1.0000     | 1.1167   | OK
+No MPI          | Soft   | 1.0000     | 1.1207   | OK
+No MPI          | Hard   | 1.0000     | 1.1111   | OK
+Only MPI        | Soft   | 1.0000     | 1.1358   | OK
+Only MPI        | Hard   | 1.0000     | 1.1319   | OK
+Only ISR        | Soft   | 1.0000     | 1.1457   | OK
+Only ISR        | Hard   | 1.0000     | 1.1031   | OK
+Only FSR        | Soft   | 1.0000     | 1.1271   | OK
+Only FSR        | Hard   | 1.0000     | 1.1418   | OK
+No Extra        | Soft   | 1.0000     | 1.1449   | OK
+No Extra        | Hard   | 1.0000     | 1.1489   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0255   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0212   | OK
+No MPI          | Hard   | 1.0000     | 1.0282   | OK
+Only MPI        | Soft   | 1.0000     | 1.0272   | OK
+Only MPI        | Hard   | 1.0000     | 1.0769   | OK
+Only ISR        | Soft   | 1.0000     | 1.0272   | OK
+Only ISR        | Hard   | 1.0000     | 1.0299   | OK
+Only FSR        | Soft   | 1.0000     | 1.0208   | OK
+Only FSR        | Hard   | 1.0000     | 1.0426   | OK
+No Extra        | Soft   | 1.0000     | 1.0212   | OK
+No Extra        | Hard   | 1.0000     | 1.0435   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0112   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0106   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0034   | OK
+Only MPI        | Hard   | 1.0000     | 1.0312   | OK
+Only ISR        | Soft   | 1.0000     | 1.0095   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0156   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0075   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0065   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0140   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0162   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0091   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0117   | OK
+Only FSR        | Hard   | 1.0000     | 1.1429   | OK
+No Extra        | Soft   | 1.0000     | 1.0032   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 4.0 | pT: pt_12_24
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1184   | OK
+All Physics     | Hard   | 1.0000     | 1.1385   | OK
+No MPI          | Soft   | 1.0000     | 1.1424   | OK
+No MPI          | Hard   | 1.0000     | 1.2708   | OK
+Only MPI        | Soft   | 1.0000     | 1.1763   | OK
+Only MPI        | Hard   | 1.0000     | 1.2203   | OK
+Only ISR        | Soft   | 1.0000     | 1.1806   | OK
+Only ISR        | Hard   | 1.0000     | 1.0916   | OK
+Only FSR        | Soft   | 1.0000     | 1.1456   | OK
+Only FSR        | Hard   | 1.0000     | 1.1389   | OK
+No Extra        | Soft   | 1.0000     | 1.1777   | OK
+No Extra        | Hard   | 1.0000     | 1.1408   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0228   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0236   | OK
+No MPI          | Hard   | 1.0000     | 1.0417   | OK
+Only MPI        | Soft   | 1.0000     | 1.0483   | OK
+Only MPI        | Hard   | 1.0000     | 1.0526   | OK
+Only ISR        | Soft   | 1.0000     | 1.0247   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0243   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0245   | OK
+No Extra        | Hard   | 1.0000     | 1.0625   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0125   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0114   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0283   | OK
+Only MPI        | Hard   | 1.0000     | 1.0625   | OK
+Only ISR        | Soft   | 1.0000     | 1.0232   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0150   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0106   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0109   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0286   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0086   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0082   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 5.0 | pT: global
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 72.3597  | OK
+All Physics     | Hard   | 1.0000     | 33.1861  | OK
+No MPI          | Soft   | 1.0000     | 35.4083  | OK
+No MPI          | Hard   | 1.0000     | 26.0241  | OK
+Only MPI        | Soft   | 1.0000     | 45.5916  | OK
+Only MPI        | Hard   | 1.0000     | 27.5174  | OK
+Only ISR        | Soft   | 1.0000     | 31.4595  | OK
+Only ISR        | Hard   | 1.0000     | 24.8295  | OK
+Only FSR        | Soft   | 1.0000     | 28.7398  | OK
+Only FSR        | Hard   | 1.0000     | 24.2618  | OK
+No Extra        | Soft   | 1.0000     | 27.1714  | OK
+No Extra        | Hard   | 1.0000     | 23.7137  | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.5805   | OK
+All Physics     | Hard   | 1.0000     | 1.4375   | OK
+No MPI          | Soft   | 1.0000     | 1.4054   | OK
+No MPI          | Hard   | 1.0000     | 1.3380   | OK
+Only MPI        | Soft   | 1.0000     | 1.2621   | OK
+Only MPI        | Hard   | 1.0000     | 1.2092   | OK
+Only ISR        | Soft   | 1.0000     | 1.3585   | OK
+Only ISR        | Hard   | 1.0000     | 1.2985   | OK
+Only FSR        | Soft   | 1.0000     | 1.2711   | OK
+Only FSR        | Hard   | 1.0000     | 1.2179   | OK
+No Extra        | Soft   | 1.0000     | 1.1749   | OK
+No Extra        | Hard   | 1.0000     | 1.1506   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.2723   | OK
+All Physics     | Hard   | 1.0000     | 1.2100   | OK
+No MPI          | Soft   | 1.0000     | 1.1800   | OK
+No MPI          | Hard   | 1.0000     | 1.1553   | OK
+Only MPI        | Soft   | 1.0000     | 1.1256   | OK
+Only MPI        | Hard   | 1.0000     | 1.1005   | OK
+Only ISR        | Soft   | 1.0000     | 1.1621   | OK
+Only ISR        | Hard   | 1.0000     | 1.1378   | OK
+Only FSR        | Soft   | 1.0000     | 1.1279   | OK
+Only FSR        | Hard   | 1.0000     | 1.0973   | OK
+No Extra        | Soft   | 1.0000     | 1.0826   | OK
+No Extra        | Hard   | 1.0000     | 1.0785   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1043   | OK
+All Physics     | Hard   | 1.0000     | 1.0671   | OK
+No MPI          | Soft   | 1.0000     | 1.0785   | OK
+No MPI          | Hard   | 1.0000     | 1.0472   | OK
+Only MPI        | Soft   | 1.0000     | 1.0571   | OK
+Only MPI        | Hard   | 1.0000     | 1.0276   | OK
+Only ISR        | Soft   | 1.0000     | 1.0815   | OK
+Only ISR        | Hard   | 1.0000     | 1.0440   | OK
+Only FSR        | Soft   | 1.0000     | 1.0598   | OK
+Only FSR        | Hard   | 1.0000     | 1.0273   | OK
+No Extra        | Soft   | 1.0000     | 1.0586   | OK
+No Extra        | Hard   | 1.0000     | 1.0294   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 5.0 | pT: pt_1_2
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 9.5075   | OK
+All Physics     | Hard   | 1.0000     | 2.7904   | OK
+No MPI          | Soft   | 1.0000     | 3.3871   | OK
+No MPI          | Hard   | 1.0000     | 1.6522   | OK
+Only MPI        | Soft   | 1.0000     | 5.5055   | OK
+Only MPI        | Hard   | 1.0000     | 2.0412   | OK
+Only ISR        | Soft   | 1.0000     | 2.9442   | OK
+Only ISR        | Hard   | 1.0000     | 1.5743   | OK
+Only FSR        | Soft   | 1.0000     | 2.4008   | OK
+Only FSR        | Hard   | 1.0000     | 1.4229   | OK
+No Extra        | Soft   | 1.0000     | 2.1862   | OK
+No Extra        | Hard   | 1.0000     | 1.3921   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1564   | OK
+All Physics     | Hard   | 1.0000     | 1.1299   | OK
+No MPI          | Soft   | 1.0000     | 1.1005   | OK
+No MPI          | Hard   | 1.0000     | 1.0970   | OK
+Only MPI        | Soft   | 1.0000     | 1.0665   | OK
+Only MPI        | Hard   | 1.0000     | 1.0585   | OK
+Only ISR        | Soft   | 1.0000     | 1.0753   | OK
+Only ISR        | Hard   | 1.0000     | 1.0833   | OK
+Only FSR        | Soft   | 1.0000     | 1.0775   | OK
+Only FSR        | Hard   | 1.0000     | 1.0646   | OK
+No Extra        | Soft   | 1.0000     | 1.0563   | OK
+No Extra        | Hard   | 1.0000     | 1.0379   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0725   | OK
+All Physics     | Hard   | 1.0000     | 1.0601   | OK
+No MPI          | Soft   | 1.0000     | 1.0500   | OK
+No MPI          | Hard   | 1.0000     | 1.0475   | OK
+Only MPI        | Soft   | 1.0000     | 1.0325   | OK
+Only MPI        | Hard   | 1.0000     | 1.0267   | OK
+Only ISR        | Soft   | 1.0000     | 1.0331   | OK
+Only ISR        | Hard   | 1.0000     | 1.0420   | OK
+Only FSR        | Soft   | 1.0000     | 1.0389   | OK
+Only FSR        | Hard   | 1.0000     | 1.0302   | OK
+No Extra        | Soft   | 1.0000     | 1.0342   | OK
+No Extra        | Hard   | 1.0000     | 1.0343   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0294   | OK
+All Physics     | Hard   | 1.0000     | 1.0227   | OK
+No MPI          | Soft   | 1.0000     | 1.0199   | OK
+No MPI          | Hard   | 1.0000     | 1.0154   | OK
+Only MPI        | Soft   | 1.0000     | 1.0198   | OK
+Only MPI        | Hard   | 1.0000     | 1.0078   | OK
+Only ISR        | Soft   | 1.0000     | 1.0203   | OK
+Only ISR        | Hard   | 1.0000     | 1.0156   | OK
+Only FSR        | Soft   | 1.0000     | 1.0201   | OK
+Only FSR        | Hard   | 1.0000     | 1.0083   | OK
+No Extra        | Soft   | 1.0000     | 1.0251   | OK
+No Extra        | Hard   | 1.0000     | 1.0112   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 5.0 | pT: pt_2_4
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 3.6455   | OK
+All Physics     | Hard   | 1.0000     | 2.1358   | OK
+No MPI          | Soft   | 1.0000     | 1.8245   | OK
+No MPI          | Hard   | 1.0000     | 1.3016   | OK
+Only MPI        | Soft   | 1.0000     | 2.6248   | OK
+Only MPI        | Hard   | 1.0000     | 1.7402   | OK
+Only ISR        | Soft   | 1.0000     | 1.7972   | OK
+Only ISR        | Hard   | 1.0000     | 1.3085   | OK
+Only FSR        | Soft   | 1.0000     | 1.5815   | OK
+Only FSR        | Hard   | 1.0000     | 1.2245   | OK
+No Extra        | Soft   | 1.0000     | 1.5557   | OK
+No Extra        | Hard   | 1.0000     | 1.2236   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1837   | OK
+All Physics     | Hard   | 1.0000     | 1.1324   | OK
+No MPI          | Soft   | 1.0000     | 1.1080   | OK
+No MPI          | Hard   | 1.0000     | 1.0694   | OK
+Only MPI        | Soft   | 1.0000     | 1.0701   | OK
+Only MPI        | Hard   | 1.0000     | 1.0506   | OK
+Only ISR        | Soft   | 1.0000     | 1.0891   | OK
+Only ISR        | Hard   | 1.0000     | 1.0650   | OK
+Only FSR        | Soft   | 1.0000     | 1.0839   | OK
+Only FSR        | Hard   | 1.0000     | 1.0520   | OK
+No Extra        | Soft   | 1.0000     | 1.0594   | OK
+No Extra        | Hard   | 1.0000     | 1.0330   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0909   | OK
+All Physics     | Hard   | 1.0000     | 1.0671   | OK
+No MPI          | Soft   | 1.0000     | 1.0544   | OK
+No MPI          | Hard   | 1.0000     | 1.0271   | OK
+Only MPI        | Soft   | 1.0000     | 1.0393   | OK
+Only MPI        | Hard   | 1.0000     | 1.0266   | OK
+Only ISR        | Soft   | 1.0000     | 1.0441   | OK
+Only ISR        | Hard   | 1.0000     | 1.0292   | OK
+Only FSR        | Soft   | 1.0000     | 1.0431   | OK
+Only FSR        | Hard   | 1.0000     | 1.0220   | OK
+No Extra        | Soft   | 1.0000     | 1.0259   | OK
+No Extra        | Hard   | 1.0000     | 1.0166   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0394   | OK
+All Physics     | Hard   | 1.0000     | 1.0291   | OK
+No MPI          | Soft   | 1.0000     | 1.0307   | OK
+No MPI          | Hard   | 1.0000     | 1.0102   | OK
+Only MPI        | Soft   | 1.0000     | 1.0168   | OK
+Only MPI        | Hard   | 1.0000     | 1.0065   | OK
+Only ISR        | Soft   | 1.0000     | 1.0297   | OK
+Only ISR        | Hard   | 1.0000     | 1.0188   | OK
+Only FSR        | Soft   | 1.0000     | 1.0267   | OK
+Only FSR        | Hard   | 1.0000     | 1.0045   | OK
+No Extra        | Soft   | 1.0000     | 1.0151   | OK
+No Extra        | Hard   | 1.0000     | 1.0028   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 5.0 | pT: pt_4_6
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.3360   | OK
+All Physics     | Hard   | 1.0000     | 1.2033   | OK
+No MPI          | Soft   | 1.0000     | 1.2435   | OK
+No MPI          | Hard   | 1.0000     | 1.1626   | OK
+Only MPI        | Soft   | 1.0000     | 1.2801   | OK
+Only MPI        | Hard   | 1.0000     | 1.1801   | OK
+Only ISR        | Soft   | 1.0000     | 1.2606   | OK
+Only ISR        | Hard   | 1.0000     | 1.1649   | OK
+Only FSR        | Soft   | 1.0000     | 1.2020   | OK
+Only FSR        | Hard   | 1.0000     | 1.1243   | OK
+No Extra        | Soft   | 1.0000     | 1.2128   | OK
+No Extra        | Hard   | 1.0000     | 1.1422   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0685   | OK
+All Physics     | Hard   | 1.0000     | 1.0465   | OK
+No MPI          | Soft   | 1.0000     | 1.0476   | OK
+No MPI          | Hard   | 1.0000     | 1.0294   | OK
+Only MPI        | Soft   | 1.0000     | 1.0442   | OK
+Only MPI        | Hard   | 1.0000     | 1.0247   | OK
+Only ISR        | Soft   | 1.0000     | 1.0406   | OK
+Only ISR        | Hard   | 1.0000     | 1.0348   | OK
+Only FSR        | Soft   | 1.0000     | 1.0364   | OK
+Only FSR        | Hard   | 1.0000     | 1.0252   | OK
+No Extra        | Soft   | 1.0000     | 1.0291   | OK
+No Extra        | Hard   | 1.0000     | 1.0342   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0331   | OK
+All Physics     | Hard   | 1.0000     | 1.0238   | OK
+No MPI          | Soft   | 1.0000     | 1.0241   | OK
+No MPI          | Hard   | 1.0000     | 1.0222   | OK
+Only MPI        | Soft   | 1.0000     | 1.0197   | OK
+Only MPI        | Hard   | 1.0000     | 1.0253   | OK
+Only ISR        | Soft   | 1.0000     | 1.0233   | OK
+Only ISR        | Hard   | 1.0000     | 1.0039   | OK
+Only FSR        | Soft   | 1.0000     | 1.0210   | OK
+Only FSR        | Hard   | 1.0000     | 1.0121   | OK
+No Extra        | Soft   | 1.0000     | 1.0139   | OK
+No Extra        | Hard   | 1.0000     | 1.0051   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0174   | OK
+All Physics     | Hard   | 1.0000     | 1.0066   | OK
+No MPI          | Soft   | 1.0000     | 1.0135   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0023   | OK
+Only MPI        | Hard   | 1.0000     | 1.0135   | OK
+Only ISR        | Soft   | 1.0000     | 1.0118   | OK
+Only ISR        | Hard   | 1.0000     | 1.0213   | OK
+Only FSR        | Soft   | 1.0000     | 1.0071   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0109   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 5.0 | pT: pt_6_8
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1213   | OK
+All Physics     | Hard   | 1.0000     | 1.0955   | OK
+No MPI          | Soft   | 1.0000     | 1.1242   | OK
+No MPI          | Hard   | 1.0000     | 1.1136   | OK
+Only MPI        | Soft   | 1.0000     | 1.1302   | OK
+Only MPI        | Hard   | 1.0000     | 1.0940   | OK
+Only ISR        | Soft   | 1.0000     | 1.1433   | OK
+Only ISR        | Hard   | 1.0000     | 1.1262   | OK
+Only FSR        | Soft   | 1.0000     | 1.1058   | OK
+Only FSR        | Hard   | 1.0000     | 1.0942   | OK
+No Extra        | Soft   | 1.0000     | 1.1236   | OK
+No Extra        | Hard   | 1.0000     | 1.0928   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0328   | OK
+All Physics     | Hard   | 1.0000     | 1.0173   | OK
+No MPI          | Soft   | 1.0000     | 1.0258   | OK
+No MPI          | Hard   | 1.0000     | 1.0058   | OK
+Only MPI        | Soft   | 1.0000     | 1.0209   | OK
+Only MPI        | Hard   | 1.0000     | 1.0101   | OK
+Only ISR        | Soft   | 1.0000     | 1.0218   | OK
+Only ISR        | Hard   | 1.0000     | 1.0195   | OK
+Only FSR        | Soft   | 1.0000     | 1.0180   | OK
+Only FSR        | Hard   | 1.0000     | 1.0312   | OK
+No Extra        | Soft   | 1.0000     | 1.0249   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0134   | OK
+All Physics     | Hard   | 1.0000     | 1.0199   | OK
+No MPI          | Soft   | 1.0000     | 1.0146   | OK
+No MPI          | Hard   | 1.0000     | 1.0194   | OK
+Only MPI        | Soft   | 1.0000     | 1.0061   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0123   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0091   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0109   | OK
+No Extra        | Hard   | 1.0000     | 1.0175   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0053   | OK
+All Physics     | Hard   | 1.0000     | 1.0130   | OK
+No MPI          | Soft   | 1.0000     | 1.0045   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0022   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0015   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0034   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0080   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 5.0 | pT: pt_8_12
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1217   | OK
+All Physics     | Hard   | 1.0000     | 1.1111   | OK
+No MPI          | Soft   | 1.0000     | 1.1215   | OK
+No MPI          | Hard   | 1.0000     | 1.1101   | OK
+Only MPI        | Soft   | 1.0000     | 1.1369   | OK
+Only MPI        | Hard   | 1.0000     | 1.1290   | OK
+Only ISR        | Soft   | 1.0000     | 1.1486   | OK
+Only ISR        | Hard   | 1.0000     | 1.1011   | OK
+Only FSR        | Soft   | 1.0000     | 1.1247   | OK
+Only FSR        | Hard   | 1.0000     | 1.1274   | OK
+No Extra        | Soft   | 1.0000     | 1.1417   | OK
+No Extra        | Hard   | 1.0000     | 1.1535   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0270   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0223   | OK
+No MPI          | Hard   | 1.0000     | 1.0244   | OK
+Only MPI        | Soft   | 1.0000     | 1.0264   | OK
+Only MPI        | Hard   | 1.0000     | 1.0667   | OK
+Only ISR        | Soft   | 1.0000     | 1.0275   | OK
+Only ISR        | Hard   | 1.0000     | 1.0263   | OK
+Only FSR        | Soft   | 1.0000     | 1.0198   | OK
+Only FSR        | Hard   | 1.0000     | 1.0408   | OK
+No Extra        | Soft   | 1.0000     | 1.0221   | OK
+No Extra        | Hard   | 1.0000     | 1.0392   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0112   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0096   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0047   | OK
+Only MPI        | Hard   | 1.0000     | 1.0263   | OK
+Only ISR        | Soft   | 1.0000     | 1.0088   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0155   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0093   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0102   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0147   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0150   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0085   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0108   | OK
+Only FSR        | Hard   | 1.0000     | 1.1250   | OK
+No Extra        | Soft   | 1.0000     | 1.0060   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+ PROCESSANDO: |eta| < 5.0 | pT: pt_12_24
+=====================================================================================
+
+--- Partícula: Charged ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.1111   | OK
+All Physics     | Hard   | 1.0000     | 1.1370   | OK
+No MPI          | Soft   | 1.0000     | 1.1353   | OK
+No MPI          | Hard   | 1.0000     | 1.2453   | OK
+Only MPI        | Soft   | 1.0000     | 1.1715   | OK
+Only MPI        | Hard   | 1.0000     | 1.2063   | OK
+Only ISR        | Soft   | 1.0000     | 1.1773   | OK
+Only ISR        | Hard   | 1.0000     | 1.0922   | OK
+Only FSR        | Soft   | 1.0000     | 1.1384   | OK
+Only FSR        | Hard   | 1.0000     | 1.1250   | OK
+No Extra        | Soft   | 1.0000     | 1.1722   | OK
+No Extra        | Hard   | 1.0000     | 1.1688   | OK
+
+--- Partícula: D0_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0211   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0245   | OK
+No MPI          | Hard   | 1.0000     | 1.0385   | OK
+Only MPI        | Soft   | 1.0000     | 1.0453   | OK
+Only MPI        | Hard   | 1.0000     | 1.0476   | OK
+Only ISR        | Soft   | 1.0000     | 1.0269   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0295   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0264   | OK
+No Extra        | Hard   | 1.0000     | 1.0588   | OK
+
+--- Partícula: D_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0118   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0109   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0267   | OK
+Only MPI        | Hard   | 1.0000     | 1.0588   | OK
+Only ISR        | Soft   | 1.0000     | 1.0240   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0145   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0096   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+--- Partícula: Ds_mesons ---
+Configuração    | Processo | Soma P(N)  | <N>      | Status
+-------------------------------------------------------
+All Physics     | Soft   | 1.0000     | 1.0000   | OK
+All Physics     | Hard   | 1.0000     | 1.0000   | OK
+No MPI          | Soft   | 1.0000     | 1.0103   | OK
+No MPI          | Hard   | 1.0000     | 1.0000   | OK
+Only MPI        | Soft   | 1.0000     | 1.0270   | OK
+Only MPI        | Hard   | 1.0000     | 1.0000   | OK
+Only ISR        | Soft   | 1.0000     | 1.0000   | OK
+Only ISR        | Hard   | 1.0000     | 1.0000   | OK
+Only FSR        | Soft   | 1.0000     | 1.0081   | OK
+Only FSR        | Hard   | 1.0000     | 1.0000   | OK
+No Extra        | Soft   | 1.0000     | 1.0079   | OK
+No Extra        | Hard   | 1.0000     | 1.0000   | OK
+
+=====================================================================================
+Processamento e geração de todos os plots de Multiplicidade concluídos!
+Logs salvos em 'validacao_simulacao_PN.log'
 =====================================================================================
