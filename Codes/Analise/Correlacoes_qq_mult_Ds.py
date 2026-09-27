@@ -157,7 +157,7 @@ def escrever_tabela_latex(nome_caso, corte_eta, faixa_pt, n_ch_soft, n_ch_hard, 
             percentual_final_fmt += ".0"
         log_file.write(
             f"{nome_classe} & ${percentual_inicial_fmt} - {percentual_final_fmt}$ "
-            f"& {media_carregadas:.4f} & {media_ds:.4f} \\\\\n"
+            f"& {media_carregadas:.4f} & {media_ds:.6f} \\\\\n"
         )
 
     log_file.write("\\hline\n\\end{tabular}\n")
@@ -180,7 +180,7 @@ def escrever_tabela_latex(nome_caso, corte_eta, faixa_pt, n_ch_soft, n_ch_hard, 
         f"Hard Ds = {soma_pn_ds_hard:.6f} | Cobertura classes Soft/Hard = "
         f"{cobertura_soft:.2%}/{cobertura_hard:.2%} | "
         f"Medias recompostas Soft/Hard = {media_reconstruida_soft:.4f}/"
-        f"{media_reconstruida_ds:.4f} | {status_sanidade}"
+        f"{media_reconstruida_ds:.6f} | {status_sanidade}"
     )
     log_file.flush()
 
