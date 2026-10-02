@@ -44,7 +44,7 @@ pdg_D0_mesons = [421]   # Mésons D0 e D0bar
 
 # Parâmetros gerais dos histogramas e do número de eventos
 bin_width = 0.1
-nEvents = 1000000
+nEvents = 20_000_000
 
 # Criação estruturada do diretório de saída para os arquivos de dados (.dat)
 output_dir = os.path.join("..", "..", "Dados", "Hard", subpasta_nome)
