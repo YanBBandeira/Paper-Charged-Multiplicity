@@ -258,7 +258,7 @@ for nome_caso, config in casos.items():
             dados_hard = np.loadtxt(arq_hard, skiprows=1)
 
             n_ch_soft = dados_soft[:, 0] if dados_soft.ndim > 1 else dados_soft
-            n_ch_hard, n_ds_hard = dados_hard[:, 0], dados_hard[:, 2]
+            n_ch_hard, n_ds_hard = dados_hard[:, 0], dados_hard[:, 3]
 
             x_norm, media_ch_glob = obter_norm_soft(n_ch_soft, classes_alice)
             y_norm, media_ds_glob = obter_norm_hard(n_ch_hard, n_ds_hard, classes_alice)
@@ -288,7 +288,7 @@ for nome_caso, config in casos.items():
             dados_hard_pt = np.loadtxt(arq_hard_pt, skiprows=1)
 
             n_ch_soft_pt = dados_soft_pt[:, 0] if dados_soft_pt.ndim > 1 else dados_soft_pt
-            n_ch_hard_pt, n_ds_hard_pt = dados_hard_pt[:, 0], dados_hard_pt[:, 2]
+            n_ch_hard_pt, n_ds_hard_pt = dados_hard_pt[:, 0], dados_hard_pt[:, 3]
 
             x_norm_pt, _ = obter_norm_soft(n_ch_soft_pt, classes_alice)
             y_norm_pt, _ = obter_norm_hard(n_ch_hard_pt, n_ds_hard_pt, classes_alice)
@@ -383,7 +383,7 @@ for nome_caso, config in casos.items():
             dados_hard_pt = np.loadtxt(arq_hard_pt, skiprows=1)
 
             n_ch_soft_pt = dados_soft_pt[:, 0] if dados_soft_pt.ndim > 1 else dados_soft_pt
-            n_ch_hard_pt, n_ds_hard_pt = dados_hard_pt[:, 0], dados_hard_pt[:, 2]
+            n_ch_hard_pt, n_ds_hard_pt = dados_hard_pt[:, 0], dados_hard_pt[:, 3]
 
             x_norm, _ = obter_norm_soft(n_ch_soft_pt, classes_alice)
             y_norm, _ = obter_norm_hard(n_ch_hard_pt, n_ds_hard_pt, classes_alice)
