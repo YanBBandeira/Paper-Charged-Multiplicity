@@ -82,7 +82,7 @@ cortes_eta = [0.5, 1.0, 2.0, 3.0, 4.0, 5.0]
 
 diretorio_script = os.path.dirname(os.path.abspath(__file__))
 base_dados_dir = os.path.abspath(os.path.join(diretorio_script, "..", "Dados"))
-base_figuras_dir = os.path.join(diretorio_script, "Figures", "Correlacoes_Ds")
+base_figuras_dir = os.path.join(diretorio_script, "Figures", "Correlacoes_Ds_Soft")
 figuras_comparativo_casos_dir = os.path.join(base_figuras_dir, "Comparativo_Casos_Por_Eta")
 
 os.makedirs(base_figuras_dir, exist_ok=True)

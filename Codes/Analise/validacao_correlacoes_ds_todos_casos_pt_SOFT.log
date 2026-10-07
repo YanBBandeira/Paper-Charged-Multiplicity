@@ -4958,98 +4958,98 @@ X & $68.0 - 100.0$ & 0.0000 & 0.000047 \\
 ########################################################################################################################
 GERANDO FIGURAS GLOBAIS (COMPARATIVO DE ETA)
 ########################################################################################################################
-[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
-[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
-[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
-[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
-[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
-[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
+[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/all/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
+[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
+[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
+[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
+[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
+[OK] Figura global salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_global_soft.pdf
 
 ########################################################################################################################
 GERANDO FIGURAS DIFERENCIAIS POR FAIXA DE PT (COMPARATIVO DE ETA)
 ########################################################################################################################
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/all/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
-[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/all/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/all/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/all/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/all/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/all/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/all/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noExtra/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/noMPI/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyFSR/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyISR/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_1_2_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_2_4_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_4_6_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_6_8_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_8_12_soft.pdf
+[OK] Figura de pT salva em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/onlyMPI/Por_Pt/Correlacao_QQ_Ds_pt_12_24_soft.pdf
 
 ########################################################################################################################
 GERANDO COMPARATIVOS ENTRE CASOS POR FAIXA DE PT
 ########################################################################################################################
-[OK] Comparativo global para $|\eta| < 0.5$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_global_soft.pdf
-[OK] Comparativo global para $|\eta| < 1.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_global_soft.pdf
-[OK] Comparativo global para $|\eta| < 2.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_global_soft.pdf
-[OK] Comparativo global para $|\eta| < 3.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_global_soft.pdf
-[OK] Comparativo global para $|\eta| < 4.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_global_soft.pdf
-[OK] Comparativo global para $|\eta| < 5.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_global_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_1_2_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_1_2_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_1_2_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_1_2_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_1_2_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_1_2_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_2_4_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_2_4_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_2_4_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_2_4_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_2_4_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_2_4_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_4_6_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_4_6_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_4_6_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_4_6_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_4_6_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_4_6_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_6_8_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_6_8_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_6_8_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_6_8_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_6_8_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_6_8_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_8_12_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_8_12_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_8_12_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_8_12_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_8_12_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_8_12_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_12_24_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_12_24_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_12_24_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_12_24_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_12_24_soft.pdf
-[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_12_24_soft.pdf
+[OK] Comparativo global para $|\eta| < 0.5$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_global_soft.pdf
+[OK] Comparativo global para $|\eta| < 1.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_global_soft.pdf
+[OK] Comparativo global para $|\eta| < 2.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_global_soft.pdf
+[OK] Comparativo global para $|\eta| < 3.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_global_soft.pdf
+[OK] Comparativo global para $|\eta| < 4.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_global_soft.pdf
+[OK] Comparativo global para $|\eta| < 5.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_global_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_1_2_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_1_2_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_1_2_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_1_2_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_1_2_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_1_2 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_1_2_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_2_4_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_2_4_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_2_4_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_2_4_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_2_4_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_2_4 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_2_4_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_4_6_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_4_6_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_4_6_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_4_6_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_4_6_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_4_6 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_4_6_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_6_8_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_6_8_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_6_8_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_6_8_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_6_8_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_6_8 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_6_8_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_8_12_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_8_12_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_8_12_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_8_12_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_8_12_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_8_12 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_8_12_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 0.5$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_0p5_pt_12_24_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 1.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_1p0_pt_12_24_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 2.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_2p0_pt_12_24_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 3.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_3p0_pt_12_24_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 4.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_4p0_pt_12_24_soft.pdf
+[OK] Comparativo de casos para $|\eta| < 5.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds_Soft/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_12_24_soft.pdf
 
 ########################################################################################################################
 Sucesso! Todas as análises diferenciais em pT foram processadas e geradas.
