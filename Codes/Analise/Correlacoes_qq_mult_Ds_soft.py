@@ -496,5 +496,60 @@ for pt_min, pt_max, pt_label, pt_desc in faixas_pt:
             plt.close()
             log_print(f"[OK] Comparativo de casos para $|\eta| < {corte_eta}$ e {pt_label} salvo em: {caminho_fig_caso_pt}")
 
-log_print(f"\n{'#'*120}\nSucesso! Todas as análises diferenciais em pT foram processadas e geradas.\n{'#'*120}")
+# =============================================================================
+# 6. NOVO: COMPARATIVO DOS 6 CASOS PARA CADA CORTE FIXO DE ETA (GLOBAL pT > 0)
+# =============================================================================
+log_print(f"\n{'#'*120}\nGERANDO COMPARATIVOS DE CASOS POR CORTE FIXO DE ETA (GLOBAL)\n{'#'*120}")
+
+figuras_por_eta_dir = os.path.join(base_figuras_dir, "Comparativo_Casos_Por_Eta_Fixo")
+os.makedirs(figuras_por_eta_dir, exist_ok=True)
+
+for corte_eta in cortes_eta:
+    corte_str = f"{corte_eta:.1f}".replace(".", "p")
+    plt.figure(figsize=(8, 7))
+    
+    global_max_x, global_max_y = 0.0, 0.0
+    tem_dados = False
+
+    for nome_caso, config in casos.items():
+        if nome_caso in dados_global_por_eta[corte_eta]:
+            tem_dados = True
+            x_norm, y_norm = dados_global_por_eta[corte_eta][nome_caso]
+            estilo = estilos_casos.get(nome_caso, {"cor": "gray", "marker": "o"})
+
+            global_max_x = max(global_max_x, np.nanmax(x_norm))
+            global_max_y = max(global_max_y, np.nanmax(y_norm))
+
+            plt.plot(
+                x_norm, y_norm,
+                color=estilo["cor"],
+                marker=estilo["marker"],
+                linestyle="-",
+                linewidth=1.5,
+                markersize=7,
+                alpha=0.85,
+                label=nome_caso
+            )
+
+    if tem_dados:
+        lim_x = global_max_x * 1.1
+        lim_y = global_max_y * 1.1
+        lim_ref = max(lim_x, lim_y)
+
+        plt.plot([0, lim_ref], [0, lim_ref], "k--", alpha=0.3, label="Linear scaling")
+        plt.xlim(0, lim_x)
+        plt.ylim(0, lim_y)
+
+        plt.xlabel(r"$\langle N_{\text{ch}} \rangle_{\text{local}} / \langle N_{\text{ch}} \rangle_{\text{global}}$ (Soft)")
+        plt.ylabel(r"$\langle N_{D_s} \rangle_{\text{local}} / \langle N_{D_s} \rangle_{\text{global}}$ ($D_s$ Mesons - soft)")
+        plt.grid(True, linestyle="--", alpha=0.7)
+        plt.legend(loc="best", frameon=False, title=f"Corte Fixo: $|\eta| < {corte_eta}$\nGlobal ($p_T > 0$)", title_fontsize=10, fontsize=9)
+        plt.tight_layout()
+
+        caminho_fig_eta = os.path.join(figuras_por_eta_dir, f"Comparativo_Casos_Fixo_eta_{corte_str}_global_soft.pdf")
+        plt.savefig(caminho_fig_eta, bbox_inches="tight")
+        plt.close()
+        log_print(f"[OK] Comparativo para $|\eta| < {corte_eta}$ salvo em: {caminho_fig_eta}")
+
+log_print(f"\n{'#'*120}\nSucesso! Todas as análises foram processadas e geradas.\n{'#'*120}")
 log_file.close()

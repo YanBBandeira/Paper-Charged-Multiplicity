@@ -5052,5 +5052,15 @@ GERANDO COMPARATIVOS ENTRE CASOS POR FAIXA DE PT
 [OK] Comparativo de casos para $|\eta| < 5.0$ e pt_12_24 salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Pt/Comparativo_Casos_eta_5p0_pt_12_24.pdf
 
 ########################################################################################################################
-Sucesso! Todas as análises diferenciais em pT foram processadas e geradas.
+GERANDO COMPARATIVOS DE CASOS POR CORTE FIXO DE ETA (GLOBAL)
+########################################################################################################################
+[OK] Comparativo para $|\eta| < 0.5$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta_Fixo/Comparativo_Casos_Fixo_eta_0p5_global.pdf
+[OK] Comparativo para $|\eta| < 1.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta_Fixo/Comparativo_Casos_Fixo_eta_1p0_global.pdf
+[OK] Comparativo para $|\eta| < 2.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta_Fixo/Comparativo_Casos_Fixo_eta_2p0_global.pdf
+[OK] Comparativo para $|\eta| < 3.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta_Fixo/Comparativo_Casos_Fixo_eta_3p0_global.pdf
+[OK] Comparativo para $|\eta| < 4.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta_Fixo/Comparativo_Casos_Fixo_eta_4p0_global.pdf
+[OK] Comparativo para $|\eta| < 5.0$ salvo em: /home/yan/Documents/PhD/papers/Paper-Charged-Multiplicity/Codes/Analise/Figures/Correlacoes_Ds/Comparativo_Casos_Por_Eta_Fixo/Comparativo_Casos_Fixo_eta_5p0_global.pdf
+
+########################################################################################################################
+Sucesso! Todas as análises foram processadas e geradas.
 ########################################################################################################################
