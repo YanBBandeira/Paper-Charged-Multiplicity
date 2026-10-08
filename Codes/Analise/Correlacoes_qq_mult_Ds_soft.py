@@ -551,5 +551,70 @@ for corte_eta in cortes_eta:
         plt.close()
         log_print(f"[OK] Comparativo para $|\eta| < {corte_eta}$ salvo em: {caminho_fig_eta}")
 
+# =============================================================================
+# 7. NOVO: PARA CADA CASO, EIXO X FIXO EM UM CORTE DE ETA E Y VARIANDO OS ETAS
+# =============================================================================
+log_print(f"\n{'#'*120}\nGERANDO GRÁFICOS PARA OS 6 CASOS COM EIXO X FIXO EM UM CORTE DE ETA E Y VARIANDO\n{'#'*120}")
+
+figuras_caso_fixo_eta_dir = os.path.join(base_figuras_dir, "Caso_Fixo_EixoX_Fixo_Eta_Variando_Y")
+os.makedirs(figuras_caso_fixo_eta_dir, exist_ok=True)
+
+for nome_caso, config in casos.items():
+    for eta_ref in cortes_eta:
+        eta_ref_str = f"{eta_ref:.1f}".replace(".", "p")
+        
+        if eta_ref not in dados_global_por_eta or nome_caso not in dados_global_por_eta[eta_ref]:
+            continue
+
+        x_norm_ref, _ = dados_global_por_eta[eta_ref][nome_caso]
+
+        plt.figure(figsize=(8, 7))
+        global_max_x, global_max_y = np.nanmax(x_norm_ref), 0.0
+        tem_dados_plot = False
+
+        for eta_y in cortes_eta:
+            if eta_y == eta_ref:
+                continue
+            
+            if nome_caso not in dados_global_por_eta[eta_y]:
+                continue
+
+            tem_dados_plot = True
+            _, y_norm_y = dados_global_por_eta[eta_y][nome_caso]
+            estilo = estilos_eta.get(eta_y, {"cor": "gray", "marker": "o"})
+
+            global_max_y = max(global_max_y, np.nanmax(y_norm_y))
+
+            plt.plot(
+                x_norm_ref, y_norm_y,
+                color=estilo["cor"],
+                marker=estilo["marker"],
+                linestyle="-",
+                linewidth=1.5,
+                markersize=7,
+                alpha=0.85,
+                label=rf"Eixo Y: $|\eta| < {eta_y}$"
+            )
+
+        if tem_dados_plot:
+            lim_x = global_max_x * 1.1
+            lim_y = global_max_y * 1.1
+            lim_ref = max(lim_x, lim_y)
+
+            plt.plot([0, lim_ref], [0, lim_ref], "k--", alpha=0.3, label="Linear scaling")
+            plt.xlim(0, lim_x)
+            plt.ylim(0, lim_y)
+
+            plt.xlabel(r"$\langle N_{\text{ch}} \rangle_{\text{local}} / \langle N_{\text{ch}} \rangle_{\text{global}}$ (Soft) - $|\eta| < " + f"{eta_ref}$")
+            plt.ylabel(r"$\langle N_{D_s} \rangle_{\text{local}} / \langle N_{D_s} \rangle_{\text{global}}$ ($D_s$ Mesons - Soft)")
+            plt.grid(True, linestyle="--", alpha=0.7)
+            plt.legend(loc="best", frameon=False, title=f"Caso: {nome_caso}\nReferência Eixo X: $|\eta| < {eta_ref}$", title_fontsize=10, fontsize=9)
+            plt.tight_layout()
+
+            caminho_fig_caso_fixo = os.path.join(figuras_caso_fixo_eta_dir, f"CasoFixo_{config['pasta']}_X_ref_eta_{eta_ref_str}_global_soft.pdf")
+            plt.savefig(caminho_fig_caso_fixo, bbox_inches="tight")
+            plt.close()
+            log_print(f"[OK] Gráfico para [{nome_caso}] com eixo X em $|\eta| < {eta_ref}$ salvo em: {caminho_fig_caso_fixo}")
+
 log_print(f"\n{'#'*120}\nSucesso! Todas as análises foram processadas e geradas.\n{'#'*120}")
 log_file.close()
