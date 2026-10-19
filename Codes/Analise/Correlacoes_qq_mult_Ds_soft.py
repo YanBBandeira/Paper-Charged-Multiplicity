@@ -78,6 +78,15 @@ estilos_casos = {
     "Only MPI": {"cor": "purple", "marker": "p"},
 }
 
+estilos_pt = {
+    "pt_1_2": {"cor": "black", "marker": "o"},
+    "pt_2_4": {"cor": "firebrick", "marker": "s"},
+    "pt_4_6": {"cor": "royalblue", "marker": "^"},
+    "pt_6_8": {"cor": "forestgreen", "marker": "v"},
+    "pt_8_12": {"cor": "darkorange", "marker": "D"},
+    "pt_12_24": {"cor": "purple", "marker": "p"},
+}
+
 cortes_eta = [0.5, 1.0, 2.0, 3.0, 4.0, 5.0]
 
 diretorio_script = os.path.dirname(os.path.abspath(__file__))
@@ -94,6 +103,18 @@ def log_print(texto):
     print(texto)
     log_file.write(texto + "\n")
 
+def formatar_celula(val):
+    if val == 0.0:
+        return "ZERO"
+    elif abs(val) < 1e-4:
+        # Formata em notação científica padrão (ex: 2.70e-05)
+        s = f"{val:.2e}"
+        base, exp = s.split('e')
+        # Converte o expoente removendo zeros à esquerda (ex: -05 vira -5)
+        exp_int = int(exp)
+        return f"${base} \\times 10^{{{exp_int}}}$"
+    else:
+        return f"${val:.4f}$"
 
 def escrever_tabela_latex(nome_caso, corte_eta, faixa_pt, n_ch_soft, n_ds_soft):
     """Acrescenta ao log uma tabela LaTeX com medias por classe de percentil."""
@@ -117,6 +138,8 @@ def escrever_tabela_latex(nome_caso, corte_eta, faixa_pt, n_ch_soft, n_ds_soft):
 
     soma_pn_ch_soft = soma_probabilidades(n_ch_soft)
     soma_pn_ds_soft = soma_probabilidades(n_ds_soft)
+
+    
 
     log_file.write(
         f"\n% Caso: {nome_caso} | |eta| < {corte_eta} | pT: {faixa_pt}\n"
@@ -143,9 +166,13 @@ def escrever_tabela_latex(nome_caso, corte_eta, faixa_pt, n_ch_soft, n_ds_soft):
             percentual_inicial_fmt += ".0"
         if "." not in percentual_final_fmt:
             percentual_final_fmt += ".0"
+        
+        val_carregadas_fmt = formatar_celula(media_carregadas)
+        val_ds_fmt = formatar_celula(media_ds)
+        
         log_file.write(
             f"{nome_classe} & ${percentual_inicial_fmt} - {percentual_final_fmt}$ "
-            f"& {media_carregadas:.4f} & {media_ds:.6f} \\\\\n"
+            f"& {val_carregadas_fmt} & {val_ds_fmt} \\\\\n"
         )
 
     log_file.write("\\hline\n\\end{tabular}\n")
@@ -180,35 +207,35 @@ def obter_norm_soft(n_ch_soft, n_ds_soft, classes_info):
 
     media_glob, media_glob_ds = np.mean(n_ch_soft), np.mean(n_ds_soft)
     sort_idx = np.argsort(-n_ch_soft)
-    n_ch_sorted, n_ds_sorted = n_ch_soft[sort_idx], n_ds_soft[sort_idx]
+    
+    # Atribuição correta separada para evitar o UnboundLocalError
+    n_ch_sorted = n_ch_soft[sort_idx]
+    n_ds_sorted = n_ds_soft[sort_idx]
 
     x_norm_list = []
-    for nome_cls, p_inf_pct, p_sup_pct in classes_info:
-        i_start = int(np.round((p_inf_pct / 100.0) * n_evts))
-        i_end = max(i_start + 1, int(np.round((p_sup_pct / 100.0) * n_evts)))
-
-        faixa = n_ch_sorted[i_start:i_end]
-        m_local = np.mean(faixa) if len(faixa) > 0 else 0.0
-        norm = m_local / media_glob if media_glob > 0 else 0.0
-        x_norm_list.append(norm)
-        
     y_norm_list = []
     for nome_cls, p_inf_pct, p_sup_pct in classes_info:
         i_start = int(np.round((p_inf_pct / 100.0) * n_evts))
         i_end = max(i_start + 1, int(np.round((p_sup_pct / 100.0) * n_evts)))
 
-        faixa_ch, faixa_ds = n_ch_sorted[i_start:i_end], n_ds_sorted[i_start:i_end]
+        faixa_ch = n_ch_sorted[i_start:i_end]
+        faixa_ds = n_ds_sorted[i_start:i_end]
+        
+        m_local = np.mean(faixa_ch) if len(faixa_ch) > 0 else 0.0
         m_local_ds = np.mean(faixa_ds) if len(faixa_ds) > 0 else 0.0
+        
+        norm = m_local / media_glob if media_glob > 0 else 0.0
         norm_ds = m_local_ds / media_glob_ds if media_glob_ds > 0 else 0.0
-        y_norm_list.append(norm_ds)
+        
+        x_norm_list.append(np.nan if m_local == 0 else norm)
+        y_norm_list.append(np.nan if m_local_ds == 0 else norm_ds)
         
     return np.array(x_norm_list), media_glob, np.array(y_norm_list), media_glob_ds
-
-
 
 # Estruturas globais para armazenar os dados por corte de eta e por faixa de pt
 dados_global_por_eta = {corte: {} for corte in cortes_eta}
 dados_global_por_pt = {pt_label: {corte: {} for corte in cortes_eta} for _, _, pt_label, _ in faixas_pt}
+dados_brutos_globais = {corte: {} for corte in cortes_eta}
 
 # =============================================================================
 # 3. PROCESSAMENTO DOS CASOS, CORTES DE ETA E FAIXAS DE PT
@@ -616,5 +643,143 @@ for nome_caso, config in casos.items():
             plt.close()
             log_print(f"[OK] Gráfico para [{nome_caso}] com eixo X em $|\eta| < {eta_ref}$ salvo em: {caminho_fig_caso_fixo}")
 
-log_print(f"\n{'#'*120}\nSucesso! Todas as análises foram processadas e geradas.\n{'#'*120}")
+# =============================================================================
+# 8. NOVO: EIXO X FIXO NO GLOBAL (pT > 0) E Y VARIANDO OS CORTES EM PT (COM TABELAS)
+# =============================================================================
+log_print(f"\n{'#'*120}\nGERANDO GRÁFICOS E TABELAS COM EIXO X FIXO NO GLOBAL (pT > 0) E Y VARIANDO AS FAIXAS DE PT\n{'#'*120}")
+
+figuras_x_global_y_pt_dir = os.path.join(base_figuras_dir, "EixoX_Global_EixoY_Variando_Pt")
+os.makedirs(figuras_x_global_y_pt_dir, exist_ok=True)
+
+for nome_caso, config in casos.items():
+    for corte_eta in cortes_eta:
+        corte_str = f"{corte_eta:.1f}".replace(".", "p")
+
+        if corte_eta not in dados_global_por_eta or nome_caso not in dados_global_por_eta[corte_eta]:
+            continue
+
+        x_norm_global, _ = dados_global_por_eta[corte_eta][nome_caso]
+        n_ch_global_bruto = dados_brutos_globais[corte_eta].get(nome_caso, [])
+
+        # Escreve a nova tabela comparativa no log correspondente a este caso e eta
+        if len(n_ch_global_bruto) > 0:
+            escrever_tabela_comparativa_pt(nome_caso, corte_eta, dados_global_por_pt, n_ch_global_bruto)
+
+        plt.figure(figsize=(8, 7))
+        global_max_x, global_max_y = np.nanmax(x_norm_global), 0.0
+        tem_dados_plot = False
+
+        for pt_min, pt_max, pt_label, pt_desc in faixas_pt:
+            if pt_label not in dados_global_por_pt or corte_eta not in dados_global_por_pt[pt_label]:
+                continue
+            if nome_caso not in dados_global_por_pt[pt_label][corte_eta]:
+                continue
+
+            tem_dados_plot = True
+            _, y_norm_pt = dados_global_por_pt[pt_label][corte_eta][nome_caso]
+            estilo = estilos_pt.get(pt_label, {"cor": "gray", "marker": "o"})
+
+            global_max_y = max(global_max_y, np.nanmax(y_norm_pt))
+
+            plt.plot(
+                x_norm_global, y_norm_pt,
+                color=estilo["cor"],
+                marker=estilo["marker"],
+                linestyle="-",
+                linewidth=1.5,
+                markersize=7,
+                alpha=0.85,
+                label=pt_desc
+            )
+
+        if tem_dados_plot:
+            lim_x = global_max_x * 1.1
+            lim_y = global_max_y * 1.1
+            lim_ref = max(lim_x, lim_y)
+
+            plt.plot([0, lim_ref], [0, lim_ref], "k--", alpha=0.3, label="Linear scaling")
+            plt.xlim(0, lim_x)
+            plt.ylim(0, lim_y)
+
+            plt.xlabel(r"$\langle N_{\text{ch}} \rangle_{\text{local}} / \langle N_{\text{ch}} \rangle_{\text{global}}$ (Global $p_T > 0$) - $|\eta| < " + f"{corte_eta}$")
+            plt.ylabel(r"$\langle N_{D_s} \rangle_{\text{local}} / \langle N_{D_s} \rangle_{\text{global}}$ ($D_s$ Mesons - Variando $p_T$)")
+            plt.grid(True, linestyle="--", alpha=0.7)
+            plt.legend(loc="best", frameon=False, title=f"Caso: {nome_caso}\n$|\eta| < {corte_eta}$ | X: Global ($p_T > 0$)", title_fontsize=10, fontsize=9)
+            plt.tight_layout()
+
+            caminho_fig_x_global_y_pt = os.path.join(figuras_x_global_y_pt_dir, f"XGlobal_YPt_{config['pasta']}_eta_{corte_str}_soft.pdf")
+            plt.savefig(caminho_fig_x_global_y_pt, bbox_inches="tight")
+            plt.close()
+            log_print(f"[OK] Gráfico e Tabela X: Global, Y: Variando pT [{nome_caso} | $|\eta| < {corte_eta}$] salvos.")
+
+# =============================================================================
+# 9. NOVO: EIXO X VARIANDO AS FAIXAS DE PT E Y FIXO NO GLOBAL (COM TABELAS) - INVERSO DO ITEM 8
+# =============================================================================
+log_print(f"\n{'#'*120}\nGERANDO GRÁFICOS E TABELAS COM EIXO X VARIANDO AS FAIXAS DE PT E Y FIXO NO GLOBAL\n{'#'*120}")
+
+figuras_x_pt_y_global_dir = os.path.join(base_figuras_dir, "EixoX_Pt_EixoY_Global")
+os.makedirs(figuras_x_pt_y_global_dir, exist_ok=True)
+
+for nome_caso, config in casos.items():
+    for corte_eta in cortes_eta:
+        corte_str = f"{corte_eta:.1f}".replace(".", "p")
+
+        if corte_eta not in dados_global_por_eta or nome_caso not in dados_global_por_eta[corte_eta]:
+            continue
+
+        # Y fixo no global Ds
+        _, y_norm_global = dados_global_por_eta[corte_eta][nome_caso]
+        n_ch_global_bruto = dados_brutos_globais[corte_eta].get(nome_caso, [])
+
+        if len(n_ch_global_bruto) > 0:
+            escrever_tabela_inversa_pt(nome_caso, corte_eta, dados_global_por_pt, n_ch_global_bruto)
+
+        plt.figure(figsize=(8, 7))
+        global_max_x, global_max_y = 0.0, np.nanmax(y_norm_global)
+        tem_dados_plot = False
+
+        for pt_min, pt_max, pt_label, pt_desc in faixas_pt:
+            if pt_label not in dados_global_por_pt or corte_eta not in dados_global_por_pt[pt_label]:
+                continue
+            if nome_caso not in dados_global_por_pt[pt_label][corte_eta]:
+                continue
+
+            tem_dados_plot = True
+            x_norm_pt, _ = dados_global_por_pt[pt_label][corte_eta][nome_caso]
+            estilo = estilos_pt.get(pt_label, {"cor": "gray", "marker": "o"})
+
+            global_max_x = max(global_max_x, np.nanmax(x_norm_pt))
+
+            plt.plot(
+                x_norm_pt, y_norm_global,
+                color=estilo["cor"],
+                marker=estilo["marker"],
+                linestyle="-",
+                linewidth=1.5,
+                markersize=7,
+                alpha=0.85,
+                label=pt_desc
+            )
+
+        if tem_dados_plot:
+            lim_x = global_max_x * 1.1
+            lim_y = global_max_y * 1.1
+            lim_ref = max(lim_x, lim_y)
+
+            plt.plot([0, lim_ref], [0, lim_ref], "k--", alpha=0.3, label="Linear scaling")
+            plt.xlim(0, lim_x)
+            plt.ylim(0, lim_y)
+
+            plt.xlabel(r"$\langle N_{\text{ch}} \rangle_{\text{local}} / \langle N_{\text{ch}} \rangle_{\text{global}}$ (Variando $p_T$) - $|\eta| < " + f"{corte_eta}$")
+            plt.ylabel(r"$\langle N_{D_s} \rangle_{\text{local}} / \langle N_{D_s} \rangle_{\text{global}}$ ($D_s$ Mesons - Global $p_T > 0$)")
+            plt.grid(True, linestyle="--", alpha=0.7)
+            plt.legend(loc="best", frameon=False, title=f"Caso: {nome_caso}\n$|\eta| < {corte_eta}$ | X: Variando $p_T$, Y: Global", title_fontsize=10, fontsize=9)
+            plt.tight_layout()
+
+            caminho_fig_x_pt_y_global = os.path.join(figuras_x_pt_y_global_dir, f"XPt_YGlobal_{config['pasta']}_eta_{corte_str}_soft.pdf")
+            plt.savefig(caminho_fig_x_pt_y_global, bbox_inches="tight")
+            plt.close()
+            log_print(f"[OK] Gráfico e Tabela X: Variando pT, Y: Global [{nome_caso} | $|\eta| < {corte_eta}$] salvos.")
+
+log_print(f"\n{'#'*120}\nSucesso! Todas as análises, gráficos e tabelas (itens 8 e 9) foram processados e gerados.\n{'#'*120}")
 log_file.close()
